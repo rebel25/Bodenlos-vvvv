@@ -221,7 +221,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1635" top="10905" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="40350" top="735" width="14535" height="11040">
+   <BOUNDS type="Window" left="40335" top="1260" width="25605" height="12975">
    </BOUNDS>
    <PIN pinname="View" visible="1" slicecount="1" values="||">
    </PIN>
@@ -230,6 +230,10 @@
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="AA Samples per Pixel" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Aspect Ratio" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Actual BackBuffer SizeXY" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="0" srcpinname="Controller Poses" dstnodeid="11" dstpinname="Postion Controller">
@@ -267,7 +271,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="8220" top="2610" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="9780" top="7710" width="13965" height="12315">
+   <BOUNDS type="Window" left="13350" top="8760" width="13965" height="12315">
    </BOUNDS>
    <PIN pinname="World Modell" visible="1">
    </PIN>
@@ -287,5 +291,87 @@
    <LINK srcnodeid="38" srcpinname="World Modell" dstnodeid="39" dstpinname="Layer 2">
    </LINK>
    <LINK srcnodeid="39" srcpinname="Layer Out" dstnodeid="34" dstpinname="Layers">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="42">
+   <BOUNDS type="Box" left="2730" top="11895" width="795" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2730" top="11895" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="34" srcpinname="Actual BackBuffer SizeXY" dstnodeid="42" dstpinname="Y Input Value">
+   </LINK>
+   <NODE id="44" systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Node" left="2775" top="12960" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" pintype="Input" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Bin Size" pintype="Input" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Index" pintype="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Output Bins" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="42" srcpinname="Y Output Value" dstnodeid="44" dstpinname="Input">
+   </LINK>
+   <NODE id="45" systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Node" left="3765" top="12990" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" pintype="Input" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Bin Size" pintype="Input" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Index" pintype="Input" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Output" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Output Bins" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="42" srcpinname="Y Output Value" dstnodeid="45" dstpinname="Input">
+   </LINK>
+   <NODE systemname="AspectRatio (Transform)" nodename="AspectRatio (Transform)" componentmode="Hidden" id="47">
+   <BOUNDS type="Node" left="4890" top="11535" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Aspect Width" visible="1">
+   </PIN>
+   <PIN pinname="Aspect Height" visible="1">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="Uniform Scale" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Alignment" slicecount="1" values="FitHeight">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="44" srcpinname="Output" dstnodeid="47" dstpinname="Aspect Width">
+   </LINK>
+   <LINK srcnodeid="45" srcpinname="Output" dstnodeid="47" dstpinname="Aspect Height">
+   </LINK>
+   <LINK srcnodeid="47" srcpinname="Transform Out" dstnodeid="34" dstpinname="Aspect Ratio">
    </LINK>
    </PATCH>
