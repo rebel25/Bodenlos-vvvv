@@ -46,60 +46,6 @@
    <PIN pinname="ID" pintype="Output" visible="-1">
    </PIN>
    </NODE>
-   <NODE id="1" systemname="Controller (OpenVR Split)" filename="%VVVV%\packs\VVVV.OpenVR\nodes\plugins\VVVV.OpenVR.dll" nodename="Controller (OpenVR Split)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <PIN pinname="Pose" visible="1" pintype="Output">
-   </PIN>
-   <BOUNDS type="Node" left="6300" top="2660" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="3390" top="1970" width="2400" height="1800">
-   </BOUNDS>
-   <BOUNDS type="Window" left="0" top="0" width="6000" height="4500">
-   </BOUNDS>
-   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Controller" pintype="Input" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Window Handle" pintype="Output">
-   </PIN>
-   <PIN pinname="Device Index" pintype="Output" visible="1">
-   </PIN>
-   <PIN pinname="Device Role" pintype="Output" visible="1">
-   </PIN>
-   <PIN pinname="Trigger Touch" pintype="Output" visible="1">
-   </PIN>
-   <PIN pinname="Trigger Press" pintype="Output" visible="1">
-   </PIN>
-   <PIN pinname="Trigger Axis" pintype="Output" visible="1">
-   </PIN>
-   <PIN pinname="Touchpad Touch" pintype="Output" visible="1">
-   </PIN>
-   <PIN pinname="Touchpad Press" pintype="Output" visible="1">
-   </PIN>
-   <PIN pinname="Touchpad AxisXY" pintype="Output" visible="1">
-   </PIN>
-   <PIN pinname="System Press" pintype="Output" visible="1">
-   </PIN>
-   <PIN pinname="ApplicationMenu Press" pintype="Output" visible="1">
-   </PIN>
-   <PIN pinname="Grip Press" pintype="Output" visible="1">
-   </PIN>
-   <PIN pinname="Valid" pintype="Output" visible="1">
-   </PIN>
-   <PIN pinname="Connected" pintype="Output" visible="-1">
-   </PIN>
-   <PIN pinname="Has Tracking" pintype="Output" visible="-1">
-   </PIN>
-   <PIN pinname="Out Of Range" pintype="Output" visible="-1">
-   </PIN>
-   <PIN pinname="Calibrating" pintype="Output" visible="-1">
-   </PIN>
-   <PIN pinname="Uninitialized" pintype="Output" visible="-1">
-   </PIN>
-   <PIN pinname="ID" pintype="Output" visible="-1">
-   </PIN>
-   </NODE>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
    <NODE systemname="AR cam fix" filename="subpatch\AR cam fix.v4p" nodename="subpatch\AR cam fix.v4p" componentmode="InAWindow" id="11">
@@ -275,19 +221,25 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1635" top="10905" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="21975" top="8010" width="14535" height="11040">
+   <BOUNDS type="Window" left="40335" top="1260" width="25605" height="12975">
    </BOUNDS>
    <PIN pinname="View" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Projection" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Layers" visible="1">
+   <PIN pinname="Layers" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="AA Samples per Pixel" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Aspect Ratio" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Actual BackBuffer SizeXY" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="0" srcpinname="Controller Poses" dstnodeid="11" dstpinname="Postion Controller">
    </LINK>
    <NODE systemname="Main view" filename="subpatch\Main view.v4p" nodename="subpatch\Main view.v4p" componentmode="InAWindow" id="36">
-   <BOUNDS type="Node" left="6555" top="4485" width="100" height="100">
+   <BOUNDS type="Node" left="6555" top="4560" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform In" visible="1">
    </PIN>
@@ -295,19 +247,131 @@
    </PIN>
    <PIN pinname="Projection" visible="1">
    </PIN>
+   <BOUNDS type="Window" left="15825" top="1680" width="12330" height="17085">
+   </BOUNDS>
+   <PIN pinname="LookAt (View)" visible="1">
+   </PIN>
+   <PIN pinname="Perspective" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="0" srcpinname="Controller Poses" dstnodeid="36" dstpinname="Transform In">
    </LINK>
    <NODE systemname="AxisAndGrid (DX11)" filename="%VVVV%\packs\dx11\nodes\modules\AxisAndGrid\AxisAndGrid (DX11).v4p" nodename="AxisAndGrid (DX11)" componentmode="Hidden" id="37">
-   <BOUNDS type="Node" left="2175" top="8475" width="100" height="100">
+   <BOUNDS type="Node" left="1560" top="7845" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="37" srcpinname="Layer" dstnodeid="34" dstpinname="Layers">
+   <LINK srcnodeid="36" srcpinname="LookAt (View)" dstnodeid="34" dstpinname="View">
    </LINK>
-   <LINK srcnodeid="36" srcpinname="View" dstnodeid="34" dstpinname="View">
+   <LINK srcnodeid="36" srcpinname="Perspective" dstnodeid="34" dstpinname="Projection">
    </LINK>
-   <LINK srcnodeid="36" srcpinname="Projection" dstnodeid="34" dstpinname="Projection">
+   <NODE systemname="Modell" filename="subpatch\Modell.v4p" componentmode="InAWindow" id="38" nodename="subpatch\Modell.v4p">
+   <BOUNDS type="Node" left="8220" top="2610" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8220" top="2610" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="13350" top="8760" width="13965" height="12315">
+   </BOUNDS>
+   <PIN pinname="World Modell" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Group (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Group (DX11.Layer)" componentmode="Hidden" id="39">
+   <BOUNDS type="Node" left="2685" top="8385" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer 1" visible="1">
+   </PIN>
+   <PIN pinname="Layer 2" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="37" srcpinname="Layer" dstnodeid="39" dstpinname="Layer 1">
+   </LINK>
+   <LINK srcnodeid="38" srcpinname="World Modell" dstnodeid="39" dstpinname="Layer 2">
+   </LINK>
+   <LINK srcnodeid="39" srcpinname="Layer Out" dstnodeid="34" dstpinname="Layers">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="42">
+   <BOUNDS type="Box" left="2730" top="11895" width="795" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2730" top="11895" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="34" srcpinname="Actual BackBuffer SizeXY" dstnodeid="42" dstpinname="Y Input Value">
+   </LINK>
+   <NODE id="44" systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Node" left="2775" top="12960" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" pintype="Input" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Bin Size" pintype="Input" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Index" pintype="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Output Bins" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="42" srcpinname="Y Output Value" dstnodeid="44" dstpinname="Input">
+   </LINK>
+   <NODE id="45" systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Node" left="3765" top="12990" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" pintype="Input" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Bin Size" pintype="Input" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Index" pintype="Input" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Output" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Output Bins" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="42" srcpinname="Y Output Value" dstnodeid="45" dstpinname="Input">
+   </LINK>
+   <NODE systemname="AspectRatio (Transform)" nodename="AspectRatio (Transform)" componentmode="Hidden" id="47">
+   <BOUNDS type="Node" left="4890" top="11535" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Aspect Width" visible="1">
+   </PIN>
+   <PIN pinname="Aspect Height" visible="1">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="Uniform Scale" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Alignment" slicecount="1" values="FitHeight">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="44" srcpinname="Output" dstnodeid="47" dstpinname="Aspect Width">
+   </LINK>
+   <LINK srcnodeid="45" srcpinname="Output" dstnodeid="47" dstpinname="Aspect Height">
+   </LINK>
+   <LINK srcnodeid="47" srcpinname="Transform Out" dstnodeid="34" dstpinname="Aspect Ratio">
    </LINK>
    </PATCH>
