@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\Natalie\Documents\VVVV\6. Semester\bodenlos\Prototyp_Ausstellung\_root_Prototyp.v4p" scrollx="0" scrolly="-360" systemname="_root_Prototyp" filename="C:\Users\Natalie\Documents\VVVV\6. Semester\bodenlos\Prototyp_Ausstellung\_root_Prototyp.v4p">
-   <BOUNDS type="Window" left="2940" top="850" width="14570" height="13430">
+   <PATCH nodename="C:\Users\Daniel\Desktop\Prototyp_bodenlos_Ausstellung\patch\_root_Prototyp.v4p" scrollx="0" scrolly="-360" systemname="_root_Prototyp" filename="C:\Users\Natalie\Documents\VVVV\6. Semester\bodenlos\Prototyp_Ausstellung\_root_Prototyp.v4p">
+   <BOUNDS type="Window" left="2895" top="1440" width="12150" height="16170">
    </BOUNDS>
    <NODE id="0" systemname="Poser (OpenVR)" filename="%VVVV%\packs\VVVV.OpenVR\nodes\plugins\VVVV.OpenVR.dll" nodename="Poser (OpenVR)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
    <PIN pinname="Controller Poses" visible="1" pintype="Output">
@@ -100,59 +100,17 @@
    <PIN pinname="ID" pintype="Output" visible="-1">
    </PIN>
    </NODE>
-   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="Hidden" id="5">
-   <BOUNDS type="Node" left="1810" top="11400" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="1810" top="11400" width="2400" height="1800">
-   </BOUNDS>
-   <BOUNDS type="Window" left="12120" top="9630" width="6220" height="5060">
-   </BOUNDS>
-   <PIN pinname="Layers" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="View" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Projection" visible="1" slicecount="1" values="||">
-   </PIN>
-   </NODE>
-   <NODE systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" id="7">
-   <BOUNDS type="Node" left="6810" top="7780" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   <PIN pinname="Layer Template Count" slicecount="2" values="3,3">
-   </PIN>
-   </NODE>
-   <NODE systemname="Switch (Node Input)" nodename="Switch (Node Input)" componentmode="Hidden" id="8">
-   <BOUNDS type="Node" left="1820" top="10780" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 1" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Input 2" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="8" srcpinname="Output" dstnodeid="5" dstpinname="Layers">
-   </LINK>
-   <LINK srcnodeid="7" srcpinname="Layer" dstnodeid="8" dstpinname="Input 2">
-   </LINK>
-   <NODE nodename="IOBox (Node)" componentmode="InABox" id="10" systemname="IOBox (Node)">
-   <BOUNDS type="Box" left="2090" top="10100" width="800" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="2090" top="10100" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="10" srcpinname="Output Node" dstnodeid="8" dstpinname="Input 1">
-   </LINK>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
-   <NODE systemname="AR cam fix" filename="subpatch\AR cam fix.v4p" nodename="subpatch\AR cam fix.v4p" componentmode="Hidden" id="11">
+   <NODE systemname="AR cam fix" filename="subpatch\AR cam fix.v4p" nodename="subpatch\AR cam fix.v4p" componentmode="InAWindow" id="11">
    <BOUNDS type="Node" left="4860" top="5270" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="4860" top="5270">
    </BOUNDS>
+   <BOUNDS type="Window" left="2895" top="1440" width="12150" height="16170">
+   </BOUNDS>
+   <PIN pinname="Postion Controller" visible="1">
+   </PIN>
    </NODE>
    <NODE systemname="AR map fix" filename="subpatch\AR map fix.v4p" componentmode="Hidden" id="12" nodename="subpatch\AR map fix.v4p">
    <BOUNDS type="Node" left="6750" top="5270" width="100" height="100">
@@ -169,20 +127,6 @@
    </BOUNDS>
    <BOUNDS type="Window" left="16600" top="8000" width="9000" height="6000">
    </BOUNDS>
-   </NODE>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="14">
-   <BOUNDS type="Node" left="1900" top="9810" width="1050" height="230">
-   </BOUNDS>
-   <BOUNDS type="Box" left="1900" top="9810" width="1050" height="230">
-   </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|Pause Screen|">
-   </PIN>
-   <PIN pinname="Output String" visible="0">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="MultiLine">
-   </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="16">
    <BOUNDS type="Node" left="3930" top="2190" width="850" height="230">
@@ -212,10 +156,6 @@
    <PIN pinname="Camera Switch" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="25" srcpinname="View Output" dstnodeid="5" dstpinname="View">
-   </LINK>
-   <LINK srcnodeid="25" srcpinname="Projection Output" dstnodeid="5" dstpinname="Projection">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="26">
    <BOUNDS type="Box" left="960" top="2560" width="480" height="480">
    </BOUNDS>
@@ -271,7 +211,7 @@
    <NODE nodename="IOBox (String)" componentmode="InABox" id="29">
    <BOUNDS type="Node" left="580" top="1440" width="3800" height="230">
    </BOUNDS>
-   <BOUNDS type="Box" left="580" top="1440" width="10390" height="300">
+   <BOUNDS type="Box" left="580" top="1440" width="10440" height="390">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="Input____________________________________________________________________________">
    </PIN>
@@ -287,7 +227,7 @@
    <NODE nodename="IOBox (String)" componentmode="InABox" id="30">
    <BOUNDS type="Node" left="580" top="4050" width="3800" height="230">
    </BOUNDS>
-   <BOUNDS type="Box" left="580" top="4050" width="10430" height="310">
+   <BOUNDS type="Box" left="580" top="4050" width="10620" height="465">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="Grafik____________________________________________________________________________">
    </PIN>
@@ -303,7 +243,7 @@
    <NODE nodename="IOBox (String)" componentmode="InABox" id="31">
    <BOUNDS type="Node" left="580" top="9390" width="3800" height="230">
    </BOUNDS>
-   <BOUNDS type="Box" left="580" top="9390" width="10460" height="310">
+   <BOUNDS type="Box" left="580" top="9390" width="10575" height="465">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="Output____________________________________________________________________________">
    </PIN>
@@ -330,4 +270,44 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
+   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" id="34">
+   <BOUNDS type="Node" left="1635" top="10905" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1635" top="10905" width="6000" height="4500">
+   </BOUNDS>
+   <BOUNDS type="Window" left="22035" top="6885" width="6240" height="5085">
+   </BOUNDS>
+   <PIN pinname="View" visible="1">
+   </PIN>
+   <PIN pinname="Projection" visible="1">
+   </PIN>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Controller Poses" dstnodeid="11" dstpinname="Postion Controller">
+   </LINK>
+   <NODE systemname="Main view" filename="subpatch\Main view.v4p" nodename="subpatch\Main view.v4p" componentmode="InAWindow" id="36">
+   <BOUNDS type="Node" left="6555" top="4485" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform In" visible="1">
+   </PIN>
+   <PIN pinname="View" visible="1">
+   </PIN>
+   <PIN pinname="Projection" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Controller Poses" dstnodeid="36" dstpinname="Transform In">
+   </LINK>
+   <LINK srcnodeid="36" srcpinname="View" dstnodeid="34" dstpinname="View">
+   </LINK>
+   <LINK srcnodeid="36" srcpinname="Projection" dstnodeid="34" dstpinname="Projection">
+   </LINK>
+   <NODE systemname="AxisAndGrid (DX11)" filename="%VVVV%\packs\dx11\nodes\modules\AxisAndGrid\AxisAndGrid (DX11).v4p" nodename="AxisAndGrid (DX11)" componentmode="Hidden" id="37">
+   <BOUNDS type="Node" left="2175" top="8475" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="37" srcpinname="Layer" dstnodeid="34" dstpinname="Layers">
+   </LINK>
    </PATCH>
