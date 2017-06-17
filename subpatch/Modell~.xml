@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
    <PATCH nodename="C:\Users\Daniel\Desktop\Prototyp_bodenlos_Ausstellung\patch\subpatch\Modell.v4p" systemname="Modell" filename="C:\Users\Daniel\Desktop\Prototyp_bodenlos_Ausstellung\patch\subpatch\Modell.v4p" scrollx="15" scrolly="-360">
-   <BOUNDS type="Window" left="20715" top="1725" width="13965" height="12315">
+   <BOUNDS type="Window" left="25575" top="3930" width="13965" height="12315">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -22,34 +22,6 @@
    <PIN pinname="Mesh Count" visible="1">
    </PIN>
    <PIN pinname="Is Valid" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="GouraudDirectional (DX11.Effect)" filename="%VVVV%\packs\dx11\nodes\dx11\GouraudDirectional.fx" nodename="GouraudDirectional (DX11.Effect)" componentmode="Hidden" id="23">
-   <BOUNDS type="Node" left="5115" top="7575" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Technique" slicecount="1" values="GouraudDirectional">
-   </PIN>
-   <PIN pinname="Geometry" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   <PIN pinname="Transform In" visible="1">
-   </PIN>
-   <PIN pinname="Color" slicecount="1" visible="1" values="|0.00139,0.00139,0.00139,1.00000|">
-   </PIN>
-   <PIN pinname="Alpha" visible="1">
-   </PIN>
-   <PIN pinname="Ambient Color" visible="1" slicecount="1" values="|0.00000,0.00000,0.00000,1.00000|">
-   </PIN>
-   <PIN pinname="Diffuse Color" visible="1" slicecount="1" values="|0.60000,0.60000,0.60000,1.00000|">
-   </PIN>
-   <PIN pinname="Specular Color" visible="1" slicecount="1" values="|0.00000,0.00000,0.00000,1.00000|">
-   </PIN>
-   <PIN pinname="Power" slicecount="1" visible="1" values="1">
-   </PIN>
-   <PIN pinname="Light DirectionXYZ" visible="1">
-   </PIN>
-   <PIN pinname="Render State" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <NODE systemname="Mesh (DX11.Geometry Assimp)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.Assimp.dll" nodename="Mesh (DX11.Geometry Assimp)" componentmode="Hidden" id="22">
@@ -177,7 +149,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2760" top="2025" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="..\assets\Commandtable_3.dae">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="..\assets\Island_medres_C4D.dae">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -191,9 +163,9 @@
    <LINK srcnodeid="14" srcpinname="Output String" dstnodeid="24" dstpinname="Filename">
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="25">
-   <BOUNDS type="Box" left="4290" top="8535" width="795" height="240">
+   <BOUNDS type="Box" left="1770" top="9420" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="4290" top="8535" width="0" height="0">
+   <BOUNDS type="Node" left="1770" top="9420" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="|World Modell|">
    </PIN>
@@ -201,51 +173,13 @@
    </PIN>
    </NODE>
    <NODE systemname="UniformScale (Transform)" nodename="UniformScale (Transform)" componentmode="Hidden" id="26">
-   <BOUNDS type="Node" left="3630" top="5310" width="100" height="100">
+   <BOUNDS type="Node" left="990" top="5550" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
    <PIN pinname="XYZ" slicecount="1" values="0.01">
    </PIN>
    </NODE>
-   <LINK srcnodeid="26" srcpinname="Transform Out" dstnodeid="23" dstpinname="Transform In">
-   </LINK>
-   <NODE systemname="Node (Assimp)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.Assimp.dll" nodename="Node (Assimp)" componentmode="Hidden" id="27">
-   <BOUNDS type="Node" left="1725" top="4710" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Scene" visible="1">
-   </PIN>
-   <PIN pinname="Local Transform" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="19" srcpinname="Output Node" dstnodeid="27" dstpinname="Scene">
-   </LINK>
-   <NODE nodename="IOBox (Color)" componentmode="InABox" id="29">
-   <BOUNDS type="Box" left="5175" top="6345" width="2250" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="5175" top="6345" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.67753,0.00000,0.01606,1.00000|">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Color">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="29" srcpinname="Color Output" dstnodeid="23" dstpinname="Color">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="30">
-   <BOUNDS type="Box" left="4815" top="5850" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="4815" top="5850" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="30" srcpinname="Y Output Value" dstnodeid="23" dstpinname="Alpha">
-   </LINK>
    <NODE systemname="Material (Assimp)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.Assimp.dll" nodename="Material (Assimp)" componentmode="Hidden" id="35">
    <BOUNDS type="Node" left="5910" top="4845" width="100" height="100">
    </BOUNDS>
@@ -263,11 +197,11 @@
    <LINK srcnodeid="19" srcpinname="Output Node" dstnodeid="35" dstpinname="Scene">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="36">
-   <BOUNDS type="Box" left="6570" top="9240" width="795" height="720">
+   <BOUNDS type="Box" left="3045" top="6135" width="795" height="720">
    </BOUNDS>
-   <BOUNDS type="Node" left="6570" top="9240" width="0" height="0">
+   <BOUNDS type="Node" left="3045" top="6135" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="-2.6,-3.86,-5.9">
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="-2.68,-10.93,4.22">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -282,20 +216,8 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="36" srcpinname="Y Output Value" dstnodeid="23" dstpinname="Light DirectionXYZ">
-   </LINK>
-   <LINK srcnodeid="22" srcpinname="Output" dstnodeid="23" dstpinname="Geometry">
-   </LINK>
-   <LINK srcnodeid="35" srcpinname="Ambient Color" dstnodeid="23" dstpinname="Ambient Color">
-   </LINK>
-   <LINK srcnodeid="35" srcpinname="Diffuse Color" dstnodeid="23" dstpinname="Diffuse Color">
-   </LINK>
-   <LINK srcnodeid="35" srcpinname="Specular Color" dstnodeid="23" dstpinname="Specular Color">
-   </LINK>
-   <LINK srcnodeid="35" srcpinname="Specular Power" dstnodeid="23" dstpinname="Power">
-   </LINK>
    <NODE systemname="PhongDirectional (DX11.Effect)" filename="%VVVV%\packs\dx11\nodes\dx11\PhongDirectional.fx" nodename="PhongDirectional (DX11.Effect)" componentmode="Hidden" id="44">
-   <BOUNDS type="Node" left="1800" top="8055" width="100" height="100">
+   <BOUNDS type="Node" left="3360" top="7905" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Geometry" visible="1" slicecount="1" values="||">
    </PIN>
@@ -332,10 +254,6 @@
    </LINK>
    <LINK srcnodeid="36" srcpinname="Y Output Value" dstnodeid="44" dstpinname="Light DirectionXYZ">
    </LINK>
-   <NODE systemname="Mesh (DX11.Geometry Assimp)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.Assimp.dll" nodename="Mesh (DX11.Geometry Assimp)" componentmode="Hidden" id="54">
-   <BOUNDS type="Node" left="7740" top="4725" width="100" height="100">
-   </BOUNDS>
-   </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="55">
    <BOUNDS type="Box" left="4815" top="4575" width="480" height="480">
    </BOUNDS>
@@ -356,8 +274,26 @@
    </LINK>
    <LINK srcnodeid="22" srcpinname="Output" dstnodeid="44" dstpinname="Geometry">
    </LINK>
-   <LINK srcnodeid="26" srcpinname="Transform Out" dstnodeid="44" dstpinname="Transform In">
-   </LINK>
    <LINK srcnodeid="44" srcpinname="Layer" dstnodeid="25" dstpinname="Input Node">
+   </LINK>
+   <NODE systemname="Transform (Transform 3d)" nodename="Transform (Transform 3d)" componentmode="Hidden" id="56">
+   <BOUNDS type="Node" left="810" top="6555" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform In" visible="1">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="TranslateY" slicecount="1" values="23.05">
+   </PIN>
+   <PIN pinname="TranslateX" slicecount="1" values="-0.24">
+   </PIN>
+   <PIN pinname="Yaw" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="ScaleY" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="26" srcpinname="Transform Out" dstnodeid="56" dstpinname="Transform In">
+   </LINK>
+   <LINK srcnodeid="56" srcpinname="Transform Out" dstnodeid="44" dstpinname="Transform In">
    </LINK>
    </PATCH>
