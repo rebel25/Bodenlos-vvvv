@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\Daniel\Desktop\Prototyp_bodenlos_Ausstellung\patch\_root_Prototyp.v4p" scrollx="0" scrolly="-360" systemname="_root_Prototyp" filename="C:\Users\Natalie\Documents\VVVV\6. Semester\bodenlos\Prototyp_Ausstellung\_root_Prototyp.v4p">
-   <BOUNDS type="Window" left="2895" top="1440" width="12150" height="16170">
+   <PATCH nodename="C:\Users\Daniel\Desktop\Prototyp_bodenlos_Ausstellung\patch\_root_Prototyp.v4p" scrollx="0" scrolly="2160" systemname="_root_Prototyp" filename="C:\Users\Natalie\Documents\VVVV\6. Semester\bodenlos\Prototyp_Ausstellung\_root_Prototyp.v4p">
+   <BOUNDS type="Window" left="17580" top="9030" width="12930" height="13830">
    </BOUNDS>
    <NODE id="0" systemname="Poser (OpenVR)" filename="%VVVV%\packs\VVVV.OpenVR\nodes\plugins\VVVV.OpenVR.dll" nodename="Poser (OpenVR)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
    <PIN pinname="Controller Poses" visible="1" pintype="Output">
@@ -49,27 +49,37 @@
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
    <NODE systemname="AR cam fix" filename="subpatch\AR cam fix.v4p" nodename="subpatch\AR cam fix.v4p" componentmode="InAWindow" id="11">
-   <BOUNDS type="Node" left="4860" top="5270" width="100" height="100">
+   <BOUNDS type="Node" left="6375" top="6080" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="4860" top="5270">
+   <BOUNDS type="Box" left="6375" top="6080">
    </BOUNDS>
-   <BOUNDS type="Window" left="2895" top="1440" width="12150" height="16170">
+   <BOUNDS type="Window" left="17580" top="9030" width="12930" height="13830">
    </BOUNDS>
    <PIN pinname="Postion Controller" visible="1">
    </PIN>
+   <PIN pinname="Look At Camera" visible="1" slicecount="3" values="-1.2616,0.5932,-0.6225">
+   </PIN>
+   <PIN pinname="Lazer HUD" visible="1">
+   </PIN>
+   <PIN pinname="Renderer Size" visible="1">
+   </PIN>
    </NODE>
-   <NODE systemname="AR map fix" filename="subpatch\AR map fix.v4p" componentmode="Hidden" id="12" nodename="subpatch\AR map fix.v4p">
-   <BOUNDS type="Node" left="6750" top="5270" width="100" height="100">
+   <NODE systemname="AR map fix" filename="subpatch\AR map fix.v4p" componentmode="InAWindow" id="12" nodename="subpatch\AR map fix.v4p">
+   <BOUNDS type="Node" left="9405" top="5030" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="6750" top="5270" width="4800" height="3600">
+   <BOUNDS type="Box" left="9405" top="5030" width="4800" height="3600">
    </BOUNDS>
    <BOUNDS type="Window" left="15830" top="8600" width="9000" height="6000">
    </BOUNDS>
+   <PIN pinname="Transform In" visible="1">
+   </PIN>
+   <PIN pinname="pos Controller" visible="1">
+   </PIN>
    </NODE>
    <NODE systemname="Mentor" filename="subpatch\Mentor.v4p" componentmode="Hidden" id="13" nodename="subpatch\Mentor.v4p">
-   <BOUNDS type="Node" left="8350" top="5270" width="100" height="100">
+   <BOUNDS type="Node" left="9940" top="6380" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="8350" top="5270" width="4800" height="3600">
+   <BOUNDS type="Box" left="9940" top="6380" width="4800" height="3600">
    </BOUNDS>
    <BOUNDS type="Window" left="16600" top="8000" width="9000" height="6000">
    </BOUNDS>
@@ -221,7 +231,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1635" top="10905" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="40335" top="1260" width="25605" height="12975">
+   <BOUNDS type="Window" left="4995" top="1995" width="19470" height="11355">
    </BOUNDS>
    <PIN pinname="View" visible="1" slicecount="1" values="||">
    </PIN>
@@ -235,6 +245,8 @@
    </PIN>
    <PIN pinname="Actual BackBuffer SizeXY" visible="1">
    </PIN>
+   <PIN pinname="Show Cursor" slicecount="1" values="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="0" srcpinname="Controller Poses" dstnodeid="11" dstpinname="Postion Controller">
    </LINK>
@@ -247,17 +259,19 @@
    </PIN>
    <PIN pinname="Projection" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="15825" top="1680" width="12330" height="17085">
+   <BOUNDS type="Window" left="16500" top="240" width="11445" height="10755">
    </BOUNDS>
    <PIN pinname="LookAt (View)" visible="1">
    </PIN>
    <PIN pinname="Perspective" visible="1">
    </PIN>
+   <PIN pinname="Look At" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="0" srcpinname="Controller Poses" dstnodeid="36" dstpinname="Transform In">
    </LINK>
    <NODE systemname="AxisAndGrid (DX11)" filename="%VVVV%\packs\dx11\nodes\modules\AxisAndGrid\AxisAndGrid (DX11).v4p" nodename="AxisAndGrid (DX11)" componentmode="Hidden" id="37">
-   <BOUNDS type="Node" left="1560" top="7845" width="100" height="100">
+   <BOUNDS type="Node" left="735" top="7380" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -265,13 +279,15 @@
    <LINK srcnodeid="36" srcpinname="LookAt (View)" dstnodeid="34" dstpinname="View">
    </LINK>
    <LINK srcnodeid="36" srcpinname="Perspective" dstnodeid="34" dstpinname="Projection">
+   <LINKPOINT x="8175" y="7545">
+   </LINKPOINT>
    </LINK>
    <NODE systemname="Modell" filename="subpatch\Modell.v4p" componentmode="InAWindow" id="38" nodename="subpatch\Modell.v4p">
-   <BOUNDS type="Node" left="8220" top="2610" width="100" height="100">
+   <BOUNDS type="Node" left="7905" top="2310" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="8220" top="2610" width="4800" height="3600">
+   <BOUNDS type="Box" left="7905" top="2310" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="13350" top="8760" width="13965" height="12315">
+   <BOUNDS type="Window" left="23730" top="8685" width="13965" height="12315">
    </BOUNDS>
    <PIN pinname="World Modell" visible="1">
    </PIN>
@@ -284,6 +300,14 @@
    <PIN pinname="Layer 2" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Layer Out" visible="1">
+   </PIN>
+   <PIN pinname="Input Count" slicecount="1" values="5">
+   </PIN>
+   <PIN pinname="Layer 3" visible="1">
+   </PIN>
+   <PIN pinname="Layer 4" visible="1">
+   </PIN>
+   <PIN pinname="Layer 5" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="37" srcpinname="Layer" dstnodeid="39" dstpinname="Layer 1">
@@ -307,71 +331,65 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
+   <PIN pinname="Y Input Value" visible="1" slicecount="2" values="1531,830">
+   </PIN>
    </NODE>
+   <NODE systemname="PerfMeter (DX11.Debug)" filename="%VVVV%\packs\dx11\nodes\modules\PerfMeter (DX11.Debug).v4p" nodename="PerfMeter (DX11.Debug)" componentmode="Hidden" id="48">
+   <BOUNDS type="Node" left="2535" top="6900" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="48" srcpinname="Layer" dstnodeid="39" dstpinname="Layer 3">
+   </LINK>
+   <LINK srcnodeid="11" srcpinname="Lazer HUD" dstnodeid="39" dstpinname="Layer 4">
+   </LINK>
    <LINK srcnodeid="34" srcpinname="Actual BackBuffer SizeXY" dstnodeid="42" dstpinname="Y Input Value">
    </LINK>
-   <NODE id="44" systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Node" left="2775" top="12960" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1" pintype="Input" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Bin Size" pintype="Input" visible="1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Index" pintype="Input" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Output" pintype="Output" visible="1">
-   </PIN>
-   <PIN pinname="Output Bins" pintype="Output" visible="1">
-   </PIN>
-   <PIN pinname="ID" pintype="Output" visible="-1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="42" srcpinname="Y Output Value" dstnodeid="44" dstpinname="Input">
+   <LINK srcnodeid="42" srcpinname="Y Output Value" dstnodeid="11" dstpinname="Renderer Size">
    </LINK>
-   <NODE id="45" systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Node" left="3765" top="12990" width="100" height="100">
+   <NODE systemname="AspectRatio (Transform)" nodename="AspectRatio (Transform)" componentmode="Hidden" id="52">
+   <BOUNDS type="Node" left="4590" top="10860" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1" pintype="Input" slicecount="1" values="0">
+   <PIN pinname="Transform Out" visible="1">
    </PIN>
-   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Bin Size" pintype="Input" visible="1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Index" pintype="Input" visible="1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Output" pintype="Output" visible="1">
-   </PIN>
-   <PIN pinname="Output Bins" pintype="Output" visible="1">
-   </PIN>
-   <PIN pinname="ID" pintype="Output" visible="-1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="42" srcpinname="Y Output Value" dstnodeid="45" dstpinname="Input">
-   </LINK>
-   <NODE systemname="AspectRatio (Transform)" nodename="AspectRatio (Transform)" componentmode="Hidden" id="47">
-   <BOUNDS type="Node" left="4890" top="11535" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Aspect Width" visible="1">
+   <PIN pinname="Aspect Width" slicecount="1" visible="1" values="2.79">
    </PIN>
    <PIN pinname="Aspect Height" visible="1">
    </PIN>
-   <PIN pinname="Transform Out" visible="1">
+   </NODE>
+   <LINK srcnodeid="52" srcpinname="Transform Out" dstnodeid="34" dstpinname="Aspect Ratio">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="53">
+   <BOUNDS type="Box" left="5070" top="9780" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5070" top="9780" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="16">
    </PIN>
-   <PIN pinname="Uniform Scale" slicecount="1" values="1">
+   <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Alignment" slicecount="1" values="FitHeight">
+   <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
    </NODE>
-   <LINK srcnodeid="44" srcpinname="Output" dstnodeid="47" dstpinname="Aspect Width">
+   <LINK srcnodeid="53" srcpinname="Y Output Value" dstnodeid="52" dstpinname="Aspect Width">
    </LINK>
-   <LINK srcnodeid="45" srcpinname="Output" dstnodeid="47" dstpinname="Aspect Height">
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="54">
+   <BOUNDS type="Box" left="5280" top="10245" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5280" top="10245" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="9">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="54" srcpinname="Y Output Value" dstnodeid="52" dstpinname="Aspect Height">
    </LINK>
-   <LINK srcnodeid="47" srcpinname="Transform Out" dstnodeid="34" dstpinname="Aspect Ratio">
+   <LINK srcnodeid="0" srcpinname="Controller Poses" dstnodeid="12" dstpinname="Transform In">
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="pos Controller" dstnodeid="39" dstpinname="Layer 5">
    </LINK>
    </PATCH>
