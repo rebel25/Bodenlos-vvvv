@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\Daniel\Desktop\Prototyp_bodenlos_Ausstellung\patch\subpatch\AR cam fix.v4p" scrollx="15" scrolly="0" systemname="Ar_cam_fix" filename="C:\Users\Natalie\Documents\VVVV\6. Semester\bodenlos\Prototyp_Ausstellung\subpatch\Ar_cam_fix.v4p">
-   <BOUNDS type="Window" left="18990" top="8460" width="12930" height="13830">
+   <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\subpatch\AR cam fix.v4p" scrollx="15" scrolly="0" systemname="Ar_cam_fix" filename="C:\Users\Natalie\Documents\VVVV\6. Semester\bodenlos\Prototyp_Ausstellung\subpatch\Ar_cam_fix.v4p">
+   <BOUNDS type="Window" left="14880" top="855" width="12930" height="13830">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -57,13 +57,13 @@
    </BOUNDS>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
-   <PIN pinname="TranslateZ" slicecount="1" values="0.13">
+   <PIN pinname="TranslateZ" slicecount="1" values="0.01" visible="1">
    </PIN>
-   <PIN pinname="ScaleY" slicecount="1" values="0.05">
+   <PIN pinname="ScaleY" slicecount="1" values="1" visible="1">
    </PIN>
-   <PIN pinname="ScaleX" slicecount="1" values="0.05">
+   <PIN pinname="ScaleX" slicecount="1" values="1" visible="1">
    </PIN>
-   <PIN pinname="TranslateY" slicecount="1" values="0">
+   <PIN pinname="TranslateY" slicecount="1" values="0" visible="1">
    </PIN>
    <PIN pinname="TranslateX" slicecount="1" visible="1" values="-0.02">
    </PIN>
@@ -81,11 +81,13 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3900" top="3675" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-0.11">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-0.0004">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="23" srcpinname="Y Output Value" dstnodeid="19" dstpinname="TranslateX">
@@ -129,5 +131,51 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="29" srcpinname="Transform Out" dstnodeid="8" dstpinname="Texture Transform">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="31">
+   <BOUNDS type="Box" left="5280" top="3780" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5280" top="3780" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.0002">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="31" srcpinname="Y Output Value" dstnodeid="19" dstpinname="ScaleX">
+   </LINK>
+   <LINK srcnodeid="31" srcpinname="Y Output Value" dstnodeid="19" dstpinname="ScaleY">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="32">
+   <BOUNDS type="Box" left="5115" top="2760" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5115" top="2760" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.0005">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="32" srcpinname="Y Output Value" dstnodeid="19" dstpinname="TranslateZ">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="33">
+   <BOUNDS type="Box" left="4110" top="2985" width="810" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4110" top="2985" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.0001">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="33" srcpinname="Y Output Value" dstnodeid="19" dstpinname="TranslateY">
    </LINK>
    </PATCH>
