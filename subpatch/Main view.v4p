@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\subpatch\Main view.v4p" systemname="Main view" filename="C:\Users\Daniel\Desktop\Prototyp_bodenlos_Ausstellung\patch\subpatch\Main view.v4p" scrollx="15" scrolly="90">
-   <BOUNDS type="Window" left="6690" top="3990" width="11445" height="10755">
+   <PATCH nodename="C:\Users\Daniel\Desktop\Prototyp_bodenlos_Ausstellung\patch\subpatch\Main view.v4p" systemname="Main view" filename="C:\Users\Daniel\Desktop\Prototyp_bodenlos_Ausstellung\patch\subpatch\Main view.v4p" scrollx="15" scrolly="-360">
+   <BOUNDS type="Window" left="2310" top="5445" width="11445" height="10755">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -73,7 +73,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Perspective (Transform)" nodename="Perspective (Transform)" componentmode="Hidden" id="24">
-   <BOUNDS type="Node" left="6675" top="7935" width="100" height="100">
+   <BOUNDS type="Node" left="7305" top="8325" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
@@ -85,7 +85,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Translate (Transform)" nodename="Translate (Transform)" componentmode="Hidden" id="16">
-   <BOUNDS type="Node" left="5040" top="4035" width="100" height="100">
+   <BOUNDS type="Node" left="5070" top="4080" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
    </PIN>
@@ -99,7 +99,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Decompose (Transform Vector)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Decompose (Transform Vector)" componentmode="Hidden" id="15">
-   <BOUNDS type="Node" left="4965" top="4635" width="100" height="100">
+   <BOUNDS type="Node" left="5070" top="4605" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform In" visible="1">
    </PIN>
@@ -129,9 +129,9 @@
    <LINK srcnodeid="14" srcpinname="Y Output Value" dstnodeid="16" dstpinname="Y">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="13">
-   <BOUNDS type="Box" left="6960" top="7410" width="795" height="240">
+   <BOUNDS type="Box" left="7575" top="7800" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="6960" top="7410" width="0" height="0">
+   <BOUNDS type="Node" left="7575" top="7800" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.26">
    </PIN>
@@ -153,9 +153,9 @@
    <LINK srcnodeid="25" srcpinname="Transform Out" dstnodeid="29" dstpinname="Input Node">
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="30">
-   <BOUNDS type="Box" left="6690" top="9060" width="795" height="240">
+   <BOUNDS type="Box" left="7305" top="8985" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="6690" top="9060" width="0" height="0">
+   <BOUNDS type="Node" left="7305" top="8985" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="Perspective">
    </PIN>

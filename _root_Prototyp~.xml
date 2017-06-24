@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\Natalie\Documents\GitHub\Bodenlos-vvvv\_root_Prototyp.v4p" scrollx="0" scrolly="-360" systemname="_root_Prototyp" filename="C:\Users\Natalie\Documents\VVVV\6. Semester\bodenlos\Prototyp_Ausstellung\_root_Prototyp.v4p">
-   <BOUNDS type="Window" left="9900" top="530" width="12930" height="13830">
+   <PATCH nodename="C:\Users\Daniel\Desktop\Prototyp_bodenlos_Ausstellung\patch\_root_Prototyp.v4p" scrollx="0" scrolly="-360" systemname="_root_Prototyp" filename="C:\Users\Natalie\Documents\VVVV\6. Semester\bodenlos\Prototyp_Ausstellung\_root_Prototyp.v4p">
+   <BOUNDS type="Window" left="13305" top="1455" width="12930" height="13830">
    </BOUNDS>
    <NODE id="0" systemname="Poser (OpenVR)" filename="%VVVV%\packs\VVVV.OpenVR\nodes\plugins\VVVV.OpenVR.dll" nodename="Poser (OpenVR)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
    <PIN pinname="Controller Poses" visible="1" pintype="Output">
@@ -49,9 +49,9 @@
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
    <NODE systemname="AR cam fix" filename="subpatch\AR cam fix.v4p" nodename="subpatch\AR cam fix.v4p" componentmode="Hidden" id="11">
-   <BOUNDS type="Node" left="5715" top="5375" width="100" height="100">
+   <BOUNDS type="Node" left="5550" top="4730" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="5715" top="5375">
+   <BOUNDS type="Box" left="5550" top="4730">
    </BOUNDS>
    <BOUNDS type="Window" left="9900" top="530" width="12930" height="13830">
    </BOUNDS>
@@ -64,13 +64,25 @@
    <PIN pinname="Renderer Size" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="Mentor" filename="subpatch\Mentor.v4p" componentmode="Hidden" id="13" nodename="subpatch\Mentor.v4p">
-   <BOUNDS type="Node" left="10585" top="4835" width="100" height="100">
+   <NODE systemname="Mentor" filename="subpatch\Mentor.v4p" componentmode="InAWindow" id="13" nodename="subpatch\Mentor.v4p">
+   <BOUNDS type="Node" left="10000" top="4715" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="10585" top="4835" width="4800" height="3600">
+   <BOUNDS type="Box" left="10000" top="4715" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="16600" top="8000" width="9000" height="6000">
+   <BOUNDS type="Window" left="24315" top="10470" width="13575" height="10335">
    </BOUNDS>
+   <PIN pinname="LookAt_Position" visible="1">
+   </PIN>
+   <PIN pinname="Transform In" visible="1">
+   </PIN>
+   <PIN pinname="Switch Input" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="light" visible="1">
+   </PIN>
+   <PIN pinname="Light Pos" visible="1">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="16">
    <BOUNDS type="Node" left="3930" top="2190" width="850" height="230">
@@ -219,7 +231,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1635" top="10905" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="2460" top="870" width="11720" height="7030">
+   <BOUNDS type="Window" left="44925" top="1875" width="11715" height="7020">
    </BOUNDS>
    <PIN pinname="View" visible="1" slicecount="1" values="||">
    </PIN>
@@ -242,7 +254,7 @@
    </NODE>
    <LINK srcnodeid="0" srcpinname="Controller Poses" dstnodeid="11" dstpinname="Postion Controller">
    </LINK>
-   <NODE systemname="Main view" filename="subpatch\Main view.v4p" nodename="subpatch\Main view.v4p" componentmode="Hidden" id="36">
+   <NODE systemname="Main view" filename="subpatch\Main view.v4p" nodename="subpatch\Main view.v4p" componentmode="InAWindow" id="36">
    <BOUNDS type="Node" left="6990" top="4725" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform In" visible="1">
@@ -251,7 +263,7 @@
    </PIN>
    <PIN pinname="Projection" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="6690" top="3990" width="11445" height="10755">
+   <BOUNDS type="Window" left="1815" top="8655" width="11445" height="10755">
    </BOUNDS>
    <PIN pinname="LookAt (View)" visible="1">
    </PIN>
@@ -270,14 +282,16 @@
    <LINKPOINT x="8393" y="7627">
    </LINKPOINT>
    </LINK>
-   <NODE systemname="Modell" filename="subpatch\Modell.v4p" componentmode="Hidden" id="38" nodename="subpatch\Modell.v4p">
+   <NODE systemname="Modell" filename="subpatch\Modell.v4p" componentmode="InAWindow" id="38" nodename="subpatch\Modell.v4p">
    <BOUNDS type="Node" left="3360" top="3720" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="3360" top="3720" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="17430" top="6285" width="10980" height="10695">
+   <BOUNDS type="Window" left="15285" top="5910" width="10980" height="10695">
    </BOUNDS>
    <PIN pinname="World Modell" visible="1">
+   </PIN>
+   <PIN pinname="light pos in" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="Group (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Group (DX11.Layer)" componentmode="Hidden" id="39">
@@ -300,6 +314,10 @@
    <PIN pinname="Layer 14" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Layer 13" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer 10" visible="1">
+   </PIN>
+   <PIN pinname="Layer 11" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="39" srcpinname="Layer Out" dstnodeid="34" dstpinname="Layers">
@@ -372,46 +390,6 @@
    </NODE>
    <LINK srcnodeid="54" srcpinname="Y Output Value" dstnodeid="52" dstpinname="Aspect Height">
    </LINK>
-   <NODE systemname="RoundRect (DX11.Geometry)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="RoundRect (DX11.Geometry)" componentmode="Hidden" id="55">
-   <BOUNDS type="Node" left="8280" top="11400" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Geometry Out" visible="1">
-   </PIN>
-   <PIN pinname="Inner RadiusXY" slicecount="2" values="0.3,0.3">
-   </PIN>
-   </NODE>
-   <NODE systemname="PhongDirectional (DX11.Effect)" filename="%VVVV%\packs\dx11\nodes\dx11\PhongDirectional.fx" nodename="PhongDirectional (DX11.Effect)" componentmode="Hidden" id="56">
-   <BOUNDS type="Node" left="8460" top="12045" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Geometry" visible="1">
-   </PIN>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   <PIN pinname="Transform In" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="55" srcpinname="Geometry Out" dstnodeid="56" dstpinname="Geometry">
-   </LINK>
-   <NODE systemname="Transform (Transform 3d)" nodename="Transform (Transform 3d)" componentmode="Hidden" id="57">
-   <BOUNDS type="Node" left="9555" top="11190" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Transform Out" visible="1">
-   </PIN>
-   <PIN pinname="Pitch" slicecount="1" values="0.25">
-   </PIN>
-   <PIN pinname="TranslateX" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="TranslateZ" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="TranslateY" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="ScaleX" slicecount="1" values="8.93">
-   </PIN>
-   <PIN pinname="ScaleY" slicecount="1" values="4.54">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="57" srcpinname="Transform Out" dstnodeid="56" dstpinname="Transform In">
-   </LINK>
    <LINK srcnodeid="38" srcpinname="World Modell" dstnodeid="39" dstpinname="Layer 2">
    </LINK>
    <LINK srcnodeid="48" srcpinname="Layer" dstnodeid="39" dstpinname="Layer 14">
@@ -439,7 +417,7 @@
    </PIN>
    <PIN pinname="pos Controller" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="15135" top="3645" width="12405" height="10905">
+   <BOUNDS type="Window" left="3255" top="11010" width="12405" height="10905">
    </BOUNDS>
    <PIN pinname="Switch Input" visible="1">
    </PIN>
@@ -453,7 +431,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="9225" top="2115" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -465,7 +443,7 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Toggle Input|">
    </PIN>
@@ -481,5 +459,17 @@
    </LINKPOINT>
    <LINKPOINT x="8520" y="3418">
    </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="36" srcpinname="Look At" dstnodeid="13" dstpinname="LookAt_Position">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Controller Poses" dstnodeid="13" dstpinname="Transform In">
+   </LINK>
+   <LINK srcnodeid="63" srcpinname="Y Output Value" dstnodeid="13" dstpinname="Switch Input">
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="Layer" dstnodeid="39" dstpinname="Layer 10">
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="light" dstnodeid="39" dstpinname="Layer 11">
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="Light Pos" dstnodeid="38" dstpinname="light pos in">
    </LINK>
    </PATCH>

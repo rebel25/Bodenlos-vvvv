@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
    <PATCH nodename="C:\Users\Daniel\Desktop\Prototyp_bodenlos_Ausstellung\patch\subpatch\Modell.v4p" systemname="Modell" filename="C:\Users\Daniel\Desktop\Prototyp_bodenlos_Ausstellung\patch\subpatch\Modell.v4p" scrollx="15" scrolly="-360">
-   <BOUNDS type="Window" left="25575" top="3930" width="13965" height="12315">
+   <BOUNDS type="Window" left="15285" top="5910" width="10980" height="10695">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -116,20 +116,6 @@
    </NODE>
    <LINK srcnodeid="24" srcpinname="Is Valid" dstnodeid="17" dstpinname="Y Input Value">
    </LINK>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="16" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="4890" top="3765" width="5055" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="4890" top="3765" width="3870" height="705">
-   </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|Note: Mesh is referencing Assimp mesh, it is not a Geometry output|">
-   </PIN>
-   <PIN pinname="Output String" visible="0">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="URL">
-   </PIN>
-   </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="15" systemname="IOBox (String)">
    <BOUNDS type="Node" left="7635" top="1845" width="2115" height="270">
    </BOUNDS>
@@ -181,9 +167,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="36">
-   <BOUNDS type="Box" left="3045" top="6135" width="795" height="720">
+   <BOUNDS type="Box" left="4470" top="6015" width="795" height="720">
    </BOUNDS>
-   <BOUNDS type="Node" left="3045" top="6135" width="0" height="0">
+   <BOUNDS type="Node" left="4470" top="6015" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="3" visible="1" values="-2.68,-10.93,4.22">
    </PIN>
@@ -250,8 +236,6 @@
    </LINK>
    <LINK srcnodeid="22" srcpinname="Output" dstnodeid="44" dstpinname="Geometry">
    </LINK>
-   <LINK srcnodeid="44" srcpinname="Layer" dstnodeid="25" dstpinname="Input Node">
-   </LINK>
    <NODE systemname="Transform (Transform 3d)" nodename="Transform (Transform 3d)" componentmode="Hidden" id="56">
    <BOUNDS type="Node" left="810" top="6555" width="100" height="100">
    </BOUNDS>
@@ -287,5 +271,55 @@
    <LINK srcnodeid="57" srcpinname="Color Output" dstnodeid="44" dstpinname="Diffuse Color">
    </LINK>
    <LINK srcnodeid="57" srcpinname="Color Output" dstnodeid="44" dstpinname="Specular Color">
+   </LINK>
+   <NODE systemname="PhongPoint (DX11.Effect)" filename="%VVVV%\packs\dx11\nodes\dx11\PhongPoint.fx" nodename="PhongPoint (DX11.Effect)" componentmode="Hidden" id="59">
+   <BOUNDS type="Node" left="6525" top="7980" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Geometry" visible="1">
+   </PIN>
+   <PIN pinname="Ambient Color" visible="1">
+   </PIN>
+   <PIN pinname="Diffuse Color" visible="1">
+   </PIN>
+   <PIN pinname="Specular Color" visible="1">
+   </PIN>
+   <PIN pinname="Light PositionXYZ" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Transform In" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="22" srcpinname="Output" dstnodeid="59" dstpinname="Geometry">
+   </LINK>
+   <LINK srcnodeid="57" srcpinname="Color Output" dstnodeid="59" dstpinname="Ambient Color">
+   </LINK>
+   <LINK srcnodeid="57" srcpinname="Color Output" dstnodeid="59" dstpinname="Diffuse Color">
+   </LINK>
+   <LINK srcnodeid="57" srcpinname="Color Output" dstnodeid="59" dstpinname="Specular Color">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="60">
+   <BOUNDS type="Box" left="8265" top="6150" width="795" height="720">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8265" top="6150" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0,5,-2">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|light pos in|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="60" srcpinname="Y Output Value" dstnodeid="59" dstpinname="Light PositionXYZ">
+   </LINK>
+   <LINK srcnodeid="59" srcpinname="Layer" dstnodeid="25" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="56" srcpinname="Transform Out" dstnodeid="59" dstpinname="Transform In">
    </LINK>
    </PATCH>
