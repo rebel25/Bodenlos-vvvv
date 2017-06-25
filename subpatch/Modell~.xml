@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\Daniel\Desktop\Prototyp_bodenlos_Ausstellung\patch\subpatch\Modell.v4p" systemname="Modell" filename="C:\Users\Daniel\Desktop\Prototyp_bodenlos_Ausstellung\patch\subpatch\Modell.v4p" scrollx="15" scrolly="-360">
-   <BOUNDS type="Window" left="15285" top="5910" width="10980" height="10695">
+   <PATCH nodename="C:\Users\Daniel\Desktop\Prototyp_bodenlos_Ausstellung\patch\subpatch\Modell.v4p" systemname="Modell" filename="C:\Users\Daniel\Desktop\Prototyp_bodenlos_Ausstellung\patch\subpatch\Modell.v4p" scrollx="15" scrolly="720">
+   <BOUNDS type="Window" left="11325" top="6390" width="10980" height="10695">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -155,7 +155,7 @@
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="|World Modell|">
    </PIN>
-   <PIN pinname="Input Node" visible="1">
+   <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <NODE systemname="UniformScale (Transform)" nodename="UniformScale (Transform)" componentmode="Hidden" id="26">
@@ -166,28 +166,8 @@
    <PIN pinname="XYZ" slicecount="1" values="0.01">
    </PIN>
    </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="36">
-   <BOUNDS type="Box" left="4470" top="6015" width="795" height="720">
-   </BOUNDS>
-   <BOUNDS type="Node" left="4470" top="6015" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="-2.68,-10.93,4.22">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Vector Size" slicecount="1" values="3">
-   </PIN>
-   <PIN pinname="Rows" slicecount="1" values="3">
-   </PIN>
-   <PIN pinname="X Input Value" slicecount="3" values="0,0,0">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   </NODE>
    <NODE systemname="PhongDirectional (DX11.Effect)" filename="%VVVV%\packs\dx11\nodes\dx11\PhongDirectional.fx" nodename="PhongDirectional (DX11.Effect)" componentmode="Hidden" id="44">
-   <BOUNDS type="Node" left="3360" top="7905" width="100" height="100">
+   <BOUNDS type="Node" left="1320" top="7965" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Geometry" visible="1" slicecount="1" values="||">
    </PIN>
@@ -207,15 +187,13 @@
    </PIN>
    <PIN pinname="Alpha" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Light DirectionXYZ" visible="1">
+   <PIN pinname="Light DirectionXYZ" visible="1" slicecount="3" values="-2.68,-10.93,4.22">
    </PIN>
    <PIN pinname="Technique" slicecount="1" values="GouraudDirectional">
    </PIN>
    <PIN pinname="Layer In" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <LINK srcnodeid="36" srcpinname="Y Output Value" dstnodeid="44" dstpinname="Light DirectionXYZ">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="55">
    <BOUNDS type="Box" left="4815" top="4575" width="480" height="480">
    </BOUNDS>
@@ -257,11 +235,11 @@
    <LINK srcnodeid="56" srcpinname="Transform Out" dstnodeid="44" dstpinname="Transform In">
    </LINK>
    <NODE nodename="IOBox (Color)" componentmode="InABox" id="57">
-   <BOUNDS type="Box" left="5265" top="6750" width="2250" height="480">
+   <BOUNDS type="Box" left="3825" top="6825" width="2250" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="5265" top="6750" width="0" height="0">
+   <BOUNDS type="Node" left="3825" top="6825" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.10000,0.10000,0.10000,1.00000|">
+   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.10564,0.10564,0.10564,1.00000|">
    </PIN>
    <PIN pinname="Color Output" visible="1">
    </PIN>
@@ -273,7 +251,7 @@
    <LINK srcnodeid="57" srcpinname="Color Output" dstnodeid="44" dstpinname="Specular Color">
    </LINK>
    <NODE systemname="PhongPoint (DX11.Effect)" filename="%VVVV%\packs\dx11\nodes\dx11\PhongPoint.fx" nodename="PhongPoint (DX11.Effect)" componentmode="Hidden" id="59">
-   <BOUNDS type="Node" left="6525" top="7980" width="100" height="100">
+   <BOUNDS type="Node" left="7290" top="8955" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Geometry" visible="1">
    </PIN>
@@ -289,6 +267,20 @@
    </PIN>
    <PIN pinname="Transform In" visible="1">
    </PIN>
+   <PIN pinname="Light Attenuation 0" slicecount="1" values="0.05">
+   </PIN>
+   <PIN pinname="Light Range" slicecount="1" values="4.36">
+   </PIN>
+   <PIN pinname="Power" slicecount="1" values="17.62">
+   </PIN>
+   <PIN pinname="Light Attenuation 1" slicecount="1" values="0.34">
+   </PIN>
+   <PIN pinname="Technique" slicecount="1" values="TPhongPoint">
+   </PIN>
+   <PIN pinname="Color" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Layer In" visible="1" slicecount="1" values="||">
+   </PIN>
    </NODE>
    <LINK srcnodeid="22" srcpinname="Output" dstnodeid="59" dstpinname="Geometry">
    </LINK>
@@ -299,9 +291,9 @@
    <LINK srcnodeid="57" srcpinname="Color Output" dstnodeid="59" dstpinname="Specular Color">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="60">
-   <BOUNDS type="Box" left="8265" top="6150" width="795" height="720">
+   <BOUNDS type="Box" left="9150" top="6480" width="795" height="720">
    </BOUNDS>
-   <BOUNDS type="Node" left="8265" top="6150" width="0" height="0">
+   <BOUNDS type="Node" left="9150" top="6480" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0,5,-2">
    </PIN>
@@ -318,8 +310,22 @@
    </NODE>
    <LINK srcnodeid="60" srcpinname="Y Output Value" dstnodeid="59" dstpinname="Light PositionXYZ">
    </LINK>
-   <LINK srcnodeid="59" srcpinname="Layer" dstnodeid="25" dstpinname="Input Node">
-   </LINK>
    <LINK srcnodeid="56" srcpinname="Transform Out" dstnodeid="59" dstpinname="Transform In">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="61">
+   <BOUNDS type="Node" left="7485" top="7920" width="1170" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7485" top="7920" width="1170" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Lightning Test|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="59" srcpinname="Layer" dstnodeid="25" dstpinname="Input Node">
    </LINK>
    </PATCH>
