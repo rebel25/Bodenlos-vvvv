@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\Natalie\Documents\GitHub\Bodenlos-vvvv\subpatch\Main view.v4p" systemname="Main view" filename="C:\Users\Daniel\Desktop\Prototyp_bodenlos_Ausstellung\patch\subpatch\Main view.v4p" scrollx="15" scrolly="720">
-   <BOUNDS type="Window" left="7620" top="1270" width="11440" height="10750">
+   <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\subpatch\Main view.v4p" systemname="Main view" filename="C:\Users\Daniel\Desktop\Prototyp_bodenlos_Ausstellung\patch\subpatch\Main view.v4p" scrollx="15" scrolly="1080">
+   <BOUNDS type="Window" left="5445" top="6990" width="10695" height="9060">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>

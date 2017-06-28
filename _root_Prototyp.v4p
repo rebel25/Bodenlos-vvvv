@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\Natalie\Documents\GitHub\Bodenlos-vvvv\_root_Prototyp.v4p" scrollx="0" scrolly="360" systemname="_root_Prototyp" filename="C:\Users\Natalie\Documents\VVVV\6. Semester\bodenlos\Prototyp_Ausstellung\_root_Prototyp.v4p">
-   <BOUNDS type="Window" left="2690" top="2620" width="12930" height="13830">
+   <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\_root_Prototyp.v4p" scrollx="0" scrolly="1080" systemname="_root_Prototyp" filename="C:\Users\Natalie\Documents\VVVV\6. Semester\bodenlos\Prototyp_Ausstellung\_root_Prototyp.v4p">
+   <BOUNDS type="Window" left="16365" top="2370" width="12930" height="13830">
    </BOUNDS>
    <NODE id="0" systemname="Poser (OpenVR)" filename="%VVVV%\packs\VVVV.OpenVR\nodes\plugins\VVVV.OpenVR.dll" nodename="Poser (OpenVR)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
    <PIN pinname="Controller Poses" visible="1" pintype="Output">
@@ -48,22 +48,6 @@
    </NODE>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
-   <NODE systemname="AR cam fix" filename="subpatch\AR cam fix.v4p" nodename="subpatch\AR cam fix.v4p" componentmode="Hidden" id="11">
-   <BOUNDS type="Node" left="5550" top="4730" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="5550" top="4730">
-   </BOUNDS>
-   <BOUNDS type="Window" left="9900" top="530" width="12930" height="13830">
-   </BOUNDS>
-   <PIN pinname="Postion Controller" visible="1">
-   </PIN>
-   <PIN pinname="Look At Camera" visible="1" slicecount="3" values="-1.2616,0.5932,-0.6225">
-   </PIN>
-   <PIN pinname="Lazer HUD" visible="1">
-   </PIN>
-   <PIN pinname="Renderer Size" visible="1">
-   </PIN>
-   </NODE>
    <NODE systemname="Mentor" filename="subpatch\Mentor.v4p" componentmode="Hidden" id="13" nodename="subpatch\Mentor.v4p">
    <BOUNDS type="Node" left="10000" top="4715" width="100" height="100">
    </BOUNDS>
@@ -217,7 +201,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1635" top="10905" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="510" top="620" width="16400" height="10120">
+   <BOUNDS type="Window" left="2190" top="0" width="12030" height="7470">
    </BOUNDS>
    <PIN pinname="View" visible="1" slicecount="1" values="||">
    </PIN>
@@ -238,8 +222,6 @@
    <PIN pinname="Depth Buffer Format" slicecount="1" values="D32_Float">
    </PIN>
    </NODE>
-   <LINK srcnodeid="0" srcpinname="Controller Poses" dstnodeid="11" dstpinname="Postion Controller">
-   </LINK>
    <NODE systemname="Main view" filename="subpatch\Main view.v4p" nodename="subpatch\Main view.v4p" componentmode="InAWindow" id="36">
    <BOUNDS type="Node" left="6990" top="4725" width="100" height="100">
    </BOUNDS>
@@ -249,7 +231,7 @@
    </PIN>
    <PIN pinname="Projection" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="7620" top="1270" width="11440" height="10750">
+   <BOUNDS type="Window" left="1920" top="7425" width="10695" height="9060">
    </BOUNDS>
    <PIN pinname="LookAt (View)" visible="1">
    </PIN>
@@ -270,12 +252,12 @@
    <LINKPOINT x="8393" y="7627">
    </LINKPOINT>
    </LINK>
-   <NODE systemname="Modell" filename="subpatch\Modell.v4p" componentmode="Hidden" id="38" nodename="subpatch\Modell.v4p">
+   <NODE systemname="Modell" filename="subpatch\Modell.v4p" componentmode="InAWindow" id="38" nodename="subpatch\Modell.v4p">
    <BOUNDS type="Node" left="3500" top="2950" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="3500" top="2950" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="14620" top="2820" width="10980" height="10690">
+   <BOUNDS type="Window" left="2565" top="9255" width="10980" height="10680">
    </BOUNDS>
    <PIN pinname="World Modell" visible="1">
    </PIN>
@@ -338,8 +320,6 @@
    </NODE>
    <LINK srcnodeid="34" srcpinname="Actual BackBuffer SizeXY" dstnodeid="42" dstpinname="Y Input Value">
    </LINK>
-   <LINK srcnodeid="42" srcpinname="Y Output Value" dstnodeid="11" dstpinname="Renderer Size">
-   </LINK>
    <NODE systemname="AspectRatio (Transform)" nodename="AspectRatio (Transform)" componentmode="Hidden" id="52">
    <BOUNDS type="Node" left="4590" top="10860" width="100" height="100">
    </BOUNDS>
@@ -380,18 +360,14 @@
    </NODE>
    <LINK srcnodeid="54" srcpinname="Y Output Value" dstnodeid="52" dstpinname="Aspect Height">
    </LINK>
-   <LINK srcnodeid="38" srcpinname="World Modell" dstnodeid="39" dstpinname="Layer 2">
-   </LINK>
-   <LINK srcnodeid="11" srcpinname="Lazer HUD" dstnodeid="39" dstpinname="Layer 13">
-   </LINK>
-   <NODE systemname="AR map fix" filename="subpatch\AR map fix.v4p" nodename="subpatch\AR map fix.v4p" componentmode="Hidden" id="60">
+   <NODE systemname="AR map fix" filename="subpatch\AR map fix.v4p" nodename="subpatch\AR map fix.v4p" componentmode="InAWindow" id="60">
    <BOUNDS type="Node" left="8550" top="4710" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform In" visible="1">
    </PIN>
    <PIN pinname="pos Controller" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="1740" top="4290" width="12400" height="10900">
+   <BOUNDS type="Window" left="18345" top="2970" width="12390" height="10890">
    </BOUNDS>
    <PIN pinname="Switch Input" visible="1">
    </PIN>
@@ -450,8 +426,44 @@
    </LINK>
    <LINK srcnodeid="26" srcpinname="Y Output Value" dstnodeid="36" dstpinname="Controller">
    </LINK>
-   <NODE systemname="Figuren" filename="subpatch\Figuren.v4p" nodename="subpatch\Figuren.v4p" componentmode="Hidden" id="64">
-   <BOUNDS type="Node" left="4870" top="2080" width="100" height="100">
+   <NODE systemname="Figuren" filename="subpatch\Figuren.v4p" nodename="subpatch\Figuren.v4p" componentmode="InAWindow" id="64">
+   <BOUNDS type="Node" left="5155" top="2785" width="100" height="100">
    </BOUNDS>
+   <PIN pinname="Output Figuren" visible="1">
+   </PIN>
+   <BOUNDS type="Window" left="11520" top="5550" width="9765" height="9180">
+   </BOUNDS>
+   <PIN pinname="Switch Input" visible="1">
+   </PIN>
+   <PIN pinname="Transform In" visible="1">
+   </PIN>
+   <PIN pinname="pos Controller" visible="1">
+   </PIN>
    </NODE>
+   <NODE id="11" componentmode="Hidden" systemname="AR cam fix" filename="subpatch\AR cam fix.v4p" nodename="subpatch\AR cam fix.v4p">
+   <BOUNDS type="Node" left="5550" top="4730" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5550" top="4730">
+   </BOUNDS>
+   <BOUNDS type="Window" left="9900" top="530" width="12930" height="13830">
+   </BOUNDS>
+   <PIN pinname="Postion Controller" visible="1">
+   </PIN>
+   <PIN pinname="Look At Camera" visible="1" slicecount="3" values="-1.2616,0.5932,-0.6225">
+   </PIN>
+   <PIN pinname="Lazer HUD" visible="1">
+   </PIN>
+   <PIN pinname="Renderer Size" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="11" srcpinname="Lazer HUD" dstnodeid="39" dstpinname="Layer 13">
+   </LINK>
+   <LINK srcnodeid="38" srcpinname="World Modell" dstnodeid="39" dstpinname="Layer 2">
+   </LINK>
+   <LINK srcnodeid="63" srcpinname="Y Output Value" dstnodeid="64" dstpinname="Switch Input">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Controller Poses" dstnodeid="64" dstpinname="Transform In">
+   </LINK>
+   <LINK srcnodeid="64" srcpinname="pos Controller" dstnodeid="39" dstpinname="Layer 3">
+   </LINK>
    </PATCH>
