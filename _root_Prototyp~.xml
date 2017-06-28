@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\_root_Prototyp.v4p" scrollx="0" scrolly="0" systemname="_root_Prototyp" filename="C:\Users\Natalie\Documents\VVVV\6. Semester\bodenlos\Prototyp_Ausstellung\_root_Prototyp.v4p">
+   <PATCH nodename="C:\Users\Natalie\Documents\GitHub\Bodenlos-vvvv\_root_Prototyp.v4p" scrollx="0" scrolly="-360" systemname="_root_Prototyp" filename="C:\Users\Natalie\Documents\VVVV\6. Semester\bodenlos\Prototyp_Ausstellung\_root_Prototyp.v4p">
    <BOUNDS type="Window" left="11570" top="1080" width="12930" height="13830">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
@@ -159,7 +159,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1545" top="11515" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="2190" top="0" width="12030" height="7470">
+   <BOUNDS type="Window" left="3210" top="555" width="12030" height="7470">
    </BOUNDS>
    <PIN pinname="View" visible="1" slicecount="1" values="||">
    </PIN>
@@ -545,27 +545,13 @@
    <LINK srcnodeid="71" srcpinname="Y Output Value" dstnodeid="70" dstpinname="Switch">
    </LINK>
    <NODE systemname="Pathfinder (Value) convert to dx11" filename="subpatch\Pathfinder (Value) convert to dx11.v4p" nodename="subpatch\Pathfinder (Value) convert to dx11.v4p" componentmode="InAWindow" id="72">
-   <BOUNDS type="Node" left="10770" top="4215" width="100" height="100">
+   <BOUNDS type="Node" left="10080" top="3905" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="3105" top="2550" width="15405" height="12705">
+   <BOUNDS type="Window" left="550" top="0" width="17290" height="15500">
    </BOUNDS>
    <PIN pinname="Pathfinder" visible="1">
    </PIN>
    <PIN pinname="DX11_Querry" visible="1">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="75">
-   <BOUNDS type="Node" left="10845" top="8400" width="510" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="10845" top="8400" width="510" height="270">
-   </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="rotat">
-   </PIN>
-   <PIN pinname="Output String" visible="0">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
    <LINK srcnodeid="72" srcpinname="Pathfinder" dstnodeid="39" dstpinname="Layer 8">
