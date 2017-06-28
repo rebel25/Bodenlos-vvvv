@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\Natalie\Documents\GitHub\Bodenlos-vvvv\subpatch\Modell.v4p" systemname="Modell" filename="C:\Users\Daniel\Desktop\Prototyp_bodenlos_Ausstellung\patch\subpatch\Modell.v4p" scrollx="20" scrolly="0">
+   <PATCH nodename="C:\Users\Natalie\Documents\GitHub\Bodenlos-vvvv\subpatch\Modell.v4p" systemname="Modell" filename="C:\Users\Daniel\Desktop\Prototyp_bodenlos_Ausstellung\patch\subpatch\Modell.v4p" scrollx="20" scrolly="-360">
    <BOUNDS type="Window" left="3220" top="2480" width="10980" height="10680">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
@@ -135,7 +135,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2760" top="2025" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="..\assets\vivium_modell.dae">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="..\assets\vivium_modell_v0.3.dae">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>

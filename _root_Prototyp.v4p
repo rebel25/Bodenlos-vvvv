@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\Natalie\Documents\GitHub\Bodenlos-vvvv\_root_Prototyp.v4p" scrollx="0" scrolly="-360" systemname="_root_Prototyp" filename="C:\Users\Natalie\Documents\VVVV\6. Semester\bodenlos\Prototyp_Ausstellung\_root_Prototyp.v4p">
+   <PATCH nodename="C:\Users\Natalie\Documents\GitHub\Bodenlos-vvvv\_root_Prototyp.v4p" scrollx="0" scrolly="0" systemname="_root_Prototyp" filename="C:\Users\Natalie\Documents\VVVV\6. Semester\bodenlos\Prototyp_Ausstellung\_root_Prototyp.v4p">
    <BOUNDS type="Window" left="11570" top="1080" width="12930" height="13830">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
@@ -93,9 +93,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="29">
-   <BOUNDS type="Node" left="580" top="1440" width="3800" height="230">
+   <BOUNDS type="Node" left="570" top="1490" width="3800" height="230">
    </BOUNDS>
-   <BOUNDS type="Box" left="580" top="1440" width="10440" height="390">
+   <BOUNDS type="Box" left="570" top="1490" width="10440" height="390">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="Input____________________________________________________________________________">
    </PIN>
@@ -208,11 +208,7 @@
    <PIN pinname="Switch View" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="36" srcpinname="LookAt (View)" dstnodeid="34" dstpinname="View">
-   </LINK>
-   <LINK srcnodeid="36" srcpinname="Perspective" dstnodeid="34" dstpinname="Projection">
-   </LINK>
-   <NODE systemname="Modell" filename="subpatch\Modell.v4p" componentmode="Hidden" id="38" nodename="subpatch\Modell.v4p">
+   <NODE systemname="Modell" filename="subpatch\Modell.v4p" componentmode="InAWindow" id="38" nodename="subpatch\Modell.v4p">
    <BOUNDS type="Node" left="1370" top="2810" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="1370" top="2810" width="4800" height="3600">
@@ -287,7 +283,7 @@
    <LINK srcnodeid="34" srcpinname="Actual BackBuffer SizeXY" dstnodeid="42" dstpinname="Y Input Value">
    </LINK>
    <NODE systemname="AspectRatio (Transform)" nodename="AspectRatio (Transform)" componentmode="Hidden" id="52">
-   <BOUNDS type="Node" left="8860" top="10990" width="100" height="100">
+   <BOUNDS type="Node" left="9340" top="10870" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
@@ -299,9 +295,9 @@
    <LINK srcnodeid="52" srcpinname="Transform Out" dstnodeid="34" dstpinname="Aspect Ratio">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="53">
-   <BOUNDS type="Box" left="9100" top="10210" width="795" height="240">
+   <BOUNDS type="Box" left="9580" top="10090" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="9100" top="10210" width="0" height="0">
+   <BOUNDS type="Node" left="9580" top="10090" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="16">
    </PIN>
@@ -313,9 +309,9 @@
    <LINK srcnodeid="53" srcpinname="Y Output Value" dstnodeid="52" dstpinname="Aspect Width">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="54">
-   <BOUNDS type="Box" left="9320" top="10485" width="795" height="240">
+   <BOUNDS type="Box" left="9800" top="10365" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="9320" top="10485" width="0" height="0">
+   <BOUNDS type="Node" left="9800" top="10365" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="9">
    </PIN>
@@ -491,5 +487,75 @@
    <LINK srcnodeid="26" srcpinname="Y Output Value" dstnodeid="11" dstpinname="InfoFeed An/Aus">
    </LINK>
    <LINK srcnodeid="26" srcpinname="Y Output Value" dstnodeid="60" dstpinname="Leuchtsäule An/Aus">
+   </LINK>
+   <NODE systemname="Camera (Transform Orbit)" filename="%VVVV%\lib\packs\VL.EditingFramework.0.49.229-g30fb9f349f\vvvv\nodes\modules\Camera (Transform Orbit).v4p" nodename="Camera (Transform Orbit)" componentmode="Hidden" id="68">
+   <BOUNDS type="Node" left="7450" top="10010" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="View" visible="1">
+   </PIN>
+   <PIN pinname="Projection" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Switch (Node Input)" nodename="Switch (Node Input)" componentmode="Hidden" id="69">
+   <BOUNDS type="Node" left="7260" top="11000" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Switch" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="69" srcpinname="Output" dstnodeid="34" dstpinname="View">
+   </LINK>
+   <NODE systemname="Switch (Node Input)" nodename="Switch (Node Input)" componentmode="Hidden" id="70">
+   <BOUNDS type="Node" left="7890" top="11000" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Switch" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="70" srcpinname="Output" dstnodeid="34" dstpinname="Projection">
+   </LINK>
+   <LINK srcnodeid="36" srcpinname="LookAt (View)" dstnodeid="69" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="36" srcpinname="Perspective" dstnodeid="70" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="68" srcpinname="View" dstnodeid="69" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="68" srcpinname="Projection" dstnodeid="70" dstpinname="Input 2">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="71">
+   <BOUNDS type="Box" left="6190" top="10100" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6190" top="10100" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Switch Camera|">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="71" srcpinname="Y Output Value" dstnodeid="69" dstpinname="Switch">
+   </LINK>
+   <LINK srcnodeid="71" srcpinname="Y Output Value" dstnodeid="70" dstpinname="Switch">
    </LINK>
    </PATCH>
