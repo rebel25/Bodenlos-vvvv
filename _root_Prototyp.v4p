@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
    <PATCH nodename="C:\Users\Natalie\Documents\GitHub\Bodenlos-vvvv\_root_Prototyp.v4p" scrollx="0" scrolly="-360" systemname="_root_Prototyp" filename="C:\Users\Natalie\Documents\VVVV\6. Semester\bodenlos\Prototyp_Ausstellung\_root_Prototyp.v4p">
-   <BOUNDS type="Window" left="11570" top="1080" width="12930" height="13830">
+   <BOUNDS type="Window" left="9010" top="920" width="12930" height="13830">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -154,12 +154,12 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
-   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="Hidden" id="34">
+   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" id="34">
    <BOUNDS type="Node" left="1545" top="11515" width="7670" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="1545" top="11515" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="3210" top="555" width="12030" height="7470">
+   <BOUNDS type="Window" left="640" top="110" width="12030" height="7470">
    </BOUNDS>
    <PIN pinname="View" visible="1" slicecount="1" values="||">
    </PIN>
@@ -547,11 +547,15 @@
    <NODE systemname="Pathfinder (Value) convert to dx11" filename="subpatch\Pathfinder (Value) convert to dx11.v4p" nodename="subpatch\Pathfinder (Value) convert to dx11.v4p" componentmode="Hidden" id="72">
    <BOUNDS type="Node" left="10080" top="3905" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="550" top="0" width="17290" height="15500">
+   <BOUNDS type="Window" left="5190" top="1690" width="15450" height="12230">
    </BOUNDS>
    <PIN pinname="Pathfinder" visible="1">
    </PIN>
    <PIN pinname="DX11_Querry" visible="1">
+   </PIN>
+   <PIN pinname="Pos Rettungskraft" visible="1">
+   </PIN>
+   <PIN pinname="Pos Betroffener" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="72" srcpinname="Pathfinder" dstnodeid="39" dstpinname="Layer 8">
@@ -571,5 +575,9 @@
    <LINK srcnodeid="38" srcpinname="World Modell" dstnodeid="39" dstpinname="Layer 2">
    </LINK>
    <LINK srcnodeid="13" srcpinname="Light Pos" dstnodeid="38" dstpinname="light pos in">
+   </LINK>
+   <LINK srcnodeid="65" srcpinname="Output Rettungskraft" dstnodeid="72" dstpinname="Pos Rettungskraft">
+   </LINK>
+   <LINK srcnodeid="65" srcpinname="Output Betroffener" dstnodeid="72" dstpinname="Pos Betroffener">
    </LINK>
    </PATCH>
