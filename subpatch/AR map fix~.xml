@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\subpatch\AR map fix.v4p" systemname="AR map fix" filename="C:\Users\Natalie\Documents\VVVV\6. Semester\bodenlos\Prototyp_Ausstellung\subpatch\AR map fix.v4p" scrollx="30" scrolly="-360">
-   <BOUNDS type="Window" left="2625" top="2655" width="12390" height="10890">
+   <PATCH nodename="C:\Users\Natalie\Documents\GitHub\Bodenlos-vvvv\subpatch\AR map fix.v4p" systemname="AR map fix" filename="C:\Users\Natalie\Documents\VVVV\6. Semester\bodenlos\Prototyp_Ausstellung\subpatch\AR map fix.v4p" scrollx="30" scrolly="-360">
+   <BOUNDS type="Window" left="13570" top="2880" width="12390" height="10890">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -38,8 +38,6 @@
    <PIN pinname="Radius" slicecount="1" values="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="5" srcpinname="Geometry Out" dstnodeid="4" dstpinname="Geometry">
-   </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="6">
    <BOUNDS type="Box" left="4095" top="6495" width="795" height="240">
    </BOUNDS>
@@ -105,7 +103,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4980" top="3510" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0.05,1.58,0.05">
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0.03,0.49,0.03">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -123,7 +121,7 @@
    </BOUNDS>
    <PIN pinname="Render State" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Mode" slicecount="1" values="Blend">
+   <PIN pinname="Mode" slicecount="1" values="Add">
    </PIN>
    </NODE>
    <LINK srcnodeid="16" srcpinname="Render State" dstnodeid="4" dstpinname="Render State">
@@ -257,5 +255,57 @@
    <LINK srcnodeid="28" srcpinname="Y Output Value" dstnodeid="25" dstpinname="Switch">
    </LINK>
    <LINK srcnodeid="20" srcpinname="Output" dstnodeid="19" dstpinname="Input">
+   </LINK>
+   <NODE nodename="SceneFile (DX11.Geometry Assimp)" componentmode="Hidden" id="31" systemname="SceneFile (DX11.Geometry Assimp)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.Assimp.dll">
+   <BOUNDS type="Node" left="800" top="4610" width="1425" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="800" top="4610" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Filename" visible="1" slicecount="1" values="..\..\..\..\lib\assets\geometries\astroBoy_walk.dae">
+   </PIN>
+   <PIN pinname="Scene" visible="1">
+   </PIN>
+   <PIN pinname="Reload" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Preload Data" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Mesh" visible="1">
+   </PIN>
+   <PIN pinname="Mesh Count" visible="1">
+   </PIN>
+   <PIN pinname="Is Valid" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="30">
+   <BOUNDS type="Box" left="805" top="4050" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="805" top="4050" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="..\assets\Rettungskraft.dae">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="|All Files (*.*)||*.*|">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="30" srcpinname="Output String" dstnodeid="31" dstpinname="Filename">
+   </LINK>
+   <NODE systemname="Mesh (DX11.Geometry Assimp)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.Assimp.dll" nodename="Mesh (DX11.Geometry Assimp)" componentmode="Hidden" id="29">
+   <BOUNDS type="Node" left="1905" top="4970" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Scene" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Is Valid" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="31" srcpinname="Scene" dstnodeid="29" dstpinname="Scene">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Geometry Out" dstnodeid="4" dstpinname="Geometry">
    </LINK>
    </PATCH>
