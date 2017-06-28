@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
    <PATCH nodename="C:\Users\Natalie\Documents\GitHub\Bodenlos-vvvv\subpatch\AR map fix.v4p" systemname="AR map fix" filename="C:\Users\Natalie\Documents\VVVV\6. Semester\bodenlos\Prototyp_Ausstellung\subpatch\AR map fix.v4p" scrollx="30" scrolly="-360">
-   <BOUNDS type="Window" left="480" top="3850" width="7490" height="7570">
+   <BOUNDS type="Window" left="1840" top="6590" width="7490" height="7570">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -31,7 +31,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Sphere (DX11.Geometry)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Sphere (DX11.Geometry)" componentmode="Hidden" id="5">
-   <BOUNDS type="Node" left="1895" top="2470" width="100" height="100">
+   <BOUNDS type="Node" left="1935" top="1760" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Geometry Out" visible="1">
    </PIN>
@@ -39,15 +39,15 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="6">
-   <BOUNDS type="Box" left="2305" top="4685" width="795" height="240">
+   <BOUNDS type="Box" left="2005" top="5375" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2305" top="4685" width="0" height="0">
+   <BOUNDS type="Node" left="2005" top="5375" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="|pos Controller|">
    </PIN>
+   <PIN pinname="Input Node" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="4" srcpinname="Layer" dstnodeid="6" dstpinname="Input Node">
-   </LINK>
    <NODE systemname="Decompose (Transform Vector)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Decompose (Transform Vector)" componentmode="Hidden" id="8">
    <BOUNDS type="Node" left="2945" top="1670" width="100" height="100">
    </BOUNDS>
@@ -79,7 +79,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3170" top="2080" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0.03,0.49,0.03">
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0.03,0.83,0.03">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -93,7 +93,7 @@
    <LINK srcnodeid="14" srcpinname="Y Output Value" dstnodeid="13" dstpinname="Scale XYZ">
    </LINK>
    <NODE systemname="Blend (DX11.RenderState)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Blend (DX11.RenderState)" componentmode="Hidden" id="16">
-   <BOUNDS type="Node" left="935" top="2850" width="100" height="100">
+   <BOUNDS type="Node" left="1505" top="2610" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Render State" visible="1" slicecount="1" values="||">
    </PIN>
@@ -133,5 +133,39 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="32" srcpinname="Output Node" dstnodeid="8" dstpinname="Transform In">
+   </LINK>
+   <NODE systemname="Switch (Node Input)" nodename="Switch (Node Input)" componentmode="Hidden" id="33">
+   <BOUNDS type="Node" left="2010" top="4900" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Switch" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Layer" dstnodeid="33" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="33" srcpinname="Output" dstnodeid="6" dstpinname="Input Node">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="34">
+   <BOUNDS type="Box" left="640" top="760" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="640" top="760" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Leuchtsäule An/Aus|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="34" srcpinname="Y Output Value" dstnodeid="33" dstpinname="Switch">
    </LINK>
    </PATCH>

@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
    <PATCH nodename="C:\Users\Natalie\Documents\GitHub\Bodenlos-vvvv\subpatch\Mentor.v4p" systemname="Mentor" filename="C:\Users\Natalie\Documents\VVVV\6. Semester\bodenlos\Prototyp_Ausstellung\subpatch\Mentor.v4p" scrollx="0" scrolly="-360">
-   <BOUNDS type="Window" left="8960" top="330" width="15250" height="13940">
+   <BOUNDS type="Window" left="8960" top="330" width="12980" height="12050">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -85,9 +85,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="27">
-   <BOUNDS type="Box" left="2325" top="8865" width="795" height="240">
+   <BOUNDS type="Box" left="2315" top="9405" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2325" top="8865" width="0" height="0">
+   <BOUNDS type="Node" left="2315" top="9405" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Output Node" visible="1">
    </PIN>
@@ -187,7 +187,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="945" top="2280" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -269,7 +269,7 @@
    <NODE systemname="Translate (Transform)" nodename="Translate (Transform)" componentmode="Hidden" id="55">
    <BOUNDS type="Node" left="4230" top="4200" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
+   <PIN pinname="Transform In" visible="1">
    </PIN>
    <PIN pinname="X" slicecount="1" visible="1" values="0.06">
    </PIN>
