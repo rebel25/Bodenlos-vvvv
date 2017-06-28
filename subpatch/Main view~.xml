@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
    <PATCH nodename="C:\Users\Daniel\Desktop\Prototyp_bodenlos_Ausstellung\patch\subpatch\Main view.v4p" systemname="Main view" filename="C:\Users\Daniel\Desktop\Prototyp_bodenlos_Ausstellung\patch\subpatch\Main view.v4p" scrollx="15" scrolly="720">
-   <BOUNDS type="Window" left="4455" top="7470" width="11445" height="10755">
+   <BOUNDS type="Window" left="4305" top="10680" width="11445" height="10755">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -221,7 +221,7 @@
    </PIN>
    <PIN pinname="Position Out" visible="1">
    </PIN>
-   <PIN pinname="FilterTime" slicecount="1" values="1">
+   <PIN pinname="FilterTime" slicecount="1" values="0.68">
    </PIN>
    </NODE>
    <LINK srcnodeid="27" srcpinname="TranslateXYZ" dstnodeid="37" dstpinname="Go To Position">

@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
    <PATCH nodename="C:\Users\Daniel\Desktop\Prototyp_bodenlos_Ausstellung\patch\subpatch\Modell.v4p" systemname="Modell" filename="C:\Users\Daniel\Desktop\Prototyp_bodenlos_Ausstellung\patch\subpatch\Modell.v4p" scrollx="15" scrolly="720">
-   <BOUNDS type="Window" left="11325" top="6390" width="10980" height="10695">
+   <BOUNDS type="Window" left="26775" top="10635" width="10980" height="10695">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -187,7 +187,7 @@
    </PIN>
    <PIN pinname="Alpha" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Light DirectionXYZ" visible="1" slicecount="3" values="-2.68,-10.93,4.22">
+   <PIN pinname="Light DirectionXYZ" visible="1" slicecount="3" values="0.483549913686611,1.20773758526297,1.24866256329487">
    </PIN>
    <PIN pinname="Technique" slicecount="1" values="GouraudDirectional">
    </PIN>
@@ -235,9 +235,9 @@
    <LINK srcnodeid="56" srcpinname="Transform Out" dstnodeid="44" dstpinname="Transform In">
    </LINK>
    <NODE nodename="IOBox (Color)" componentmode="InABox" id="57">
-   <BOUNDS type="Box" left="3825" top="6825" width="2250" height="480">
+   <BOUNDS type="Box" left="2925" top="6540" width="2250" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="3825" top="6825" width="0" height="0">
+   <BOUNDS type="Node" left="2925" top="6540" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.10564,0.10564,0.10564,1.00000|">
    </PIN>
@@ -306,6 +306,8 @@
    <PIN pinname="Rows" slicecount="1" values="3">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|light pos in|">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="60" srcpinname="Y Output Value" dstnodeid="59" dstpinname="Light PositionXYZ">
