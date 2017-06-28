@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\Natalie\Documents\GitHub\Bodenlos-vvvv\_root_Prototyp.v4p" scrollx="0" scrolly="0" systemname="_root_Prototyp" filename="C:\Users\Natalie\Documents\VVVV\6. Semester\bodenlos\Prototyp_Ausstellung\_root_Prototyp.v4p">
+   <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\_root_Prototyp.v4p" scrollx="0" scrolly="0" systemname="_root_Prototyp" filename="C:\Users\Natalie\Documents\VVVV\6. Semester\bodenlos\Prototyp_Ausstellung\_root_Prototyp.v4p">
    <BOUNDS type="Window" left="11570" top="1080" width="12930" height="13830">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
@@ -208,18 +208,6 @@
    <PIN pinname="Switch View" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="Modell" filename="subpatch\Modell.v4p" componentmode="InAWindow" id="38" nodename="subpatch\Modell.v4p">
-   <BOUNDS type="Node" left="1370" top="2810" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="1370" top="2810" width="4800" height="3600">
-   </BOUNDS>
-   <BOUNDS type="Window" left="600" top="2570" width="10980" height="10680">
-   </BOUNDS>
-   <PIN pinname="World Modell" visible="1">
-   </PIN>
-   <PIN pinname="light pos in" visible="1">
-   </PIN>
-   </NODE>
    <NODE systemname="Group (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Group (DX11.Layer)" componentmode="Hidden" id="39">
    <BOUNDS type="Node" left="1705" top="8500" width="6400" height="270">
    </BOUNDS>
@@ -251,6 +239,8 @@
    </PIN>
    <PIN pinname="Layer 9" visible="1" slicecount="1" values="||">
    </PIN>
+   <PIN pinname="Layer 8" visible="1" slicecount="1" values="||">
+   </PIN>
    </NODE>
    <LINK srcnodeid="39" srcpinname="Layer Out" dstnodeid="34" dstpinname="Layers">
    </LINK>
@@ -277,7 +267,7 @@
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
-   <PIN pinname="Enabled" slicecount="1" values="0">
+   <PIN pinname="Enabled" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="34" srcpinname="Actual BackBuffer SizeXY" dstnodeid="42" dstpinname="Y Input Value">
@@ -378,8 +368,6 @@
    </LINK>
    <LINK srcnodeid="63" srcpinname="Y Output Value" dstnodeid="13" dstpinname="Switch Input">
    </LINK>
-   <LINK srcnodeid="13" srcpinname="Light Pos" dstnodeid="38" dstpinname="light pos in">
-   </LINK>
    <LINK srcnodeid="48" srcpinname="Layer" dstnodeid="39" dstpinname="Layer 1">
    </LINK>
    <NODE systemname="Figuren" filename="subpatch\Figuren.v4p" nodename="subpatch\Figuren.v4p" componentmode="Hidden" id="64">
@@ -420,8 +408,6 @@
    <PIN pinname="InfoFeed An/Aus" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="38" srcpinname="World Modell" dstnodeid="39" dstpinname="Layer 2">
-   </LINK>
    <LINK srcnodeid="63" srcpinname="Y Output Value" dstnodeid="64" dstpinname="Switch Input">
    </LINK>
    <LINK srcnodeid="64" srcpinname="pos Controller" dstnodeid="39" dstpinname="Layer 3">
@@ -557,5 +543,47 @@
    <LINK srcnodeid="71" srcpinname="Y Output Value" dstnodeid="69" dstpinname="Switch">
    </LINK>
    <LINK srcnodeid="71" srcpinname="Y Output Value" dstnodeid="70" dstpinname="Switch">
+   </LINK>
+   <NODE systemname="Pathfinder (Value) convert to dx11" filename="subpatch\Pathfinder (Value) convert to dx11.v4p" nodename="subpatch\Pathfinder (Value) convert to dx11.v4p" componentmode="InAWindow" id="72">
+   <BOUNDS type="Node" left="10770" top="4215" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Window" left="3105" top="2550" width="15405" height="12705">
+   </BOUNDS>
+   <PIN pinname="Pathfinder" visible="1">
+   </PIN>
+   <PIN pinname="DX11_Querry" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="75">
+   <BOUNDS type="Node" left="10845" top="8400" width="510" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="10845" top="8400" width="510" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="rotat">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="72" srcpinname="Pathfinder" dstnodeid="39" dstpinname="Layer 8">
+   </LINK>
+   <NODE id="38" componentmode="Hidden" systemname="Modell" filename="subpatch\Modell.v4p" nodename="subpatch\Modell.v4p">
+   <BOUNDS type="Window" left="4950" top="3045" width="10980" height="10680">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1370" top="2810" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1370" top="2810" width="4800" height="3600">
+   </BOUNDS>
+   <PIN pinname="World Modell" visible="1">
+   </PIN>
+   <PIN pinname="light pos in" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="38" srcpinname="World Modell" dstnodeid="39" dstpinname="Layer 2">
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="Light Pos" dstnodeid="38" dstpinname="light pos in">
    </LINK>
    </PATCH>
