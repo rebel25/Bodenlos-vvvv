@@ -5,9 +5,9 @@
    <NODE id="0" systemname="Poser (OpenVR)" filename="%VVVV%\packs\VVVV.OpenVR\nodes\plugins\VVVV.OpenVR.dll" nodename="Poser (OpenVR)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
    <PIN pinname="Controller Poses" visible="1" pintype="Output">
    </PIN>
-   <BOUNDS type="Node" left="6255" top="2725" width="100" height="100">
+   <BOUNDS type="Node" left="6415" top="2675" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="5685" top="2105" width="2400" height="1800">
+   <BOUNDS type="Box" left="5845" top="2055" width="2400" height="1800">
    </BOUNDS>
    <BOUNDS type="Window" left="0" top="0" width="6000" height="4500">
    </BOUNDS>
@@ -450,4 +450,8 @@
    </LINK>
    <LINK srcnodeid="26" srcpinname="Y Output Value" dstnodeid="36" dstpinname="Controller">
    </LINK>
+   <NODE systemname="Figuren" filename="subpatch\Figuren.v4p" nodename="subpatch\Figuren.v4p" componentmode="Hidden" id="64">
+   <BOUNDS type="Node" left="4870" top="2080" width="100" height="100">
+   </BOUNDS>
+   </NODE>
    </PATCH>
