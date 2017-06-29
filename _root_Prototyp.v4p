@@ -1,31 +1,9 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\Natalie\Documents\GitHub\Bodenlos-vvvv\_root_Prototyp.v4p" scrollx="0" scrolly="-360" systemname="_root_Prototyp" filename="C:\Users\Natalie\Documents\VVVV\6. Semester\bodenlos\Prototyp_Ausstellung\_root_Prototyp.v4p">
-   <BOUNDS type="Window" left="9010" top="920" width="12930" height="13830">
+   <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\_root_Prototyp.v4p" scrollx="0" scrolly="2160" systemname="_root_Prototyp" filename="C:\Users\Natalie\Documents\VVVV\6. Semester\bodenlos\Prototyp_Ausstellung\_root_Prototyp.v4p">
+   <BOUNDS type="Window" left="13155" top="1530" width="12930" height="13665">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
-   <NODE systemname="Mentor" filename="subpatch\Mentor.v4p" componentmode="Hidden" id="13" nodename="subpatch\Mentor.v4p">
-   <BOUNDS type="Node" left="5910" top="5635" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="5910" top="5635" width="4800" height="3600">
-   </BOUNDS>
-   <BOUNDS type="Window" left="8960" top="330" width="12980" height="12050">
-   </BOUNDS>
-   <PIN pinname="LookAt_Position" visible="1">
-   </PIN>
-   <PIN pinname="Transform In" visible="1">
-   </PIN>
-   <PIN pinname="Switch Input" visible="1">
-   </PIN>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   <PIN pinname="light" visible="1">
-   </PIN>
-   <PIN pinname="Light Pos" visible="1">
-   </PIN>
-   <PIN pinname="Pos für Mentor" visible="1">
-   </PIN>
-   </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="16">
    <BOUNDS type="Node" left="7455" top="1830" width="850" height="230">
    </BOUNDS>
@@ -45,7 +23,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="5755" top="795" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -55,7 +33,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Switch Person|">
    </PIN>
@@ -159,7 +137,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1545" top="11515" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="640" top="110" width="12030" height="7470">
+   <BOUNDS type="Window" left="4965" top="5730" width="12030" height="7470">
    </BOUNDS>
    <PIN pinname="View" visible="1" slicecount="1" values="||">
    </PIN>
@@ -189,7 +167,7 @@
    </PIN>
    <PIN pinname="Projection" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="9400" top="4370" width="8670" height="8650">
+   <BOUNDS type="Window" left="19350" top="1935" width="8670" height="8640">
    </BOUNDS>
    <PIN pinname="LookAt (View)" visible="1">
    </PIN>
@@ -233,7 +211,7 @@
    </PIN>
    <PIN pinname="Layer 11" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Layer 6" visible="1">
+   <PIN pinname="Layer 6" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Layer 7" visible="1" slicecount="1" values="||">
    </PIN>
@@ -335,7 +313,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="7245" top="805" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -347,7 +325,7 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Switch Input|">
    </PIN>
@@ -363,10 +341,6 @@
    </LINKPOINT>
    <LINKPOINT x="5134" y="3593">
    </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="36" srcpinname="Look At" dstnodeid="13" dstpinname="LookAt_Position">
-   </LINK>
-   <LINK srcnodeid="63" srcpinname="Y Output Value" dstnodeid="13" dstpinname="Switch Input">
    </LINK>
    <LINK srcnodeid="48" srcpinname="Layer" dstnodeid="39" dstpinname="Layer 1">
    </LINK>
@@ -454,8 +428,6 @@
    </NODE>
    <LINK srcnodeid="66" srcpinname="Trigger Press" dstnodeid="67" dstpinname="Y Input Value">
    </LINK>
-   <LINK srcnodeid="13" srcpinname="Layer" dstnodeid="39" dstpinname="Layer 6">
-   </LINK>
    <LINK srcnodeid="11" srcpinname="Lazer HUD" dstnodeid="39" dstpinname="Layer 9">
    </LINK>
    <LINK srcnodeid="65" srcpinname="Output Rettungskraft" dstnodeid="64" dstpinname="Pos Rettungskraft">
@@ -465,8 +437,6 @@
    <LINK srcnodeid="65" srcpinname="Output Betroffener" dstnodeid="36" dstpinname="View Betroffener">
    </LINK>
    <LINK srcnodeid="26" srcpinname="Y Output Value" dstnodeid="36" dstpinname="Switch View">
-   </LINK>
-   <LINK srcnodeid="65" srcpinname="Output Betroffener" dstnodeid="13" dstpinname="Pos für Mentor">
    </LINK>
    <LINK srcnodeid="26" srcpinname="Y Output Value" dstnodeid="64" dstpinname="Figurauswahl">
    </LINK>
@@ -544,10 +514,10 @@
    </LINK>
    <LINK srcnodeid="71" srcpinname="Y Output Value" dstnodeid="70" dstpinname="Switch">
    </LINK>
-   <NODE systemname="Pathfinder (Value) convert to dx11" filename="subpatch\Pathfinder (Value) convert to dx11.v4p" nodename="subpatch\Pathfinder (Value) convert to dx11.v4p" componentmode="Hidden" id="72">
+   <NODE systemname="Pathfinder (Value) convert to dx11" filename="subpatch\Pathfinder (Value) convert to dx11.v4p" nodename="subpatch\Pathfinder (Value) convert to dx11.v4p" componentmode="InAWindow" id="72">
    <BOUNDS type="Node" left="10080" top="3905" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="5190" top="1690" width="15450" height="12230">
+   <BOUNDS type="Window" left="15045" top="1320" width="18390" height="12225">
    </BOUNDS>
    <PIN pinname="Pathfinder" visible="1">
    </PIN>
@@ -557,11 +527,13 @@
    </PIN>
    <PIN pinname="Pos Betroffener" visible="1">
    </PIN>
+   <PIN pinname="Transform In" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="72" srcpinname="Pathfinder" dstnodeid="39" dstpinname="Layer 8">
    </LINK>
    <NODE id="38" componentmode="Hidden" systemname="Modell" filename="subpatch\Modell.v4p" nodename="subpatch\Modell.v4p">
-   <BOUNDS type="Window" left="4950" top="3045" width="10980" height="10680">
+   <BOUNDS type="Window" left="13785" top="3435" width="10980" height="10680">
    </BOUNDS>
    <BOUNDS type="Node" left="1370" top="2810" width="100" height="100">
    </BOUNDS>
@@ -569,15 +541,49 @@
    </BOUNDS>
    <PIN pinname="World Modell" visible="1">
    </PIN>
-   <PIN pinname="light pos in" visible="1">
+   <PIN pinname="light pos in" visible="1" slicecount="3" values="-0.340533277989995,0.126712854833289,-1.20727632738119">
+   </PIN>
+   <PIN pinname="Transform Map" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="38" srcpinname="World Modell" dstnodeid="39" dstpinname="Layer 2">
    </LINK>
-   <LINK srcnodeid="13" srcpinname="Light Pos" dstnodeid="38" dstpinname="light pos in">
-   </LINK>
    <LINK srcnodeid="65" srcpinname="Output Rettungskraft" dstnodeid="72" dstpinname="Pos Rettungskraft">
    </LINK>
    <LINK srcnodeid="65" srcpinname="Output Betroffener" dstnodeid="72" dstpinname="Pos Betroffener">
+   </LINK>
+   <LINK srcnodeid="38" srcpinname="Transform Map" dstnodeid="72" dstpinname="Transform In">
+   </LINK>
+   <NODE systemname="Mentor" filename="subpatch\Mentor.v4p" componentmode="Hidden" id="13" nodename="subpatch\Mentor.v4p">
+   <BOUNDS type="Node" left="5910" top="5635" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5910" top="5635" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="15975" top="3405" width="12975" height="12045">
+   </BOUNDS>
+   <PIN pinname="LookAt_Position" visible="1">
+   </PIN>
+   <PIN pinname="Transform In" visible="1">
+   </PIN>
+   <PIN pinname="Switch Input" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="light" visible="1">
+   </PIN>
+   <PIN pinname="Light Pos" visible="1">
+   </PIN>
+   <PIN pinname="Pos für Mentor" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="36" srcpinname="Look At" dstnodeid="13" dstpinname="LookAt_Position">
+   </LINK>
+   <LINK srcnodeid="63" srcpinname="Y Output Value" dstnodeid="13" dstpinname="Switch Input">
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="Layer" dstnodeid="39" dstpinname="Layer 6">
+   </LINK>
+   <LINK srcnodeid="65" srcpinname="Output Betroffener" dstnodeid="13" dstpinname="Pos für Mentor">
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="Light Pos" dstnodeid="38" dstpinname="light pos in">
    </LINK>
    </PATCH>
