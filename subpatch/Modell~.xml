@@ -388,4 +388,14 @@
    </NODE>
    <LINK srcnodeid="65" srcpinname="Y Output Value" dstnodeid="56" dstpinname="TranslateY">
    </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="66">
+   <BOUNDS type="Box" left="375" top="7365" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="375" top="7365" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Transform Map|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="56" srcpinname="Transform Out" dstnodeid="66" dstpinname="Input Node">
+   </LINK>
    </PATCH>

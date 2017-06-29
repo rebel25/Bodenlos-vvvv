@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\subpatch\Pathfinder (Value) convert to dx11.v4p" systemname="Pathfinder (Value))" filename="C:\Users\Daniel\Desktop\V4_Saves\Pathfinder (Value) convert to dx11.v4p" bgcolor="15329769" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="15045" top="1320" width="18390" height="12225">
+   <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\subpatch\Pathfinder (Value) convert to dx11.v4p" systemname="Pathfinder (Value))" filename="C:\Users\Daniel\Desktop\V4_Saves\Pathfinder (Value) convert to dx11.v4p" bgcolor="15329769" scrollx="0" scrolly="-360">
+   <BOUNDS type="Window" left="9405" top="1410" width="20745" height="11640">
    </BOUNDS>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="4">
    <BOUNDS type="Node" left="9549" top="3615" width="100" height="100">
@@ -77,7 +77,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="7899" top="1345" width="530" height="490">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0" visible="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -741,7 +741,7 @@
    </PIN>
    <PIN pinname="TranslateZ" slicecount="1" visible="1" values="-71.95">
    </PIN>
-   <PIN pinname="TranslateY" slicecount="1" values="-11.47" visible="1">
+   <PIN pinname="TranslateY" slicecount="1" visible="1" values="-11.47">
    </PIN>
    <PIN pinname="TranslateX" slicecount="1" visible="1" values="-27.81">
    </PIN>

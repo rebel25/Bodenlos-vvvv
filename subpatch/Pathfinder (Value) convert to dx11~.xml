@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
    <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\subpatch\Pathfinder (Value) convert to dx11.v4p" systemname="Pathfinder (Value))" filename="C:\Users\Daniel\Desktop\V4_Saves\Pathfinder (Value) convert to dx11.v4p" bgcolor="15329769" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="2295" top="4515" width="18390" height="12225">
+   <BOUNDS type="Window" left="15045" top="1320" width="18390" height="12225">
    </BOUNDS>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="4">
    <BOUNDS type="Node" left="9549" top="3615" width="100" height="100">
@@ -11,7 +11,7 @@
    </PIN>
    <PIN pinname="Vector Size" slicecount="1" values="2">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="0,0">
+   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="27,21">
    </PIN>
    <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
    </PIN>
@@ -425,7 +425,7 @@
    </PIN>
    <PIN pinname="Vector Size" slicecount="1" values="2">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="100,100">
+   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="56,94">
    </PIN>
    <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
    </PIN>
@@ -939,15 +939,17 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="223">
-   <BOUNDS type="Box" left="9870" top="1905" width="795" height="240">
+   <BOUNDS type="Box" left="9600" top="1665" width="300" height="270">
    </BOUNDS>
-   <BOUNDS type="Node" left="9870" top="1905" width="0" height="0">
+   <BOUNDS type="Node" left="9600" top="1665" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
    </PIN>
    </NODE>
    <LINK srcnodeid="223" srcpinname="Y Output Value" dstnodeid="222" dstpinname="Input 2">
@@ -979,5 +981,7 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="225" srcpinname="Y Output Value" dstnodeid="209" dstpinname="TranslateY">
+   </LINK>
+   <LINK srcnodeid="116" srcpinname="Layer" dstnodeid="111" dstpinname="Layer 1">
    </LINK>
    </PATCH>
