@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\Natalie\Documents\GitHub\Bodenlos-vvvv\subpatch\Figuren.v4p" scrollx="0" scrolly="-360" systemname="Figuren" filename="C:\Users\Natalie\Documents\GitHub\Bodenlos-vvvv\subpatch\Figuren.v4p">
-   <BOUNDS type="Window" left="8910" top="5300" width="12230" height="9460">
+   <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\subpatch\Figuren.v4p" scrollx="0" scrolly="-360" systemname="Figuren" filename="C:\Users\Natalie\Documents\GitHub\Bodenlos-vvvv\subpatch\Figuren.v4p">
+   <BOUNDS type="Window" left="15375" top="5895" width="12225" height="9450">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -60,6 +60,8 @@
    <PIN pinname="Transform Out" visible="1">
    </PIN>
    <PIN pinname="Scale XYZ" slicecount="3" visible="1" values="0.1,0.1,0.1">
+   </PIN>
+   <PIN pinname="Center XYZ" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="33" srcpinname="TranslateXYZ" dstnodeid="32" dstpinname="Translate XYZ">
@@ -258,8 +260,6 @@
    <PIN pinname="Switch" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="54" srcpinname="Output" dstnodeid="33" dstpinname="Transform In">
-   </LINK>
    <LINK srcnodeid="39" srcpinname="Output Node" dstnodeid="54" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="41" srcpinname="Output Node" dstnodeid="54" dstpinname="Input 2">
@@ -293,5 +293,27 @@
    <LINK srcnodeid="61" srcpinname="Inverse Output" dstnodeid="54" dstpinname="Switch">
    </LINK>
    <LINK srcnodeid="62" srcpinname="Down Edge" dstnodeid="61" dstpinname="Reset">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="64">
+   <BOUNDS type="Box" left="6300" top="4500" width="795" height="720">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6300" top="4500" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0,11.77,0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="3" values="0,0,0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="64" srcpinname="Y Output Value" dstnodeid="32" dstpinname="Center XYZ">
+   </LINK>
+   <LINK srcnodeid="54" srcpinname="Output" dstnodeid="33" dstpinname="Transform In">
    </LINK>
    </PATCH>
