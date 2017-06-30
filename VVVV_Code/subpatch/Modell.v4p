@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\subpatch\Modell.v4p" systemname="Modell" filename="C:\Users\Daniel\Desktop\Prototyp_bodenlos_Ausstellung\patch\subpatch\Modell.v4p" scrollx="15" scrolly="360">
-   <BOUNDS type="Window" left="15345" top="3510" width="9105" height="10455">
+   <PATCH nodename="C:\Users\Natalie\Documents\GitHub\Bodenlos-vvvv\VVVV_Code\subpatch\Modell.v4p" systemname="Modell" filename="C:\Users\Daniel\Desktop\Prototyp_bodenlos_Ausstellung\patch\subpatch\Modell.v4p" scrollx="15" scrolly="360">
+   <BOUNDS type="Window" left="3310" top="1610" width="10980" height="10680">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -15,7 +15,7 @@
    </PIN>
    <PIN pinname="Reload" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Preload Data" visible="1">
+   <PIN pinname="Preload Data" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Mesh" visible="1">
    </PIN>
@@ -32,42 +32,6 @@
    <PIN pinname="Output" visible="1">
    </PIN>
    <PIN pinname="Is Valid" visible="1">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="21" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="5055" top="1200" width="480" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="5055" top="1200" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Toggle">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Preload Data|">
-   </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="21" srcpinname="Y Output Value" dstnodeid="24" dstpinname="Preload Data">
-   </LINK>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="15" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="5730" top="1365" width="2115" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="5730" top="1365" width="2115" height="270">
-   </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt;-- Preloads CPU mesh data|">
-   </PIN>
-   <PIN pinname="Output String" visible="0">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="14">
@@ -181,9 +145,9 @@
    <LINK srcnodeid="57" srcpinname="Color Output" dstnodeid="59" dstpinname="Specular Color">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="60">
-   <BOUNDS type="Box" left="4575" top="5640" width="795" height="720">
+   <BOUNDS type="Box" left="4315" top="6130" width="795" height="720">
    </BOUNDS>
-   <BOUNDS type="Node" left="4575" top="5640" width="0" height="0">
+   <BOUNDS type="Node" left="4315" top="6130" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0,5,-2">
    </PIN>
@@ -205,9 +169,9 @@
    <LINK srcnodeid="56" srcpinname="Transform Out" dstnodeid="59" dstpinname="Transform In">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="61">
-   <BOUNDS type="Node" left="4680" top="6450" width="1170" height="270">
+   <BOUNDS type="Node" left="5140" top="6290" width="1170" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="4680" top="6450" width="1170" height="270">
+   <BOUNDS type="Box" left="5140" top="6290" width="1170" height="270">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|Lightning Test|">
    </PIN>
@@ -302,4 +266,46 @@
    </LINK>
    <LINK srcnodeid="24" srcpinname="Scene" dstnodeid="22" dstpinname="Scene">
    </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="68">
+   <BOUNDS type="Node" left="5490" top="2090" width="4610" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5490" top="2090" width="2440" height="440">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Stadtmodell wird geladen und in ein lesbares Mesh umgewandelt|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="69">
+   <BOUNDS type="Node" left="3180" top="4460" width="4440" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3180" top="4460" width="2350" height="470">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Modell wird manuell der Position des realen Tisches angepasst|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="70">
+   <BOUNDS type="Node" left="4590" top="8120" width="1910" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4590" top="8120" width="1910" height="230">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt;- Gibt dem Mesh Gestalt|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
    </PATCH>

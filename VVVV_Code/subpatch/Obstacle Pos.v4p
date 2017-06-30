@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\Natalie\Documents\GitHub\Bodenlos-vvvv\subpatch\Obstacle Pos.v4p" systemname="Obstacle Pos" filename="C:\Users\Natalie\Documents\GitHub\Bodenlos-vvvv\subpatch\Obstacle Pos.v4p" scrollx="0" scrolly="-360">
-   <BOUNDS type="Window" left="800" top="7350" width="24310" height="8280">
+   <PATCH nodename="C:\Users\Natalie\Documents\GitHub\Bodenlos-vvvv\VVVV_Code\subpatch\Obstacle Pos.v4p" systemname="Obstacle Pos" filename="C:\Users\Natalie\Documents\GitHub\Bodenlos-vvvv\subpatch\Obstacle Pos.v4p" scrollx="0" scrolly="-360">
+   <BOUNDS type="Window" left="490" top="5020" width="24310" height="8280">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -2578,4 +2578,18 @@
    </LINK>
    <LINK srcnodeid="14" srcpinname="Y Output Value" dstnodeid="168" dstpinname="Input 2">
    </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="169">
+   <BOUNDS type="Node" left="1590" top="550" width="8380" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1590" top="550" width="3730" height="590">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Manuelles Setzen von Barrieren um die Häuser herum, damit der Pathfinder weiß, dass die Route nicht durch die Häuser verlaufen darf|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
    </PATCH>

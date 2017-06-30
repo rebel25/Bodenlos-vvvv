@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\Natalie\Documents\GitHub\Bodenlos-vvvv\subpatch\Poser Daten.v4p" systemname="Poser Daten" filename="C:\Users\Natalie\Documents\GitHub\Bodenlos-vvvv\subpatch\Poser Daten.v4p" scrollx="0" scrolly="-360">
-   <BOUNDS type="Window" left="10030" top="2610" width="12940" height="9010">
+   <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\subpatch\Poser Daten.v4p" systemname="Poser Daten" filename="C:\Users\Natalie\Documents\GitHub\Bodenlos-vvvv\subpatch\Poser Daten.v4p" scrollx="0" scrolly="-360">
+   <BOUNDS type="Window" left="2920" top="3550" width="12940" height="9010">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -365,5 +365,27 @@
    <LINK srcnodeid="30" srcpinname="Output" dstnodeid="31" dstpinname="Input Node">
    </LINK>
    <LINK srcnodeid="4" srcpinname="Output Node" dstnodeid="30" dstpinname="Input 1">
+   </LINK>
+   <NODE systemname="Controller (OpenVR Split)" filename="%VVVV%\packs\VVVV.OpenVR\nodes\plugins\VVVV.OpenVR.dll" nodename="Controller (OpenVR Split)" componentmode="Hidden" id="33">
+   <BOUNDS type="Node" left="9090" top="900" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Trigger Press" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="32">
+   <BOUNDS type="Box" left="9720" top="1330" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9720" top="1330" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="33" srcpinname="Trigger Press" dstnodeid="32" dstpinname="Y Input Value">
    </LINK>
    </PATCH>

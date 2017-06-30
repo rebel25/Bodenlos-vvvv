@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\subpatch\Poser Daten.v4p" systemname="Poser Daten" filename="C:\Users\Natalie\Documents\GitHub\Bodenlos-vvvv\subpatch\Poser Daten.v4p" scrollx="0" scrolly="-360">
-   <BOUNDS type="Window" left="2920" top="3550" width="12940" height="9010">
+   <PATCH nodename="C:\Users\Natalie\Documents\GitHub\Bodenlos-vvvv\VVVV_Code\subpatch\Poser Daten.v4p" systemname="Poser Daten" filename="C:\Users\Natalie\Documents\GitHub\Bodenlos-vvvv\subpatch\Poser Daten.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="2920" top="3550" width="13830" height="9010">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -113,9 +113,9 @@
    <LINK srcnodeid="0" srcpinname="Controller Poses" dstnodeid="4" dstpinname="Input Node">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="5">
-   <BOUNDS type="Node" left="3000" top="2750" width="1080" height="230">
+   <BOUNDS type="Node" left="3340" top="2790" width="1080" height="230">
    </BOUNDS>
-   <BOUNDS type="Box" left="3000" top="2750" width="1470" height="300">
+   <BOUNDS type="Box" left="3340" top="2790" width="1470" height="300">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="Rettungskraft">
    </PIN>
@@ -129,9 +129,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="6">
-   <BOUNDS type="Node" left="9230" top="2820" width="920" height="230">
+   <BOUNDS type="Node" left="9450" top="2790" width="920" height="230">
    </BOUNDS>
-   <BOUNDS type="Box" left="9230" top="2820" width="1230" height="300">
+   <BOUNDS type="Box" left="9450" top="2790" width="1230" height="300">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="Betroffener">
    </PIN>
@@ -351,7 +351,7 @@
    <LINK srcnodeid="23" srcpinname="Y Output Value" dstnodeid="30" dstpinname="Switch" linkstyle="Bezier">
    <LINKPOINT x="2030" y="2890">
    </LINKPOINT>
-   <LINKPOINT x="5920" y="10">
+   <LINKPOINT x="5100" y="770">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="31">
@@ -388,4 +388,102 @@
    </NODE>
    <LINK srcnodeid="33" srcpinname="Trigger Press" dstnodeid="32" dstpinname="Y Input Value">
    </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="34">
+   <BOUNDS type="Node" left="4540" top="420" width="2770" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4540" top="420" width="2770" height="230">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Knoten um die Vive-Daten zu erhalten|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="35">
+   <BOUNDS type="Node" left="8860" top="250" width="4730" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8860" top="250" width="2260" height="610">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Hier soll ein Figurwechsel durch Controller-Tastendruck entstehen|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="36">
+   <BOUNDS type="Node" left="5020" top="4890" width="5370" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5020" top="4890" width="1960" height="620">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Sich bewegender Vektor um eine Fake-Position des Controllers darzustellen|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="37">
+   <BOUNDS type="Node" left="10680" top="4840" width="5370" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="10680" top="4840" width="1960" height="620">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Sich bewegender Vektor um eine Fake-Position des Controllers darzustellen|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="38">
+   <BOUNDS type="Node" left="2150" top="3330" width="2500" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2150" top="3330" width="1660" height="390">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Daten von Controller 1 selektieren|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="39">
+   <BOUNDS type="Node" left="7290" top="3540" width="2500" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7290" top="3540" width="1660" height="390">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Daten von Controller 2 selektieren|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="40">
+   <BOUNDS type="Node" left="3650" top="6140" width="4750" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3650" top="6140" width="1890" height="430">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Switch um zwischen Fake und Echt zu wechseln|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
    </PATCH>

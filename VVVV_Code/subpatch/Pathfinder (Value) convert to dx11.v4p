@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\subpatch\Pathfinder (Value) convert to dx11.v4p" systemname="Pathfinder (Value))" filename="C:\Users\Daniel\Desktop\V4_Saves\Pathfinder (Value) convert to dx11.v4p" bgcolor="15329769" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="9210" top="2025" width="18405" height="12390">
+   <PATCH nodename="C:\Users\Natalie\Documents\GitHub\Bodenlos-vvvv\VVVV_Code\subpatch\Pathfinder (Value) convert to dx11.v4p" systemname="Pathfinder (Value))" filename="C:\Users\Daniel\Desktop\V4_Saves\Pathfinder (Value) convert to dx11.v4p" bgcolor="15329769" scrollx="0" scrolly="-360">
+   <BOUNDS type="Window" left="3090" top="1130" width="19490" height="13540">
    </BOUNDS>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="4">
    <BOUNDS type="Node" left="9549" top="3540" width="100" height="100">
@@ -295,11 +295,11 @@
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
    <NODE systemname="Group (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Group (DX11.Layer)" componentmode="Hidden" id="111">
-   <BOUNDS type="Node" left="425" top="10245" width="11910" height="270">
+   <BOUNDS type="Node" left="425" top="10245" width="11440" height="270">
    </BOUNDS>
    <PIN pinname="Layer Out" visible="1">
    </PIN>
-   <PIN pinname="Input Count" slicecount="1" values="5">
+   <PIN pinname="Input Count" slicecount="1" values="4">
    </PIN>
    <PIN pinname="Layer 4" visible="1">
    </PIN>
@@ -399,7 +399,7 @@
    <LINK srcnodeid="111" srcpinname="Layer Out" dstnodeid="119" dstpinname="Input Node">
    </LINK>
    <NODE systemname="Rotate (Transform)" nodename="Rotate (Transform)" componentmode="Hidden" id="129">
-   <BOUNDS type="Node" left="14755" top="6310" width="100" height="100">
+   <BOUNDS type="Node" left="13985" top="7420" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
@@ -521,7 +521,7 @@
    <LINK srcnodeid="171" srcpinname="XY" dstnodeid="69" dstpinname="TranslateXY">
    </LINK>
    <NODE systemname="SetSlice (Spreads)" nodename="SetSlice (Spreads)" componentmode="Hidden" id="177">
-   <BOUNDS type="Node" left="3485" top="4035" width="990" height="270">
+   <BOUNDS type="Node" left="3475" top="4035" width="990" height="270">
    </BOUNDS>
    <PIN pinname="Spread" visible="1" slicecount="1" values="0">
    </PIN>
@@ -573,11 +573,11 @@
    <LINK srcnodeid="191" srcpinname="Output" dstnodeid="193" dstpinname="Select">
    </LINK>
    <NODE systemname="Obstacle Pos" filename="Obstacle Pos.v4p" componentmode="Hidden" id="194" nodename="Obstacle Pos.v4p">
-   <BOUNDS type="Node" left="4415" top="3255" width="100" height="100">
+   <BOUNDS type="Node" left="4405" top="3485" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="4415" top="3255" width="4800" height="3600">
+   <BOUNDS type="Box" left="4405" top="3485" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="800" top="7350" width="24310" height="8280">
+   <BOUNDS type="Window" left="490" top="5020" width="24310" height="8280">
    </BOUNDS>
    <PIN pinname="Positionen" visible="1">
    </PIN>
@@ -671,9 +671,9 @@
    <LINK srcnodeid="169" srcpinname="Y Output Value" dstnodeid="77" dstpinname="TranslateXY">
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="207">
-   <BOUNDS type="Box" left="14730" top="2835" width="795" height="240">
+   <BOUNDS type="Box" left="13960" top="3945" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="14730" top="2835" width="0" height="0">
+   <BOUNDS type="Node" left="13960" top="3945" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
    </PIN>
@@ -683,7 +683,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Transform (Transform 3d)" nodename="Transform (Transform 3d)" componentmode="Hidden" id="209">
-   <BOUNDS type="Node" left="14740" top="5855" width="100" height="100">
+   <BOUNDS type="Node" left="13970" top="6965" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
@@ -703,7 +703,7 @@
    </PIN>
    </NODE>
    <NODE systemname="UniformScale (Transform)" nodename="UniformScale (Transform)" componentmode="Hidden" id="208">
-   <BOUNDS type="Node" left="14725" top="3280" width="100" height="100">
+   <BOUNDS type="Node" left="13955" top="4390" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
@@ -719,9 +719,9 @@
    <LINK srcnodeid="207" srcpinname="Output Node" dstnodeid="208" dstpinname="Transform In">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="210">
-   <BOUNDS type="Box" left="16335" top="5235" width="795" height="240">
+   <BOUNDS type="Box" left="15565" top="6345" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="16335" top="5235" width="0" height="0">
+   <BOUNDS type="Node" left="15565" top="6345" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1.19">
    </PIN>
@@ -733,9 +733,9 @@
    <LINK srcnodeid="210" srcpinname="Y Output Value" dstnodeid="209" dstpinname="ScaleZ">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="211">
-   <BOUNDS type="Box" left="16290" top="4845" width="795" height="240">
+   <BOUNDS type="Box" left="15520" top="5955" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="16290" top="4845" width="0" height="0">
+   <BOUNDS type="Node" left="15520" top="5955" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.9">
    </PIN>
@@ -749,9 +749,9 @@
    <LINK srcnodeid="211" srcpinname="Y Output Value" dstnodeid="209" dstpinname="ScaleX">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="212">
-   <BOUNDS type="Box" left="14910" top="4065" width="795" height="240">
+   <BOUNDS type="Box" left="14140" top="5175" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="14910" top="4065" width="0" height="0">
+   <BOUNDS type="Node" left="14140" top="5175" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-81.22">
    </PIN>
@@ -763,9 +763,9 @@
    <LINK srcnodeid="212" srcpinname="Y Output Value" dstnodeid="209" dstpinname="TranslateX">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="213">
-   <BOUNDS type="Box" left="15195" top="4830" width="795" height="240">
+   <BOUNDS type="Box" left="14425" top="5940" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="15195" top="4830" width="0" height="0">
+   <BOUNDS type="Node" left="14425" top="5940" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-14.19">
    </PIN>
@@ -817,9 +817,9 @@
    <LINK srcnodeid="224" srcpinname="Change" dstnodeid="23" dstpinname="Y Input Value">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="225">
-   <BOUNDS type="Box" left="15045" top="4470" width="795" height="240">
+   <BOUNDS type="Box" left="14275" top="5580" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="15045" top="4470" width="0" height="0">
+   <BOUNDS type="Node" left="14275" top="5580" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-11">
    </PIN>
@@ -956,4 +956,144 @@
    </LINK>
    <LINK srcnodeid="129" srcpinname="Transform Out" dstnodeid="83" dstpinname="Transform In">
    </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="238">
+   <BOUNDS type="Node" left="6730" top="1820" width="3890" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6730" top="1820" width="1620" height="620">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Automatische neue &quot;Routenberechnung&quot; jede Sekunde|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="239">
+   <BOUNDS type="Node" left="4030" top="1390" width="1290" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4030" top="1390" width="1990" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Größe einer Seite des Grids|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="240">
+   <BOUNDS type="Node" left="13790" top="660" width="3390" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="13790" top="660" width="4660" height="2380">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|X und Z Wert der Controller werden ausgelesen um diese auf die Position im Grid zu übertragen.&cr;&lf;&cr;&lf;Der Knoten Map kann den Wert der zB zwischen -1 und 1 liegt proportional auf die Skala von 0 bis 100 übertragen (mappen).&cr;&lf;&cr;&lf;Der Z-Wert muss mit -1 multipliziert werden, da er sonst spiegelverkehrt laufen würde.&cr;&lf;&cr;&lf;Zum Schluss wird der alte Z-Wert zum neuen X-Wert und der alte X-Wert wird zum neuen Y-Wert, da der Pathfinder für ein zweidimensionales System geschrieben wurde und wir das ganze Grid so weit  gedreht haben, dass es auf unsere Stadt passt.|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="241">
+   <BOUNDS type="Node" left="420" top="610" width="19120" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="420" top="610" width="2910" height="1470">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Ein Grid von 100*100 wird angelegt auf welchem Start- und Endpunkt, sowie Barrieren festgelegt werden. &cr;&lf;So kann der Pathfinder den kürzesten Weg zwischen Start und Ziel (um die Barrieren herum) berechnen und die Punkte im Grid farbig markieren, die diesen Weg darstellen.|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="242">
+   <BOUNDS type="Node" left="4460" top="3210" width="1450" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4460" top="3210" width="1380" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Barrieren festlegen|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="243">
+   <BOUNDS type="Node" left="1380" top="3750" width="5440" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1380" top="3750" width="2020" height="580">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Hier wird geschaut welche Punkte im Grid als Barrieren festgelegt wurden. -&gt;|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="244">
+   <BOUNDS type="Node" left="4280" top="7440" width="5740" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4280" top="7440" width="2180" height="570">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Kleine Boxen stellen die Punkte im Grid dar, welche den kürzesten Weg markieren|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="245">
+   <BOUNDS type="Node" left="14820" top="3960" width="3090" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="14820" top="3960" width="3090" height="230">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt;- Position und Drehung des Stadtmodells|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="246">
+   <BOUNDS type="Node" left="15370" top="5230" width="1950" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="15370" top="5230" width="2410" height="580">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Anpassen und Drehen des Grids, damit es wie eine Fläche auf dem Boden der Stadt liegt|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="247">
+   <BOUNDS type="Node" left="3380" top="5670" width="5970" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3380" top="5670" width="2600" height="630">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt;- Berechnung der Positionen der Punkte im Grid um die Barrieren im Rernderer darstellen zu können|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
    </PATCH>
