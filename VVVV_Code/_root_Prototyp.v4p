@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\Natalie\Documents\GitHub\Bodenlos-vvvv\VVVV_Code\_root_Prototyp.v4p" scrollx="0" scrolly="-360" systemname="_root_Prototyp" filename="C:\Users\Natalie\Documents\VVVV\6. Semester\bodenlos\Prototyp_Ausstellung\_root_Prototyp.v4p">
-   <BOUNDS type="Window" left="4940" top="1450" width="13260" height="13660">
+   <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\VVVV_Code\_root_Prototyp.v4p" scrollx="0" scrolly="-360" systemname="_root_Prototyp" filename="C:\Users\Natalie\Documents\VVVV\6. Semester\bodenlos\Prototyp_Ausstellung\_root_Prototyp.v4p">
+   <BOUNDS type="Window" left="1710" top="1605" width="13260" height="13650">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -23,7 +23,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="5985" top="825" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -33,7 +33,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Switch Person|">
    </PIN>
@@ -132,12 +132,12 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
-   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="Hidden" id="34">
+   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" id="34">
    <BOUNDS type="Node" left="1545" top="11515" width="7670" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="1545" top="11515" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="11955" top="4425" width="12030" height="7470">
+   <BOUNDS type="Window" left="12240" top="4710" width="12030" height="7470">
    </BOUNDS>
    <PIN pinname="View" visible="1" slicecount="1" values="||">
    </PIN>
@@ -313,7 +313,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="7425" top="875" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -325,7 +325,7 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Switch Input|">
    </PIN>
@@ -528,36 +528,6 @@
    </LINK>
    <LINK srcnodeid="38" srcpinname="Transform Map" dstnodeid="72" dstpinname="Transform In">
    </LINK>
-   <NODE systemname="Mentor" filename="subpatch\Mentor.v4p" componentmode="Hidden" id="13" nodename="subpatch\Mentor.v4p">
-   <BOUNDS type="Node" left="7510" top="6725" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="7510" top="6725" width="4800" height="3600">
-   </BOUNDS>
-   <BOUNDS type="Window" left="1280" top="1770" width="14830" height="12040">
-   </BOUNDS>
-   <PIN pinname="LookAt_Position" visible="1">
-   </PIN>
-   <PIN pinname="Transform In" visible="1">
-   </PIN>
-   <PIN pinname="Switch Input" visible="1">
-   </PIN>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   <PIN pinname="light" visible="1">
-   </PIN>
-   <PIN pinname="Light Pos" visible="1">
-   </PIN>
-   <PIN pinname="Pos für Mentor" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="36" srcpinname="Look At" dstnodeid="13" dstpinname="LookAt_Position">
-   </LINK>
-   <LINK srcnodeid="63" srcpinname="Y Output Value" dstnodeid="13" dstpinname="Switch Input">
-   </LINK>
-   <LINK srcnodeid="65" srcpinname="Output Betroffener" dstnodeid="13" dstpinname="Pos für Mentor">
-   </LINK>
-   <LINK srcnodeid="13" srcpinname="Light Pos" dstnodeid="38" dstpinname="light pos in">
-   </LINK>
    <LINK srcnodeid="38" srcpinname="World Modell" dstnodeid="39" dstpinname="Layer 2">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="73">
@@ -589,8 +559,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="72" srcpinname="Pathfinder" dstnodeid="39" dstpinname="Layer 5">
-   </LINK>
-   <LINK srcnodeid="13" srcpinname="Layer" dstnodeid="39" dstpinname="Layer 7">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="75">
    <BOUNDS type="Node" left="5950" top="7070" width="980" height="230">
@@ -690,4 +658,46 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
+   <NODE id="13" componentmode="Hidden" systemname="Mentor" filename="subpatch\Mentor.v4p" nodename="subpatch\Mentor.v4p">
+   <BOUNDS type="Window" left="14280" top="2955" width="14820" height="12030">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7495" top="6710" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7495" top="6710" width="4800" height="3600">
+   </BOUNDS>
+   <PIN pinname="LookAt_Position" visible="1">
+   </PIN>
+   <PIN pinname="Transform In" visible="1">
+   </PIN>
+   <PIN pinname="Switch Input" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="light" visible="1">
+   </PIN>
+   <PIN pinname="Light Pos" visible="1">
+   </PIN>
+   <PIN pinname="Pos für Mentor" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="65" srcpinname="Output Betroffener" dstnodeid="13" dstpinname="Pos für Mentor">
+   </LINK>
+   <NODE systemname="Mentor_neu" filename="subpatch\Mentor_neu.v4p" nodename="subpatch\Mentor_neu.v4p" componentmode="InAWindow" id="82">
+   <BOUNDS type="Node" left="10305" top="5850" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Window" left="10365" top="2250" width="17250" height="16380">
+   </BOUNDS>
+   <PIN pinname="Pos für Mentor" visible="1">
+   </PIN>
+   <PIN pinname="Layer Out" visible="1">
+   </PIN>
+   <PIN pinname="Light Pos" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="65" srcpinname="Output Betroffener" dstnodeid="82" dstpinname="Pos für Mentor">
+   </LINK>
+   <LINK srcnodeid="82" srcpinname="Layer Out" dstnodeid="39" dstpinname="Layer 7">
+   </LINK>
+   <LINK srcnodeid="82" srcpinname="Light Pos" dstnodeid="38" dstpinname="light pos in">
+   </LINK>
    </PATCH>

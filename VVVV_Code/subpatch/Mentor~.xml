@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\subpatch\Mentor.v4p" systemname="Mentor" filename="C:\Users\Natalie\Documents\VVVV\6. Semester\bodenlos\Prototyp_Ausstellung\subpatch\Mentor.v4p" scrollx="0" scrolly="-360">
-   <BOUNDS type="Window" left="13035" top="2565" width="8760" height="11310">
+   <PATCH nodename="C:\Users\Natalie\Documents\GitHub\Bodenlos-vvvv\VVVV_Code\subpatch\Mentor.v4p" systemname="Mentor" filename="C:\Users\Natalie\Documents\VVVV\6. Semester\bodenlos\Prototyp_Ausstellung\subpatch\Mentor.v4p" scrollx="0" scrolly="-360">
+   <BOUNDS type="Window" left="1280" top="1770" width="14830" height="12040">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -21,7 +21,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Decompose (Transform Vector)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Decompose (Transform Vector)" componentmode="Hidden" id="10">
-   <BOUNDS type="Node" left="2415" top="4875" width="100" height="100">
+   <BOUNDS type="Node" left="2385" top="4835" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform In" visible="1">
    </PIN>
@@ -61,7 +61,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Constant (DX11.Effect)" filename="%VVVV%\packs\dx11\nodes\dx11\Constant.fx" nodename="Constant (DX11.Effect)" componentmode="Hidden" id="23">
-   <BOUNDS type="Node" left="1725" top="8715" width="100" height="100">
+   <BOUNDS type="Node" left="1705" top="8795" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Geometry" visible="1" slicecount="1" values="||">
    </PIN>
@@ -73,7 +73,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Transform (Transform 3d Vector)" nodename="Transform (Transform 3d Vector)" componentmode="Hidden" id="26">
-   <BOUNDS type="Node" left="2220" top="7890" width="100" height="100">
+   <BOUNDS type="Node" left="2190" top="7930" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Translate XYZ" visible="1" slicecount="3" values="0,0,0">
    </PIN>
@@ -85,9 +85,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="27">
-   <BOUNDS type="Box" left="1730" top="9405" width="795" height="240">
+   <BOUNDS type="Box" left="1710" top="9485" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1730" top="9405" width="0" height="0">
+   <BOUNDS type="Node" left="1710" top="9485" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Output Node" visible="1">
    </PIN>
@@ -183,9 +183,9 @@
    <LINK srcnodeid="46" srcpinname="Output 1" dstnodeid="11" dstpinname="Transform In">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="47">
-   <BOUNDS type="Box" left="1050" top="885" width="795" height="240">
+   <BOUNDS type="Box" left="1820" top="1180" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1050" top="885" width="0" height="0">
+   <BOUNDS type="Node" left="1820" top="1180" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -403,7 +403,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Light (DX11 Point)" filename="%VVVV%\packs\dx11\nodes\modules\Light (DX11 Point).v4p" nodename="Light (DX11 Point)" componentmode="Hidden" id="60">
-   <BOUNDS type="Node" left="5355" top="6330" width="100" height="100">
+   <BOUNDS type="Node" left="7165" top="6530" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Light Position" visible="1">
    </PIN>
@@ -421,9 +421,9 @@
    <LINK srcnodeid="42" srcpinname="Position Out" dstnodeid="60" dstpinname="Light Position">
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="61">
-   <BOUNDS type="Box" left="5955" top="6780" width="795" height="240">
+   <BOUNDS type="Box" left="7795" top="6960" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="5955" top="6780" width="0" height="0">
+   <BOUNDS type="Node" left="7795" top="6960" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="light">
    </PIN>
@@ -431,9 +431,9 @@
    <LINK srcnodeid="60" srcpinname="Layer" dstnodeid="61" dstpinname="Input Node">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="63">
-   <BOUNDS type="Box" left="5370" top="7305" width="795" height="720">
+   <BOUNDS type="Box" left="7180" top="7505" width="795" height="720">
    </BOUNDS>
-   <BOUNDS type="Node" left="5370" top="7305" width="0" height="0">
+   <BOUNDS type="Node" left="7180" top="7505" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -449,7 +449,7 @@
    <LINK srcnodeid="60" srcpinname="Light Position Out" dstnodeid="63" dstpinname="Y Input Value">
    </LINK>
    <NODE systemname="GaussianSpread (Spreads)" nodename="GaussianSpread (Spreads)" componentmode="Hidden" id="64">
-   <BOUNDS type="Node" left="2415" top="7470" width="100" height="100">
+   <BOUNDS type="Node" left="2385" top="7510" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="0">
    </PIN>
@@ -463,9 +463,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="65">
-   <BOUNDS type="Box" left="5730" top="5895" width="795" height="240">
+   <BOUNDS type="Box" left="7580" top="6175" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="5730" top="5895" width="0" height="0">
+   <BOUNDS type="Node" left="7580" top="6175" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="|Mentor Light|">
    </PIN>
@@ -481,7 +481,7 @@
    <LINK srcnodeid="64" srcpinname="Output" dstnodeid="26" dstpinname="Translate XYZ">
    </LINK>
    <NODE systemname="Transform (Transform 3d Vector)" nodename="Transform (Transform 3d Vector)" componentmode="Hidden" id="68">
-   <BOUNDS type="Node" left="2220" top="7080" width="100" height="100">
+   <BOUNDS type="Node" left="2190" top="7120" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Translate XYZ" visible="1" slicecount="3" values="0,0,0">
    </PIN>
@@ -499,15 +499,15 @@
    <LINK srcnodeid="68" srcpinname="Transform Out" dstnodeid="26" dstpinname="Transform In">
    </LINK>
    <NODE systemname="Sphere (DX11.Geometry)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Sphere (DX11.Geometry)" componentmode="Hidden" id="73">
-   <BOUNDS type="Node" left="1215" top="7905" width="100" height="100">
+   <BOUNDS type="Node" left="1185" top="7945" width="100" height="100">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="73" srcpinname="Geometry Out" dstnodeid="23" dstpinname="Geometry">
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="78">
-   <BOUNDS type="Box" left="3080" top="1125" width="800" height="240">
+   <BOUNDS type="Box" left="3100" top="1180" width="800" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3080" top="1125" width="0" height="0">
+   <BOUNDS type="Node" left="3100" top="1180" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
    </PIN>
@@ -516,4 +516,74 @@
    </NODE>
    <LINK srcnodeid="78" srcpinname="Output Node" dstnodeid="46" dstpinname="Input">
    </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="79">
+   <BOUNDS type="Node" left="3940" top="1210" width="3360" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3940" top="1210" width="3360" height="230">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt;- Position des Betroffenen wird übernommen|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="80">
+   <BOUNDS type="Node" left="7540" top="2610" width="5350" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7540" top="2610" width="2710" height="940">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Veränderung der Positon um den Mentor vor dem Sichtfeld des Betroffenen zu positionieren.&cr;&lf;Wahl zwischen 3 verschiedenen Positionen|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="81">
+   <BOUNDS type="Node" left="3570" top="5270" width="6260" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3570" top="5270" width="2510" height="570">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Mentor soll sich dauerhaft minimal Bewegen um den schwebenden Eindruck zu rezeugen|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="82">
+   <BOUNDS type="Node" left="3340" top="6620" width="10280" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3340" top="6620" width="2800" height="760">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Bei Bewegung des Betroffenen soll der Mentor nicht an das Sichtfeld geheftet sein, sondern eilt dem Betroffenen wie ein echtes Lebewesen hinterher|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="83">
+   <BOUNDS type="Node" left="7010" top="5690" width="4880" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7010" top="5690" width="2750" height="420">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|der Mentor ist ein &quot;Lichtwesen&quot;, deswegen geht das Licht von ihm aus|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
    </PATCH>
