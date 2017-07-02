@@ -294,4 +294,18 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="70">
+   <BOUNDS type="Node" left="4590" top="8120" width="1910" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4590" top="8120" width="1910" height="230">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt;- Gibt dem Mesh Gestalt|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
    </PATCH>

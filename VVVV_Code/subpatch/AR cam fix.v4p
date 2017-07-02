@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\Natalie\Documents\GitHub\Bodenlos-vvvv\VVVV_Code\subpatch\AR cam fix.v4p" scrollx="20" scrolly="-360" systemname="Ar_cam_fix" filename="C:\Users\Natalie\Documents\VVVV\6. Semester\bodenlos\Prototyp_Ausstellung\subpatch\Ar_cam_fix.v4p">
+   <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\VVVV_Code\subpatch\AR cam fix.v4p" scrollx="20" scrolly="-360" systemname="Ar_cam_fix" filename="C:\Users\Natalie\Documents\VVVV\6. Semester\bodenlos\Prototyp_Ausstellung\subpatch\Ar_cam_fix.v4p">
    <BOUNDS type="Window" left="3270" top="2690" width="9420" height="8720">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
@@ -57,7 +57,7 @@
    </PIN>
    <PIN pinname="TranslateZ" slicecount="1" visible="1" values="0.01">
    </PIN>
-   <PIN pinname="ScaleY" slicecount="1" visible="1" values="1">
+   <PIN pinname="ScaleY" slicecount="1" visible="1" values="0.00035">
    </PIN>
    <PIN pinname="ScaleX" slicecount="1" visible="1" values="1">
    </PIN>
@@ -75,15 +75,15 @@
    <LINK srcnodeid="19" srcpinname="Transform Out" dstnodeid="8" dstpinname="Transform">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="23">
-   <BOUNDS type="Box" left="3280" top="465" width="795" height="240">
+   <BOUNDS type="Box" left="3280" top="465" width="765" height="240">
    </BOUNDS>
    <BOUNDS type="Node" left="3280" top="465" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-0.0004">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-0.00035">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
+   <PIN pinname="Precision" slicecount="1" values="5">
    </PIN>
    <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
@@ -95,7 +95,7 @@
    </BOUNDS>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
-   <PIN pinname="Filename" slicecount="1" values="..\assets\Bilder\Supporter.png" visible="1">
+   <PIN pinname="Filename" slicecount="1" visible="1" values="..\assets\Bilder\Supporter.png">
    </PIN>
    <PIN pinname="SizeXY" visible="1">
    </PIN>
@@ -131,7 +131,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3760" top="1610" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.0002">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.00035">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -141,8 +141,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="31" srcpinname="Y Output Value" dstnodeid="19" dstpinname="ScaleX">
-   </LINK>
-   <LINK srcnodeid="31" srcpinname="Y Output Value" dstnodeid="19" dstpinname="ScaleY">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="32">
    <BOUNDS type="Box" left="3585" top="1180" width="795" height="240">
@@ -163,7 +161,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3450" top="805" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.0001">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="8E-005">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -213,7 +211,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3310" top="2860" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="..\assets\Bilder\Supporter.png">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="..\assets\Bilder\infoview-rettungskraft.png">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -282,4 +280,18 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="41">
+   <BOUNDS type="Box" left="4860" top="1530" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4860" top="1530" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.00043">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="41" srcpinname="Y Output Value" dstnodeid="19" dstpinname="ScaleY">
+   </LINK>
    </PATCH>

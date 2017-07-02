@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
    <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\VVVV_Code\_root_Prototyp.v4p" scrollx="0" scrolly="-360" systemname="_root_Prototyp" filename="C:\Users\Natalie\Documents\VVVV\6. Semester\bodenlos\Prototyp_Ausstellung\_root_Prototyp.v4p">
-   <BOUNDS type="Window" left="1710" top="1605" width="13260" height="13650">
+   <BOUNDS type="Window" left="10680" top="1425" width="13260" height="13770">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -132,12 +132,12 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
-   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" id="34">
+   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" id="34" stayontop="1">
    <BOUNDS type="Node" left="1545" top="11515" width="7670" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="1545" top="11515" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="12240" top="4710" width="12030" height="7470">
+   <BOUNDS type="Window" left="5310" top="4935" width="12015" height="7425">
    </BOUNDS>
    <PIN pinname="View" visible="1" slicecount="1" values="||">
    </PIN>
@@ -156,6 +156,16 @@
    <PIN pinname="Depth Buffer Mode" slicecount="1" values="Standard">
    </PIN>
    <PIN pinname="Depth Buffer Format" slicecount="1" values="D32_Float">
+   </PIN>
+   <PIN pinname="Flip Sequential" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Clear Depth" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Clear" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Clear Depth Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="VSync" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE systemname="Main view" filename="subpatch\Main view.v4p" nodename="subpatch\Main view.v4p" componentmode="Hidden" id="36">
@@ -313,7 +323,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="7425" top="875" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -325,7 +335,7 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Switch Input|">
    </PIN>
@@ -509,7 +519,7 @@
    </PIN>
    </NODE>
    <NODE id="38" componentmode="Hidden" systemname="Modell" filename="subpatch\Modell.v4p" nodename="subpatch\Modell.v4p">
-   <BOUNDS type="Window" left="3310" top="1610" width="10980" height="10680">
+   <BOUNDS type="Window" left="14205" top="1515" width="10980" height="10680">
    </BOUNDS>
    <BOUNDS type="Node" left="3350" top="2700" width="100" height="100">
    </BOUNDS>
@@ -658,34 +668,10 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
-   <NODE id="13" componentmode="Hidden" systemname="Mentor" filename="subpatch\Mentor.v4p" nodename="subpatch\Mentor.v4p">
-   <BOUNDS type="Window" left="14280" top="2955" width="14820" height="12030">
+   <NODE systemname="Mentor_neu" filename="subpatch\Mentor_neu.v4p" nodename="subpatch\Mentor_neu.v4p" componentmode="Hidden" id="82">
+   <BOUNDS type="Node" left="7545" top="6840" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Node" left="7495" top="6710" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="7495" top="6710" width="4800" height="3600">
-   </BOUNDS>
-   <PIN pinname="LookAt_Position" visible="1">
-   </PIN>
-   <PIN pinname="Transform In" visible="1">
-   </PIN>
-   <PIN pinname="Switch Input" visible="1">
-   </PIN>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   <PIN pinname="light" visible="1">
-   </PIN>
-   <PIN pinname="Light Pos" visible="1">
-   </PIN>
-   <PIN pinname="Pos für Mentor" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="65" srcpinname="Output Betroffener" dstnodeid="13" dstpinname="Pos für Mentor">
-   </LINK>
-   <NODE systemname="Mentor_neu" filename="subpatch\Mentor_neu.v4p" nodename="subpatch\Mentor_neu.v4p" componentmode="InAWindow" id="82">
-   <BOUNDS type="Node" left="10305" top="5850" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Window" left="10365" top="2250" width="17250" height="16380">
+   <BOUNDS type="Window" left="11280" top="240" width="17250" height="16380">
    </BOUNDS>
    <PIN pinname="Pos für Mentor" visible="1">
    </PIN>
