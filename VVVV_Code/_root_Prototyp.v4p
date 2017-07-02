@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
    <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\VVVV_Code\_root_Prototyp.v4p" scrollx="0" scrolly="-360" systemname="_root_Prototyp" filename="C:\Users\Natalie\Documents\VVVV\6. Semester\bodenlos\Prototyp_Ausstellung\_root_Prototyp.v4p">
-   <BOUNDS type="Window" left="10680" top="1425" width="13260" height="13770">
+   <BOUNDS type="Window" left="14070" top="690" width="13260" height="13770">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -23,7 +23,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="5985" top="825" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -33,7 +33,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Switch Person|">
    </PIN>
@@ -137,7 +137,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1545" top="11515" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="2490" top="6105" width="12015" height="7425">
+   <BOUNDS type="Window" left="-150" top="11760" width="12015" height="7425">
    </BOUNDS>
    <PIN pinname="View" visible="1" slicecount="1" values="||">
    </PIN>
@@ -307,7 +307,7 @@
    </PIN>
    <PIN pinname="pos Controller" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="1840" top="6590" width="9360" height="7570">
+   <BOUNDS type="Window" left="10635" top="10020" width="9360" height="7560">
    </BOUNDS>
    <PIN pinname="Switch Input" visible="1">
    </PIN>
@@ -685,5 +685,27 @@
    <LINK srcnodeid="82" srcpinname="Layer Out" dstnodeid="39" dstpinname="Layer 7">
    </LINK>
    <LINK srcnodeid="82" srcpinname="Light Pos" dstnodeid="38" dstpinname="light pos in">
+   </LINK>
+   <NODE systemname="Info Betroffener" filename="subpatch\Info Betroffener.v4p" componentmode="InAWindow" id="83" nodename="subpatch\Info Betroffener.v4p">
+   <BOUNDS type="Node" left="10035" top="6465" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="10035" top="6465" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="15375" top="2025" width="12825" height="12390">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Personen Info" visible="1">
+   </PIN>
+   <PIN pinname="Position Retter" visible="1">
+   </PIN>
+   <PIN pinname="Position Betroffener" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="83" srcpinname="Personen Info" dstnodeid="39" dstpinname="Layer 8">
+   </LINK>
+   <LINK srcnodeid="65" srcpinname="Output Rettungskraft" dstnodeid="83" dstpinname="Position Retter">
+   </LINK>
+   <LINK srcnodeid="65" srcpinname="Output Betroffener" dstnodeid="83" dstpinname="Position Betroffener">
    </LINK>
    </PATCH>
