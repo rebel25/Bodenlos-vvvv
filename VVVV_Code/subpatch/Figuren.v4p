@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\Natalie\Documents\GitHub\Bodenlos-vvvv\VVVV_Code\subpatch\Figuren.v4p" scrollx="0" scrolly="-360" systemname="Figuren" filename="C:\Users\Natalie\Documents\GitHub\Bodenlos-vvvv\subpatch\Figuren.v4p">
-   <BOUNDS type="Window" left="7280" top="1190" width="11210" height="9290">
+   <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\VVVV_Code\subpatch\Figuren.v4p" scrollx="0" scrolly="-360" systemname="Figuren" filename="C:\Users\Natalie\Documents\GitHub\Bodenlos-vvvv\subpatch\Figuren.v4p">
+   <BOUNDS type="Window" left="5700" top="1440" width="11205" height="9285">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -240,10 +240,6 @@
    <PIN pinname="Switch" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="20" srcpinname="Output String" dstnodeid="53" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="43" srcpinname="Output String" dstnodeid="53" dstpinname="Input 2">
-   </LINK>
    <LINK srcnodeid="53" srcpinname="Output" dstnodeid="21" dstpinname="Filename">
    </LINK>
    <LINK srcnodeid="38" srcpinname="Layer" dstnodeid="36" dstpinname="Input Node">
@@ -273,6 +269,8 @@
    </PIN>
    <PIN pinname="Reset" visible="1" slicecount="1" values="0">
    </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
    </NODE>
    <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="62">
    <BOUNDS type="Node" left="1630" top="1530" width="100" height="100">
@@ -285,14 +283,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="52" srcpinname="Y Output Value" dstnodeid="62" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="62" srcpinname="Up Edge" dstnodeid="61" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="61" srcpinname="Inverse Output" dstnodeid="53" dstpinname="Switch">
-   </LINK>
-   <LINK srcnodeid="61" srcpinname="Inverse Output" dstnodeid="54" dstpinname="Switch">
-   </LINK>
-   <LINK srcnodeid="62" srcpinname="Down Edge" dstnodeid="61" dstpinname="Reset">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="64">
    <BOUNDS type="Box" left="8770" top="4420" width="795" height="720">
@@ -414,4 +404,16 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
+   <LINK srcnodeid="20" srcpinname="Output String" dstnodeid="53" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="43" srcpinname="Output String" dstnodeid="53" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="62" srcpinname="Up Edge" dstnodeid="61" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="62" srcpinname="Down Edge" dstnodeid="61" dstpinname="Reset">
+   </LINK>
+   <LINK srcnodeid="61" srcpinname="Output" dstnodeid="53" dstpinname="Switch">
+   </LINK>
+   <LINK srcnodeid="61" srcpinname="Output" dstnodeid="54" dstpinname="Switch">
+   </LINK>
    </PATCH>

@@ -2583,7 +2583,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1590" top="550" width="3730" height="590">
    </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|Manuelles Setzen von Linien um die Häuser herum, damit der Pathfinder weiß, dass die Route nicht durch die Häuser verlaufen darf|">
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Manuelles Setzen von Barrieren um die Häuser herum, damit der Pathfinder weiß, dass die Route nicht durch die Häuser verlaufen darf|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
