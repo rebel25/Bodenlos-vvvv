@@ -301,17 +301,15 @@
    </PIN>
    <PIN pinname="Input Count" slicecount="1" values="4">
    </PIN>
-   <PIN pinname="Layer 4" visible="1">
+   <PIN pinname="Layer 4" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Layer 3" visible="1">
+   <PIN pinname="Layer 3" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Layer 2" visible="1">
+   <PIN pinname="Layer 2" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Layer 1" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <LINK srcnodeid="110" srcpinname="Layer" dstnodeid="111" dstpinname="Layer 4">
-   </LINK>
    <NODE systemname="PhongDirectional (DX11.Effect)" filename="%VVVV%\packs\dx11\nodes\dx11\PhongDirectional.fx" nodename="PhongDirectional (DX11.Effect)" componentmode="Hidden" id="113">
    <BOUNDS type="Node" left="6365" top="9285" width="100" height="100">
    </BOUNDS>
@@ -377,10 +375,6 @@
    <LINK srcnodeid="83" srcpinname="Transform Out" dstnodeid="113" dstpinname="Transform In">
    </LINK>
    <LINK srcnodeid="91" srcpinname="Transform Out" dstnodeid="118" dstpinname="Transform In">
-   </LINK>
-   <LINK srcnodeid="113" srcpinname="Layer" dstnodeid="111" dstpinname="Layer 3">
-   </LINK>
-   <LINK srcnodeid="118" srcpinname="Layer" dstnodeid="111" dstpinname="Layer 2">
    </LINK>
    <LINK srcnodeid="69" srcpinname="Transform Out" dstnodeid="116" dstpinname="Transform In">
    </LINK>
@@ -1119,8 +1113,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="248" srcpinname="Y Output Value" dstnodeid="224" dstpinname="Pause">
-   </LINK>
-   <LINK srcnodeid="116" srcpinname="Layer" dstnodeid="111" dstpinname="Layer 1">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="249">
    <BOUNDS type="Box" left="8670" top="390" width="795" height="240">

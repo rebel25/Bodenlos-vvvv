@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\VVVV_Code\subpatch\Mentor_neu.v4p" scrollx="15" scrolly="1440" systemname="quad test" filename="C:\Users\Daniel\Desktop\V4_Saves\quad test.v4p">
+   <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\VVVV_Code\subpatch\Mentor_neu.v4p" scrollx="15" scrolly="3600" systemname="quad test" filename="C:\Users\Daniel\Desktop\V4_Saves\quad test.v4p">
    <BOUNDS type="Window" left="11880" top="990" width="17250" height="16380">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
@@ -626,8 +626,6 @@
    <PIN pinname="Name" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="255" srcpinname="Position Out" dstnodeid="241" dstpinname="Light Position">
-   </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="240">
    <BOUNDS type="Box" left="12580" top="5415" width="795" height="240">
    </BOUNDS>
@@ -755,7 +753,7 @@
    </BOUNDS>
    <PIN pinname="Geometry Out" visible="1">
    </PIN>
-   <PIN pinname="SizeXYZ" slicecount="3" values="0.03,0.03,0.03">
+   <PIN pinname="SizeXYZ" slicecount="3" values="0.04,0.04,0.04">
    </PIN>
    </NODE>
    <LINK srcnodeid="298" srcpinname="Geometry Out" dstnodeid="299" dstpinname="Geometry">
@@ -802,6 +800,8 @@
    <BOUNDS type="Node" left="8825" top="15425" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Enabled" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE systemname="Group (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Group (DX11.Layer)" componentmode="Hidden" id="294">
@@ -1304,10 +1304,10 @@
    </LINK>
    <LINK srcnodeid="292" srcpinname="Color Output" dstnodeid="299" dstpinname="Color">
    </LINK>
-   <NODE systemname="FacingCam" filename="FacingCam.v4p" nodename="FacingCam.v4p" componentmode="InAWindow" id="301">
+   <NODE systemname="FacingCam" filename="FacingCam.v4p" nodename="FacingCam.v4p" componentmode="Hidden" id="301">
    <BOUNDS type="Node" left="4035" top="8985" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="18465" top="5040" width="9015" height="11160">
+   <BOUNDS type="Window" left="19170" top="4875" width="9015" height="11160">
    </BOUNDS>
    <PIN pinname="Buffer Size" visible="1">
    </PIN>
@@ -1421,5 +1421,7 @@
    <LINK srcnodeid="309" srcpinname="Y Output Value" dstnodeid="296" dstpinname="Rotate XYZ">
    </LINK>
    <LINK srcnodeid="301" srcpinname="Transform" dstnodeid="296" dstpinname="Transform In">
+   </LINK>
+   <LINK srcnodeid="259" srcpinname="Position Out" dstnodeid="241" dstpinname="Light Position">
    </LINK>
    </PATCH>

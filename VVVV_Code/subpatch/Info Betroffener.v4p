@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
    <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\VVVV_Code\subpatch\Info Betroffener.v4p" systemname="Info Betroffener" filename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\VVVV_Code\subpatch\Info Betroffener.v4p" scrollx="0" scrolly="-360">
-   <BOUNDS type="Window" left="6780" top="5925" width="9000" height="6000">
+   <BOUNDS type="Window" left="19200" top="6525" width="9000" height="6000">
    </BOUNDS>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="585" top="420" width="795" height="480">
@@ -153,7 +153,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4170" top="450" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0.2,0.1,0">
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0.15,0.08,0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -228,6 +228,8 @@
    <PIN pinname="Set" visible="1">
    </PIN>
    <PIN pinname="Inverse Output" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="21" srcpinname="Y Output Value" dstnodeid="22" dstpinname="Set">

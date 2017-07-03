@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\Natalie\Documents\GitHub\Bodenlos-vvvv\VVVV_Code\subpatch\Main view.v4p" systemname="Main view" filename="C:\Users\Daniel\Desktop\Prototyp_bodenlos_Ausstellung\patch\subpatch\Main view.v4p" scrollx="20" scrolly="-360">
+   <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\VVVV_Code\subpatch\Main view.v4p" systemname="Main view" filename="C:\Users\Daniel\Desktop\Prototyp_bodenlos_Ausstellung\patch\subpatch\Main view.v4p" scrollx="20" scrolly="-360">
    <BOUNDS type="Window" left="2530" top="3010" width="8670" height="8640">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
@@ -33,7 +33,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Perspective (Transform)" nodename="Perspective (Transform)" componentmode="Hidden" id="24">
-   <BOUNDS type="Node" left="5560" top="5915" width="100" height="100">
+   <BOUNDS type="Node" left="6010" top="5965" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
@@ -89,11 +89,11 @@
    <LINK srcnodeid="14" srcpinname="Y Output Value" dstnodeid="16" dstpinname="Y">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="13">
-   <BOUNDS type="Box" left="5840" top="5525" width="795" height="240">
+   <BOUNDS type="Box" left="6290" top="5575" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="5840" top="5525" width="0" height="0">
+   <BOUNDS type="Node" left="6290" top="5575" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.26">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.25">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -113,9 +113,9 @@
    <LINK srcnodeid="25" srcpinname="Transform Out" dstnodeid="29" dstpinname="Input Node">
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="30">
-   <BOUNDS type="Box" left="5560" top="6320" width="795" height="240">
+   <BOUNDS type="Box" left="6010" top="6370" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="5560" top="6320" width="0" height="0">
+   <BOUNDS type="Node" left="6010" top="6370" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="Perspective">
    </PIN>
@@ -136,24 +136,6 @@
    </LINK>
    <LINK srcnodeid="37" srcpinname="Position Out" dstnodeid="25" dstpinname="Position XYZ">
    </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="42">
-   <BOUNDS type="Box" left="3910" top="5935" width="795" height="720">
-   </BOUNDS>
-   <BOUNDS type="Node" left="3910" top="5935" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Vector Size" slicecount="1" values="3">
-   </PIN>
-   <PIN pinname="Rows" slicecount="1" values="3">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Look At|">
-   </PIN>
-   <PIN pinname="Y Input Value" visible="1">
-   </PIN>
-   </NODE>
    <NODE systemname="Damper (Animation)" nodename="Damper (Animation)" componentmode="Hidden" id="43">
    <BOUNDS type="Node" left="3905" top="4180" width="100" height="100">
    </BOUNDS>
@@ -180,8 +162,6 @@
    <PIN pinname="Output Node" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="43" srcpinname="Position Out" dstnodeid="42" dstpinname="Y Input Value">
-   </LINK>
    <LINK srcnodeid="43" srcpinname="Position Out" dstnodeid="25" dstpinname="LookAt XYZ">
    </LINK>
    <NODE systemname="Switch (Node Input)" nodename="Switch (Node Input)" componentmode="Hidden" id="95">
@@ -238,4 +218,46 @@
    </NODE>
    <LINK srcnodeid="97" srcpinname="Y Output Value" dstnodeid="95" dstpinname="Switch">
    </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="98">
+   <BOUNDS type="Node" left="3400" top="710" width="3050" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3400" top="710" width="2580" height="250">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Laden der Positionen der Personen|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="99">
+   <BOUNDS type="Node" left="4880" top="4140" width="8380" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4880" top="4140" width="3150" height="580">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Damper um die dauerhafen minimalen Änderungen des Messwetes auszugleichen, damit das Rendererbild nicht &quot;zittert&quot;|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="100">
+   <BOUNDS type="Node" left="5320" top="2570" width="7550" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5320" top="2570" width="2750" height="590">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Um einen Punkt zu haben auf den die Person schaut wird der Position der Person in der x-Achse 0.1 addiert|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
    </PATCH>
