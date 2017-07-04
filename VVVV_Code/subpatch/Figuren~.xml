@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\VVVV_Code\subpatch\Figuren.v4p" scrollx="0" scrolly="-360" systemname="Figuren" filename="C:\Users\Natalie\Documents\GitHub\Bodenlos-vvvv\subpatch\Figuren.v4p">
-   <BOUNDS type="Window" left="16860" top="855" width="11205" height="9285">
+   <PATCH nodename="C:\Users\Daniel\Desktop\Prototyp_bodenlos_Ausstellung\patch\VVVV_Code\subpatch\Figuren.v4p" scrollx="0" scrolly="-360" systemname="Figuren" filename="C:\Users\Natalie\Documents\GitHub\Bodenlos-vvvv\subpatch\Figuren.v4p">
+   <BOUNDS type="Window" left="44010" top="4635" width="11205" height="9285">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -28,6 +28,8 @@
    <PIN pinname="Diffuse Color" visible="1">
    </PIN>
    <PIN pinname="Texture" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Enabled" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="36">
@@ -63,9 +65,9 @@
    </PIN>
    <PIN pinname="Center XYZ" visible="1">
    </PIN>
+   <PIN pinname="Rotate XYZ" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="33" srcpinname="TranslateXYZ" dstnodeid="32" dstpinname="Translate XYZ">
-   </LINK>
    <LINK srcnodeid="32" srcpinname="Transform Out" dstnodeid="38" dstpinname="Transform In">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="31">
@@ -289,7 +291,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="8770" top="4420" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0,12.51,0">
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0,0,0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -404,10 +406,6 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
-   <LINK srcnodeid="20" srcpinname="Output String" dstnodeid="53" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="43" srcpinname="Output String" dstnodeid="53" dstpinname="Input 2">
-   </LINK>
    <LINK srcnodeid="62" srcpinname="Up Edge" dstnodeid="61" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="62" srcpinname="Down Edge" dstnodeid="61" dstpinname="Reset">
@@ -415,5 +413,41 @@
    <LINK srcnodeid="61" srcpinname="Inverse Output" dstnodeid="53" dstpinname="Switch">
    </LINK>
    <LINK srcnodeid="61" srcpinname="Inverse Output" dstnodeid="54" dstpinname="Switch">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="72">
+   <BOUNDS type="Box" left="8295" top="6465" width="795" height="720">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8295" top="6465" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0.24,0.46,0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="72" srcpinname="Y Output Value" dstnodeid="32" dstpinname="Rotate XYZ">
+   </LINK>
+   <LINK srcnodeid="20" srcpinname="Output String" dstnodeid="53" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="43" srcpinname="Output String" dstnodeid="53" dstpinname="Input 2">
+   </LINK>
+   <NODE systemname="SetSlice (Spreads)" nodename="SetSlice (Spreads)" componentmode="Hidden" id="73">
+   <BOUNDS type="Node" left="6555" top="4605" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Spread" visible="1">
+   </PIN>
+   <PIN pinname="Index" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="33" srcpinname="TranslateXYZ" dstnodeid="73" dstpinname="Spread">
+   </LINK>
+   <LINK srcnodeid="73" srcpinname="Output" dstnodeid="32" dstpinname="Translate XYZ">
    </LINK>
    </PATCH>

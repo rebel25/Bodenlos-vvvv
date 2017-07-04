@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\VVVV_Code\_root_Prototyp.v4p" scrollx="0" scrolly="5400" systemname="_root_Prototyp" filename="C:\Users\Natalie\Documents\VVVV\6. Semester\bodenlos\Prototyp_Ausstellung\_root_Prototyp.v4p">
-   <BOUNDS type="Window" left="3870" top="1095" width="15045" height="13905">
+   <PATCH nodename="C:\Users\Daniel\Desktop\Prototyp_bodenlos_Ausstellung\patch\VVVV_Code\_root_Prototyp.v4p" scrollx="0" scrolly="360" systemname="_root_Prototyp" filename="C:\Users\Natalie\Documents\VVVV\6. Semester\bodenlos\Prototyp_Ausstellung\_root_Prototyp.v4p">
+   <BOUNDS type="Window" left="5550" top="555" width="15045" height="13905">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -23,7 +23,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="5985" top="825" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -33,7 +33,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Switch Person|">
    </PIN>
@@ -137,7 +137,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1545" top="11515" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="10755" top="2160" width="19440" height="11385">
+   <BOUNDS type="Window" left="21735" top="10125" width="29040" height="16785">
    </BOUNDS>
    <PIN pinname="View" visible="1" slicecount="1" values="||">
    </PIN>
@@ -205,7 +205,7 @@
    </PIN>
    <PIN pinname="Layer Out" visible="1">
    </PIN>
-   <PIN pinname="Input Count" slicecount="1" values="9">
+   <PIN pinname="Input Count" slicecount="1" values="12">
    </PIN>
    <PIN pinname="Layer 3" visible="1" slicecount="1" values="||">
    </PIN>
@@ -313,7 +313,7 @@
    </PIN>
    <PIN pinname="pos Controller" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="10635" top="10020" width="9360" height="7560">
+   <BOUNDS type="Window" left="9285" top="7395" width="9360" height="7560">
    </BOUNDS>
    <PIN pinname="Switch Input" visible="1">
    </PIN>
@@ -360,12 +360,12 @@
    </LINK>
    <LINK srcnodeid="48" srcpinname="Layer" dstnodeid="39" dstpinname="Layer 1">
    </LINK>
-   <NODE systemname="Figuren" filename="subpatch\Figuren.v4p" nodename="subpatch\Figuren.v4p" componentmode="Hidden" id="64">
+   <NODE systemname="Figuren" filename="subpatch\Figuren.v4p" nodename="subpatch\Figuren.v4p" componentmode="InAWindow" id="64">
    <BOUNDS type="Node" left="4185" top="3955" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output Figuren" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="16860" top="855" width="11205" height="9285">
+   <BOUNDS type="Window" left="44010" top="4635" width="11205" height="9285">
    </BOUNDS>
    <PIN pinname="Switch Input" visible="1">
    </PIN>
@@ -385,7 +385,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="9150" top="7480">
    </BOUNDS>
-   <BOUNDS type="Window" left="18270" top="4335" width="9420" height="8715">
+   <BOUNDS type="Window" left="8220" top="6030" width="9420" height="8715">
    </BOUNDS>
    <PIN pinname="Postion Controller" visible="1">
    </PIN>
@@ -489,7 +489,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4900" top="10170" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -503,7 +503,7 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Switch Camera|">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="71" srcpinname="Y Output Value" dstnodeid="69" dstpinname="Switch">
@@ -511,7 +511,7 @@
    <LINK srcnodeid="71" srcpinname="Y Output Value" dstnodeid="70" dstpinname="Switch">
    </LINK>
    <NODE id="38" componentmode="Hidden" systemname="Modell" filename="subpatch\Modell.v4p" nodename="subpatch\Modell.v4p">
-   <BOUNDS type="Window" left="16035" top="3180" width="10980" height="10680">
+   <BOUNDS type="Window" left="15345" top="4920" width="10980" height="10680">
    </BOUNDS>
    <BOUNDS type="Node" left="3350" top="2700" width="100" height="100">
    </BOUNDS>
@@ -652,10 +652,10 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
-   <NODE systemname="Mentor_neu" filename="subpatch\Mentor_neu.v4p" nodename="subpatch\Mentor_neu.v4p" componentmode="Hidden" id="82">
+   <NODE systemname="Mentor_neu" filename="subpatch\Mentor_neu.v4p" nodename="subpatch\Mentor_neu.v4p" componentmode="Hidden" id="82" stayontop="1">
    <BOUNDS type="Node" left="7635" top="6855" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="11880" top="990" width="17250" height="16380">
+   <BOUNDS type="Window" left="4245" top="8940" width="17250" height="16380">
    </BOUNDS>
    <PIN pinname="Pos für Mentor" visible="1">
    </PIN>
@@ -687,7 +687,7 @@
    </PIN>
    </NODE>
    <NODE id="72" componentmode="Hidden" systemname="Pathfinder (Value) convert to dx11" filename="subpatch\Pathfinder (Value) convert to dx11.v4p" nodename="subpatch\Pathfinder (Value) convert to dx11.v4p">
-   <BOUNDS type="Window" left="11910" top="2040" width="19485" height="13530">
+   <BOUNDS type="Window" left="2940" top="5490" width="19485" height="13530">
    </BOUNDS>
    <BOUNDS type="Node" left="5840" top="6720" width="100" height="100">
    </BOUNDS>
@@ -710,12 +710,12 @@
    </LINK>
    <LINK srcnodeid="65" srcpinname="Output Rettungskraft" dstnodeid="72" dstpinname="Pos Rettungskraft">
    </LINK>
-   <NODE systemname="Info Betroffener" filename="subpatch\Info Betroffener.v4p" componentmode="Hidden" id="92" nodename="subpatch\Info Betroffener.v4p">
+   <NODE systemname="Info Betroffener" filename="subpatch\Info Betroffener.v4p" componentmode="InAWindow" id="92" nodename="subpatch\Info Betroffener.v4p">
    <BOUNDS type="Node" left="10335" top="5580" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="10335" top="5580" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="19200" top="6525" width="9000" height="6000">
+   <BOUNDS type="Window" left="43815" top="4260" width="9000" height="6000">
    </BOUNDS>
    <PIN pinname="View" visible="1" slicecount="1" values="||">
    </PIN>
@@ -754,4 +754,10 @@
    </LINK>
    <LINK srcnodeid="36" srcpinname="LookAt (View)" dstnodeid="86" dstpinname="Input Node">
    </LINK>
+   <NODE systemname="MainLoop (VVVV)" nodename="MainLoop (VVVV)" componentmode="Hidden" id="-6">
+   <BOUNDS type="Node" left="405" top="1980" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Maximum Foreground FPS" slicecount="1" values="30">
+   </PIN>
+   </NODE>
    </PATCH>

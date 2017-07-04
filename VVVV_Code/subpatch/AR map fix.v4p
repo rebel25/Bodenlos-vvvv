@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\Natalie\Documents\GitHub\Bodenlos-vvvv\VVVV_Code\subpatch\AR map fix.v4p" systemname="AR map fix" filename="C:\Users\Natalie\Documents\VVVV\6. Semester\bodenlos\Prototyp_Ausstellung\subpatch\AR map fix.v4p" scrollx="30" scrolly="-360">
-   <BOUNDS type="Window" left="1840" top="6590" width="9360" height="7570">
+   <PATCH nodename="C:\Users\Daniel\Desktop\Prototyp_bodenlos_Ausstellung\patch\VVVV_Code\subpatch\AR map fix.v4p" systemname="AR map fix" filename="C:\Users\Natalie\Documents\VVVV\6. Semester\bodenlos\Prototyp_Ausstellung\subpatch\AR map fix.v4p" scrollx="30" scrolly="-360">
+   <BOUNDS type="Window" left="9285" top="7395" width="9360" height="7560">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -21,13 +21,15 @@
    </PIN>
    <PIN pinname="Specular Color" slicecount="1" visible="1" values="|0.33888,0.33888,0.33888,1.00000|">
    </PIN>
-   <PIN pinname="Alpha" slicecount="1" values="0.6">
+   <PIN pinname="Alpha" slicecount="1" values="0.45">
    </PIN>
    <PIN pinname="Render State" visible="1">
    </PIN>
    <PIN pinname="Diffuse Color" visible="1">
    </PIN>
    <PIN pinname="Texture" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Enabled" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE systemname="Sphere (DX11.Geometry)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Sphere (DX11.Geometry)" componentmode="Hidden" id="5">
@@ -79,7 +81,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3450" top="2870" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0.03,1,0.03">
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0.03,1.19,0.03">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -97,7 +99,7 @@
    </BOUNDS>
    <PIN pinname="Render State" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Mode" slicecount="1" values="Add">
+   <PIN pinname="Mode" slicecount="1" values="AlphaAdd">
    </PIN>
    </NODE>
    <LINK srcnodeid="16" srcpinname="Render State" dstnodeid="4" dstpinname="Render State">
@@ -107,7 +109,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4135" top="3995" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Color Input" slicecount="1" visible="1" values="|1.00000,0.00000,0.00000,1.00000|">
+   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.94023,0.00000,0.00000,0.53157|">
    </PIN>
    <PIN pinname="Color Output" visible="1">
    </PIN>
