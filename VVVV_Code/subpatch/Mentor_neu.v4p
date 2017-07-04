@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
    <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\VVVV_Code\subpatch\Mentor_neu.v4p" scrollx="15" scrolly="-1080" systemname="quad test" filename="C:\Users\Daniel\Desktop\V4_Saves\quad test.v4p">
-   <BOUNDS type="Window" left="210" top="675" width="17250" height="16380">
+   <BOUNDS type="Window" left="3135" top="780" width="17250" height="16380">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -837,7 +837,7 @@
    </BOUNDS>
    <PIN pinname="Render State" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Mode" slicecount="1" values="Blend">
+   <PIN pinname="Mode" slicecount="1" values="Add">
    </PIN>
    </NODE>
    <LINK srcnodeid="291" srcpinname="Render State" dstnodeid="299" dstpinname="Render State">

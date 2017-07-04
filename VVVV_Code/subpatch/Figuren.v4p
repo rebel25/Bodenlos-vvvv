@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
    <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\VVVV_Code\subpatch\Figuren.v4p" scrollx="60" scrolly="360" systemname="Figuren" filename="C:\Users\Natalie\Documents\GitHub\Bodenlos-vvvv\subpatch\Figuren.v4p">
-   <BOUNDS type="Window" left="3825" top="3780" width="11205" height="9285">
+   <BOUNDS type="Window" left="4620" top="3690" width="11205" height="9285">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -131,11 +131,11 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="20">
-   <BOUNDS type="Box" left="2945" top="2970" width="795" height="240">
+   <BOUNDS type="Box" left="3170" top="3090" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2945" top="2970" width="0" height="0">
+   <BOUNDS type="Node" left="3170" top="3090" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="..\assets\Rettungskraft.dae">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="..\assets\Rettungskraft_neu.dae">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -175,11 +175,11 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="43">
-   <BOUNDS type="Box" left="3165" top="3295" width="795" height="240">
+   <BOUNDS type="Box" left="2925" top="2785" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3165" top="3295" width="0" height="0">
+   <BOUNDS type="Node" left="2925" top="2785" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="..\assets\Betroffener.dae">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="..\assets\Betroffener_neu.dae">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -285,7 +285,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="8215" top="4390" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0,0.54,0">
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0,0,0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -447,7 +447,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="8010" top="3585" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0,20.15,0">
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0,0,0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -476,8 +476,8 @@
    <LINKPOINT x="7950" y="3270">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="20" srcpinname="Output String" dstnodeid="53" dstpinname="Input 2">
+   <LINK srcnodeid="20" srcpinname="Output String" dstnodeid="53" dstpinname="Input 1">
    </LINK>
-   <LINK srcnodeid="43" srcpinname="Output String" dstnodeid="53" dstpinname="Input 1">
+   <LINK srcnodeid="43" srcpinname="Output String" dstnodeid="53" dstpinname="Input 2">
    </LINK>
    </PATCH>
