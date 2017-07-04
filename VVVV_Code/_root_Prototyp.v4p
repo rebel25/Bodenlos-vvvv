@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\VVVV_Code\_root_Prototyp.v4p" scrollx="0" scrolly="720" systemname="_root_Prototyp" filename="C:\Users\Natalie\Documents\VVVV\6. Semester\bodenlos\Prototyp_Ausstellung\_root_Prototyp.v4p">
-   <BOUNDS type="Window" left="5220" top="1425" width="13905" height="10530">
+   <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\VVVV_Code\_root_Prototyp.v4p" scrollx="0" scrolly="5880" systemname="_root_Prototyp" filename="C:\Users\Natalie\Documents\VVVV\6. Semester\bodenlos\Prototyp_Ausstellung\_root_Prototyp.v4p">
+   <BOUNDS type="Window" left="3510" top="1350" width="13905" height="10530">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -137,7 +137,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1545" top="11515" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="16305" top="5010" width="15525" height="9045">
+   <BOUNDS type="Window" left="15990" top="3165" width="12555" height="6885">
    </BOUNDS>
    <PIN pinname="View" visible="1" slicecount="1" values="||">
    </PIN>
@@ -166,6 +166,8 @@
    <PIN pinname="Clear Depth Value" slicecount="1" values="1">
    </PIN>
    <PIN pinname="VSync" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Fullscreen" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE systemname="Main view" filename="subpatch\Main view.v4p" nodename="subpatch\Main view.v4p" componentmode="Hidden" id="36">
@@ -273,7 +275,7 @@
    </PIN>
    <PIN pinname="Alignment" slicecount="1" values="FitIn">
    </PIN>
-   <PIN pinname="Uniform Scale" slicecount="1" values="1.05">
+   <PIN pinname="Uniform Scale" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="52" srcpinname="Transform Out" dstnodeid="34" dstpinname="Aspect Ratio">
@@ -497,7 +499,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="5695" top="10185" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -511,7 +513,7 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Switch Camera|">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="71" srcpinname="Y Output Value" dstnodeid="69" dstpinname="Switch">
@@ -663,7 +665,7 @@
    <NODE systemname="Mentor_neu" filename="subpatch\Mentor_neu.v4p" nodename="subpatch\Mentor_neu.v4p" componentmode="Hidden" id="82" stayontop="1">
    <BOUNDS type="Node" left="6000" top="6585" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="1710" top="4530" width="17250" height="16380">
+   <BOUNDS type="Window" left="210" top="675" width="17250" height="16380">
    </BOUNDS>
    <PIN pinname="Pos für Mentor" visible="1">
    </PIN>
@@ -702,8 +704,8 @@
    <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <NODE id="72" componentmode="InAWindow" systemname="Pathfinder (Value) convert to dx11" filename="subpatch\Pathfinder (Value) convert to dx11.v4p" nodename="subpatch\Pathfinder (Value) convert to dx11.v4p">
-   <BOUNDS type="Window" left="6540" top="3120" width="19485" height="13530">
+   <NODE id="72" componentmode="Hidden" systemname="Pathfinder (Value) convert to dx11" filename="subpatch\Pathfinder (Value) convert to dx11.v4p" nodename="subpatch\Pathfinder (Value) convert to dx11.v4p">
+   <BOUNDS type="Window" left="1320" top="0" width="19485" height="13530">
    </BOUNDS>
    <BOUNDS type="Node" left="4880" top="6600" width="100" height="100">
    </BOUNDS>
@@ -812,4 +814,18 @@
    <BOUNDS type="Node" left="11310" top="5745" width="100" height="100">
    </BOUNDS>
    </NODE>
+   <NODE systemname="ScreenRecorder (Windows)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="ScreenRecorder (Windows)" componentmode="Hidden" id="136">
+   <BOUNDS type="Node" left="2985" top="14085" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Handle" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="ActiveWindow (Windows)" nodename="ActiveWindow (Windows)" componentmode="Hidden" id="138">
+   <BOUNDS type="Node" left="3000" top="13485" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Handle" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="138" srcpinname="Handle" dstnodeid="136" dstpinname="Handle">
+   </LINK>
    </PATCH>

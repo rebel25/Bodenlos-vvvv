@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
    <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\VVVV_Code\subpatch\Pathfinder (Value) convert to dx11.v4p" systemname="Pathfinder (Value))" filename="C:\Users\Daniel\Desktop\V4_Saves\Pathfinder (Value) convert to dx11.v4p" bgcolor="15329769" scrollx="0" scrolly="-360">
-   <BOUNDS type="Window" left="2295" top="810" width="19485" height="13530">
+   <BOUNDS type="Window" left="1320" top="0" width="19485" height="13530">
    </BOUNDS>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="4">
    <BOUNDS type="Node" left="9459" top="5640" width="100" height="100">
@@ -73,9 +73,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="23" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="7569" top="4420" width="0" height="0">
+   <BOUNDS type="Node" left="7434" top="4405" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="7569" top="4420" width="530" height="490">
+   <BOUNDS type="Box" left="7434" top="4405" width="530" height="490">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -101,7 +101,7 @@
    </BOUNDS>
    <PIN pinname="Run" visible="1">
    </PIN>
-   <PIN pinname="Reset" visible="1">
+   <PIN pinname="Reset" visible="1" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="23" srcpinname="Y Output Value" dstnodeid="47" dstpinname="Run">
@@ -117,8 +117,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="47" srcpinname="Output" dstnodeid="48" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="23" srcpinname="Y Output Value" dstnodeid="47" dstpinname="Reset" linkstyle="PolyLine">
    </LINK>
    <LINK srcnodeid="23" srcpinname="Y Output Value" dstnodeid="21" dstpinname="Update Map">
    </LINK>
@@ -1023,7 +1021,7 @@
    <NODE nodename="IOBox (String)" componentmode="InABox" id="243">
    <BOUNDS type="Node" left="1485" top="5145" width="5440" height="230">
    </BOUNDS>
-   <BOUNDS type="Box" left="1485" top="5145" width="2020" height="580">
+   <BOUNDS type="Box" left="1485" top="5145" width="1950" height="1005">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|Hier wird geschaut welche Punkte im Grid als Barrieren festgelegt wurden. -&gt;|">
    </PIN>
@@ -1144,22 +1142,6 @@
    </NODE>
    <LINK srcnodeid="250" srcpinname="Y Output Value" dstnodeid="233" dstpinname="Source Maximum">
    </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="251">
-   <BOUNDS type="Box" left="8595" top="4095" width="795" height="720">
-   </BOUNDS>
-   <BOUNDS type="Node" left="8595" top="4095" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Vector Size" slicecount="1" values="3">
-   </PIN>
-   <PIN pinname="Rows" slicecount="1" values="3">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="236" srcpinname="TranslateXYZ" dstnodeid="251" dstpinname="Y Input Value">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="252">
    <BOUNDS type="Box" left="11115" top="1185" width="825" height="240">
    </BOUNDS>
@@ -1177,9 +1159,9 @@
    <LINK srcnodeid="252" srcpinname="Y Output Value" dstnodeid="231" dstpinname="Source Minimum">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="253">
-   <BOUNDS type="Box" left="11430" top="1530" width="825" height="240">
+   <BOUNDS type="Box" left="11295" top="1785" width="810" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="11430" top="1530" width="0" height="0">
+   <BOUNDS type="Node" left="11295" top="1785" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.71">
    </PIN>
@@ -1210,14 +1192,6 @@
    </NODE>
    <LINK srcnodeid="254" srcpinname="Render State" dstnodeid="118" dstpinname="Render State">
    </LINK>
-   <LINK srcnodeid="116" srcpinname="Layer" dstnodeid="111" dstpinname="Layer 1">
-   </LINK>
-   <LINK srcnodeid="118" srcpinname="Layer" dstnodeid="111" dstpinname="Layer 2">
-   </LINK>
-   <LINK srcnodeid="113" srcpinname="Layer" dstnodeid="111" dstpinname="Layer 3">
-   </LINK>
-   <LINK srcnodeid="110" srcpinname="Layer" dstnodeid="111" dstpinname="Layer 4">
-   </LINK>
    <LINK srcnodeid="234" srcpinname="Output" dstnodeid="4" dstpinname="Y Input Value">
    </LINK>
    <LINK srcnodeid="206" srcpinname="Output" dstnodeid="169" dstpinname="Y Input Value">
@@ -1235,5 +1209,7 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="255" srcpinname="Y Output Value" dstnodeid="209" dstpinname="ScaleY">
+   </LINK>
+   <LINK srcnodeid="23" srcpinname="Y Output Value" dstnodeid="47" dstpinname="Reset">
    </LINK>
    </PATCH>
