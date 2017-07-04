@@ -1200,8 +1200,6 @@
    </LINK>
    <LINK srcnodeid="253" srcpinname="Y Output Value" dstnodeid="230" dstpinname="Source Maximum">
    </LINK>
-   <LINK srcnodeid="118" srcpinname="Layer" dstnodeid="111" dstpinname="Layer 2">
-   </LINK>
    <NODE systemname="Blend (DX11.RenderState)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Blend (DX11.RenderState)" componentmode="Hidden" id="254">
    <BOUNDS type="Node" left="2385" top="9960" width="100" height="100">
    </BOUNDS>

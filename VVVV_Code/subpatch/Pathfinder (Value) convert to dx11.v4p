@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\Daniel\Desktop\Prototyp_bodenlos_Ausstellung\patch\VVVV_Code\subpatch\Pathfinder (Value) convert to dx11.v4p" systemname="Pathfinder (Value))" filename="C:\Users\Daniel\Desktop\V4_Saves\Pathfinder (Value) convert to dx11.v4p" bgcolor="15329769" scrollx="0" scrolly="-360">
-   <BOUNDS type="Window" left="2940" top="5490" width="19485" height="13530">
+   <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\VVVV_Code\subpatch\Pathfinder (Value) convert to dx11.v4p" systemname="Pathfinder (Value))" filename="C:\Users\Daniel\Desktop\V4_Saves\Pathfinder (Value) convert to dx11.v4p" bgcolor="15329769" scrollx="0" scrolly="-360">
+   <BOUNDS type="Window" left="2295" top="810" width="19485" height="13530">
    </BOUNDS>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="4">
    <BOUNDS type="Node" left="9459" top="5640" width="100" height="100">
@@ -691,7 +691,7 @@
    </PIN>
    <PIN pinname="TranslateX" slicecount="1" visible="1" values="-27.81">
    </PIN>
-   <PIN pinname="ScaleY" slicecount="1" values="1">
+   <PIN pinname="ScaleY" slicecount="1" values="1" visible="1">
    </PIN>
    <PIN pinname="ScaleX" slicecount="1" visible="1" values="0.75">
    </PIN>
@@ -863,7 +863,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Decompose (Transform Vector)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Decompose (Transform Vector)" componentmode="Hidden" id="236">
-   <BOUNDS type="Node" left="9825" top="2415" width="100" height="100">
+   <BOUNDS type="Node" left="10035" top="2040" width="100" height="100">
    </BOUNDS>
    <PIN pinname="TranslateXYZ" visible="1">
    </PIN>
@@ -881,7 +881,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Cons (Spreads)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Cons (Spreads)" componentmode="Hidden" id="234">
-   <BOUNDS type="Node" left="9675" top="4405" width="100" height="100">
+   <BOUNDS type="Node" left="9705" top="4825" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -1209,5 +1209,31 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="254" srcpinname="Render State" dstnodeid="118" dstpinname="Render State">
+   </LINK>
+   <LINK srcnodeid="116" srcpinname="Layer" dstnodeid="111" dstpinname="Layer 1">
+   </LINK>
+   <LINK srcnodeid="118" srcpinname="Layer" dstnodeid="111" dstpinname="Layer 2">
+   </LINK>
+   <LINK srcnodeid="113" srcpinname="Layer" dstnodeid="111" dstpinname="Layer 3">
+   </LINK>
+   <LINK srcnodeid="110" srcpinname="Layer" dstnodeid="111" dstpinname="Layer 4">
+   </LINK>
+   <LINK srcnodeid="234" srcpinname="Output" dstnodeid="4" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="206" srcpinname="Output" dstnodeid="169" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="255">
+   <BOUNDS type="Box" left="16230" top="7875" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="16230" top="7875" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="74.74">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="255" srcpinname="Y Output Value" dstnodeid="209" dstpinname="ScaleY">
    </LINK>
    </PATCH>

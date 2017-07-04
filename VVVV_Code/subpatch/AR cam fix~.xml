@@ -103,6 +103,8 @@
    </PIN>
    <PIN pinname="SizeXY" visible="1">
    </PIN>
+   <PIN pinname="Reload" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <LINK srcnodeid="25" srcpinname="Texture Out" dstnodeid="8" dstpinname="Texture">
    </LINK>

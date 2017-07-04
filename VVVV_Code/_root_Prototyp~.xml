@@ -1,13 +1,13 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\Daniel\Desktop\Prototyp_bodenlos_Ausstellung\patch\VVVV_Code\_root_Prototyp.v4p" scrollx="0" scrolly="360" systemname="_root_Prototyp" filename="C:\Users\Natalie\Documents\VVVV\6. Semester\bodenlos\Prototyp_Ausstellung\_root_Prototyp.v4p">
-   <BOUNDS type="Window" left="5550" top="555" width="15045" height="13905">
+   <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\VVVV_Code\_root_Prototyp.v4p" scrollx="0" scrolly="2880" systemname="_root_Prototyp" filename="C:\Users\Natalie\Documents\VVVV\6. Semester\bodenlos\Prototyp_Ausstellung\_root_Prototyp.v4p">
+   <BOUNDS type="Window" left="2670" top="1905" width="13905" height="10530">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="16">
-   <BOUNDS type="Node" left="7275" top="2420" width="850" height="230">
+   <BOUNDS type="Node" left="9270" top="2060" width="850" height="230">
    </BOUNDS>
-   <BOUNDS type="Box" left="7275" top="2420" width="850" height="230">
+   <BOUNDS type="Box" left="9270" top="2060" width="850" height="230">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|Vive Daten|">
    </PIN>
@@ -71,9 +71,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="29">
-   <BOUNDS type="Node" left="570" top="1490" width="3800" height="230">
+   <BOUNDS type="Node" left="645" top="1505" width="3800" height="230">
    </BOUNDS>
-   <BOUNDS type="Box" left="570" top="1490" width="10440" height="390">
+   <BOUNDS type="Box" left="645" top="1505" width="10440" height="390">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="Input____________________________________________________________________________">
    </PIN>
@@ -119,9 +119,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="33">
-   <BOUNDS type="Node" left="3230" top="2355" width="1240" height="230">
+   <BOUNDS type="Node" left="2960" top="2520" width="1240" height="230">
    </BOUNDS>
-   <BOUNDS type="Box" left="3230" top="2355" width="1230" height="240">
+   <BOUNDS type="Box" left="2960" top="2520" width="1230" height="240">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|3D Input Stadt|">
    </PIN>
@@ -137,7 +137,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1545" top="11515" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="21735" top="10125" width="29040" height="16785">
+   <BOUNDS type="Window" left="4170" top="3930" width="15525" height="9045">
    </BOUNDS>
    <PIN pinname="View" visible="1" slicecount="1" values="||">
    </PIN>
@@ -169,7 +169,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Main view" filename="subpatch\Main view.v4p" nodename="subpatch\Main view.v4p" componentmode="Hidden" id="36">
-   <BOUNDS type="Node" left="6935" top="10180" width="100" height="100">
+   <BOUNDS type="Node" left="6920" top="10150" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform In" visible="1">
    </PIN>
@@ -177,7 +177,7 @@
    </PIN>
    <PIN pinname="Projection" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="12330" top="2160" width="8670" height="8640">
+   <BOUNDS type="Window" left="18060" top="2685" width="8670" height="8640">
    </BOUNDS>
    <PIN pinname="LookAt (View)" visible="1">
    </PIN>
@@ -271,7 +271,7 @@
    </PIN>
    <PIN pinname="Aspect Height" visible="1">
    </PIN>
-   <PIN pinname="Alignment" slicecount="1" values="FitWidth">
+   <PIN pinname="Alignment" slicecount="1" values="FitIn">
    </PIN>
    <PIN pinname="Uniform Scale" slicecount="1" values="1.05">
    </PIN>
@@ -307,13 +307,13 @@
    <LINK srcnodeid="54" srcpinname="Y Output Value" dstnodeid="52" dstpinname="Aspect Height">
    </LINK>
    <NODE systemname="AR map fix" filename="subpatch\AR map fix.v4p" nodename="subpatch\AR map fix.v4p" componentmode="Hidden" id="60">
-   <BOUNDS type="Node" left="5020" top="6290" width="100" height="100">
+   <BOUNDS type="Node" left="4240" top="5960" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform In" visible="1">
    </PIN>
    <PIN pinname="pos Controller" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="9285" top="7395" width="9360" height="7560">
+   <BOUNDS type="Window" left="4095" top="4155" width="9360" height="7560">
    </BOUNDS>
    <PIN pinname="Switch Input" visible="1">
    </PIN>
@@ -347,25 +347,25 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="63" srcpinname="Y Output Value" dstnodeid="36" dstpinname="Switch Input" linkstyle="Bezier">
-   <LINKPOINT x="8047" y="4883">
+   <LINKPOINT x="8042" y="4873">
    </LINKPOINT>
-   <LINKPOINT x="6358" y="6638">
+   <LINKPOINT x="6348" y="6618">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="63" srcpinname="Y Output Value" dstnodeid="60" dstpinname="Switch Input" linkstyle="Bezier">
-   <LINKPOINT x="6922" y="3559">
+   <LINKPOINT x="6662" y="3449">
    </LINKPOINT>
-   <LINKPOINT x="5568" y="4057">
+   <LINKPOINT x="5048" y="3837">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="48" srcpinname="Layer" dstnodeid="39" dstpinname="Layer 1">
    </LINK>
    <NODE systemname="Figuren" filename="subpatch\Figuren.v4p" nodename="subpatch\Figuren.v4p" componentmode="InAWindow" id="64">
-   <BOUNDS type="Node" left="4185" top="3955" width="100" height="100">
+   <BOUNDS type="Node" left="3615" top="4330" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output Figuren" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="44010" top="4635" width="11205" height="9285">
+   <BOUNDS type="Window" left="17880" top="3015" width="11205" height="9285">
    </BOUNDS>
    <PIN pinname="Switch Input" visible="1">
    </PIN>
@@ -381,11 +381,11 @@
    </PIN>
    </NODE>
    <NODE id="11" componentmode="Hidden" systemname="AR cam fix" filename="subpatch\AR cam fix.v4p" nodename="subpatch\AR cam fix.v4p">
-   <BOUNDS type="Node" left="9150" top="7480" width="100" height="100">
+   <BOUNDS type="Node" left="7440" top="7075" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="9150" top="7480">
+   <BOUNDS type="Box" left="7440" top="7075">
    </BOUNDS>
-   <BOUNDS type="Window" left="8220" top="6030" width="9420" height="8715">
+   <BOUNDS type="Window" left="2550" top="2595" width="9420" height="8715">
    </BOUNDS>
    <PIN pinname="Postion Controller" visible="1">
    </PIN>
@@ -403,9 +403,9 @@
    <LINK srcnodeid="64" srcpinname="pos Controller" dstnodeid="39" dstpinname="Layer 3">
    </LINK>
    <NODE systemname="Poser Daten" filename="subpatch\Poser Daten.v4p" componentmode="Hidden" id="65" nodename="subpatch\Poser Daten.v4p">
-   <BOUNDS type="Node" left="7250" top="2725" width="100" height="100">
+   <BOUNDS type="Node" left="7970" top="2005" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="7250" top="2725" width="4800" height="3600">
+   <BOUNDS type="Box" left="7970" top="2005" width="4800" height="3600">
    </BOUNDS>
    <BOUNDS type="Window" left="2920" top="3550" width="13830" height="9010">
    </BOUNDS>
@@ -416,27 +416,63 @@
    <PIN pinname="Output Betroffener" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="65" srcpinname="Output Rettungskraft" dstnodeid="36" dstpinname="View Rettungskraft">
+   <LINK srcnodeid="65" srcpinname="Output Rettungskraft" dstnodeid="36" dstpinname="View Rettungskraft" linkstyle="Bezier">
+   <LINKPOINT x="7975" y="6215">
+   </LINKPOINT>
+   <LINKPOINT x="7400" y="6205">
+   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="63" srcpinname="Y Output Value" dstnodeid="65" dstpinname="Switch Input">
    </LINK>
-   <LINK srcnodeid="65" srcpinname="Output Betroffener" dstnodeid="60" dstpinname="Position In">
+   <LINK srcnodeid="65" srcpinname="Output Betroffener" dstnodeid="60" dstpinname="Position In" linkstyle="Bezier">
+   <LINKPOINT x="9045" y="4103">
+   </LINKPOINT>
+   <LINKPOINT x="5265" y="4103">
+   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="11" srcpinname="Lazer HUD" dstnodeid="39" dstpinname="Layer 9">
    </LINK>
-   <LINK srcnodeid="65" srcpinname="Output Rettungskraft" dstnodeid="64" dstpinname="Pos Rettungskraft">
+   <LINK srcnodeid="65" srcpinname="Output Rettungskraft" dstnodeid="64" dstpinname="Pos Rettungskraft" linkstyle="Bezier">
+   <LINKPOINT x="7965" y="3293">
+   </LINKPOINT>
+   <LINKPOINT x="4050" y="3293">
+   </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="65" srcpinname="Output Betroffener" dstnodeid="64" dstpinname="Pos Betroffener">
+   <LINK srcnodeid="65" srcpinname="Output Betroffener" dstnodeid="64" dstpinname="Pos Betroffener" linkstyle="Bezier">
+   <LINKPOINT x="9045" y="3293">
+   </LINKPOINT>
+   <LINKPOINT x="4425" y="3293">
+   </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="65" srcpinname="Output Betroffener" dstnodeid="36" dstpinname="View Betroffener">
+   <LINK srcnodeid="65" srcpinname="Output Betroffener" dstnodeid="36" dstpinname="View Betroffener" linkstyle="Bezier">
+   <LINKPOINT x="9055" y="6208">
+   </LINKPOINT>
+   <LINKPOINT x="7850" y="6198">
+   </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="26" srcpinname="Y Output Value" dstnodeid="36" dstpinname="Switch View">
+   <LINK srcnodeid="26" srcpinname="Y Output Value" dstnodeid="36" dstpinname="Switch View" linkstyle="Bezier">
+   <LINKPOINT x="6010" y="5728">
+   </LINKPOINT>
+   <LINKPOINT x="6935" y="5718">
+   </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="26" srcpinname="Y Output Value" dstnodeid="64" dstpinname="Figurauswahl">
+   <LINK srcnodeid="26" srcpinname="Y Output Value" dstnodeid="64" dstpinname="Figurauswahl" linkstyle="Bezier">
+   <LINKPOINT x="5970" y="2805">
+   </LINKPOINT>
+   <LINKPOINT x="3675" y="2805">
+   </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="26" srcpinname="Y Output Value" dstnodeid="11" dstpinname="InfoFeed An/Aus">
+   <LINK srcnodeid="26" srcpinname="Y Output Value" dstnodeid="11" dstpinname="InfoFeed An/Aus" linkstyle="Bezier">
+   <LINKPOINT x="5475" y="4260">
+   </LINKPOINT>
+   <LINKPOINT x="8010" y="4125">
+   </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="26" srcpinname="Y Output Value" dstnodeid="60" dstpinname="Leuchtsäule An/Aus">
+   <LINK srcnodeid="26" srcpinname="Y Output Value" dstnodeid="60" dstpinname="Leuchtsäule An/Aus" linkstyle="Bezier">
+   <LINKPOINT x="5985" y="3623">
+   </LINKPOINT>
+   <LINKPOINT x="4275" y="3623">
+   </LINKPOINT>
    </LINK>
    <NODE systemname="Camera (Transform Orbit)" filename="%VVVV%\lib\packs\VL.EditingFramework.0.49.229-g30fb9f349f\vvvv\nodes\modules\Camera (Transform Orbit).v4p" nodename="Camera (Transform Orbit)" componentmode="Hidden" id="68">
    <BOUNDS type="Node" left="8450" top="10240" width="100" height="100">
@@ -485,9 +521,9 @@
    <LINK srcnodeid="68" srcpinname="Projection" dstnodeid="70" dstpinname="Input 2">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="71">
-   <BOUNDS type="Box" left="4900" top="10170" width="480" height="480">
+   <BOUNDS type="Box" left="5695" top="10185" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="4900" top="10170" width="0" height="0">
+   <BOUNDS type="Node" left="5695" top="10185" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -511,11 +547,11 @@
    <LINK srcnodeid="71" srcpinname="Y Output Value" dstnodeid="70" dstpinname="Switch">
    </LINK>
    <NODE id="38" componentmode="Hidden" systemname="Modell" filename="subpatch\Modell.v4p" nodename="subpatch\Modell.v4p">
-   <BOUNDS type="Window" left="15345" top="4920" width="10980" height="10680">
+   <BOUNDS type="Window" left="2940" top="4590" width="10980" height="10680">
    </BOUNDS>
-   <BOUNDS type="Node" left="3350" top="2700" width="100" height="100">
+   <BOUNDS type="Node" left="3005" top="2865" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="3350" top="2700" width="4800" height="3600">
+   <BOUNDS type="Box" left="3005" top="2865" width="4800" height="3600">
    </BOUNDS>
    <PIN pinname="World Modell" visible="1">
    </PIN>
@@ -527,9 +563,9 @@
    <LINK srcnodeid="38" srcpinname="World Modell" dstnodeid="39" dstpinname="Layer 2">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="73">
-   <BOUNDS type="Node" left="3970" top="3620" width="1420" height="230">
+   <BOUNDS type="Node" left="3175" top="3980" width="1420" height="230">
    </BOUNDS>
-   <BOUNDS type="Box" left="3970" top="3620" width="1420" height="230">
+   <BOUNDS type="Box" left="3175" top="3980" width="1420" height="230">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|3D Input Personen|">
    </PIN>
@@ -541,9 +577,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="74">
-   <BOUNDS type="Node" left="5150" top="5970" width="960" height="230">
+   <BOUNDS type="Node" left="4250" top="5595" width="960" height="230">
    </BOUNDS>
-   <BOUNDS type="Box" left="5150" top="5970" width="960" height="230">
+   <BOUNDS type="Box" left="4250" top="5595" width="960" height="230">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="Leuchtsäule">
    </PIN>
@@ -555,9 +591,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="75">
-   <BOUNDS type="Node" left="5950" top="7070" width="980" height="230">
+   <BOUNDS type="Node" left="4855" top="6320" width="980" height="230">
    </BOUNDS>
-   <BOUNDS type="Box" left="5950" top="7070" width="980" height="230">
+   <BOUNDS type="Box" left="4855" top="6320" width="980" height="230">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="Wegfindung">
    </PIN>
@@ -569,9 +605,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="76">
-   <BOUNDS type="Node" left="7150" top="6420" width="1870" height="230">
+   <BOUNDS type="Node" left="5995" top="6300" width="1870" height="230">
    </BOUNDS>
-   <BOUNDS type="Box" left="7150" top="6420" width="1870" height="230">
+   <BOUNDS type="Box" left="5995" top="6300" width="1870" height="230">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|Begleiter des Betroffenen|">
    </PIN>
@@ -583,9 +619,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="77">
-   <BOUNDS type="Node" left="8560" top="7170" width="2240" height="230">
+   <BOUNDS type="Node" left="8875" top="6465" width="2240" height="230">
    </BOUNDS>
-   <BOUNDS type="Box" left="8560" top="7170" width="2400" height="240">
+   <BOUNDS type="Box" left="8875" top="6465" width="2400" height="240">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|Informationen am Sichtfeldrand|">
    </PIN>
@@ -597,9 +633,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="78">
-   <BOUNDS type="Node" left="5995" top="9780" width="1440" height="230">
+   <BOUNDS type="Node" left="6685" top="9750" width="1440" height="230">
    </BOUNDS>
-   <BOUNDS type="Box" left="5995" top="9780" width="1650" height="250">
+   <BOUNDS type="Box" left="6685" top="9750" width="1650" height="250">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|Sichtweise der Person|">
    </PIN>
@@ -653,9 +689,9 @@
    </PIN>
    </NODE>
    <NODE systemname="Mentor_neu" filename="subpatch\Mentor_neu.v4p" nodename="subpatch\Mentor_neu.v4p" componentmode="Hidden" id="82" stayontop="1">
-   <BOUNDS type="Node" left="7635" top="6855" width="100" height="100">
+   <BOUNDS type="Node" left="6000" top="6585" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="4245" top="8940" width="17250" height="16380">
+   <BOUNDS type="Window" left="1050" top="4695" width="17250" height="16380">
    </BOUNDS>
    <PIN pinname="Pos für Mentor" visible="1">
    </PIN>
@@ -670,14 +706,22 @@
    <PIN pinname="Mentor Out" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="65" srcpinname="Output Betroffener" dstnodeid="82" dstpinname="Pos für Mentor">
+   <LINK srcnodeid="65" srcpinname="Output Betroffener" dstnodeid="82" dstpinname="Pos für Mentor" linkstyle="Bezier">
+   <LINKPOINT x="9045" y="4425">
+   </LINKPOINT>
+   <LINKPOINT x="6570" y="4425">
+   </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="82" srcpinname="Light Pos" dstnodeid="38" dstpinname="light pos in">
+   <LINK srcnodeid="82" srcpinname="Light Pos" dstnodeid="38" dstpinname="light pos in" linkstyle="Bezier">
+   <LINKPOINT x="6525" y="4853">
+   </LINKPOINT>
+   <LINKPOINT x="3060" y="4853">
+   </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="86">
-   <BOUNDS type="Box" left="8835" top="12240" width="795" height="240">
+   <BOUNDS type="Box" left="8310" top="12150" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="8835" top="12240" width="0" height="0">
+   <BOUNDS type="Node" left="8310" top="12150" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="View">
    </PIN>
@@ -689,7 +733,7 @@
    <NODE id="72" componentmode="Hidden" systemname="Pathfinder (Value) convert to dx11" filename="subpatch\Pathfinder (Value) convert to dx11.v4p" nodename="subpatch\Pathfinder (Value) convert to dx11.v4p">
    <BOUNDS type="Window" left="2940" top="5490" width="19485" height="13530">
    </BOUNDS>
-   <BOUNDS type="Node" left="5840" top="6720" width="100" height="100">
+   <BOUNDS type="Node" left="4880" top="6600" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Pathfinder" visible="1">
    </PIN>
@@ -706,16 +750,24 @@
    </LINK>
    <LINK srcnodeid="38" srcpinname="Transform Map" dstnodeid="72" dstpinname="Transform In">
    </LINK>
-   <LINK srcnodeid="65" srcpinname="Output Betroffener" dstnodeid="72" dstpinname="Pos Betroffener">
+   <LINK srcnodeid="65" srcpinname="Output Betroffener" dstnodeid="72" dstpinname="Pos Betroffener" linkstyle="Bezier">
+   <LINKPOINT x="9030" y="4425">
+   </LINKPOINT>
+   <LINKPOINT x="5760" y="4425">
+   </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="65" srcpinname="Output Rettungskraft" dstnodeid="72" dstpinname="Pos Rettungskraft">
+   <LINK srcnodeid="65" srcpinname="Output Rettungskraft" dstnodeid="72" dstpinname="Pos Rettungskraft" linkstyle="Bezier">
+   <LINKPOINT x="7965" y="4440">
+   </LINKPOINT>
+   <LINKPOINT x="5415" y="4440">
+   </LINKPOINT>
    </LINK>
-   <NODE systemname="Info Betroffener" filename="subpatch\Info Betroffener.v4p" componentmode="InAWindow" id="92" nodename="subpatch\Info Betroffener.v4p">
-   <BOUNDS type="Node" left="10335" top="5580" width="100" height="100">
+   <NODE systemname="Info Betroffener" filename="subpatch\Info Betroffener.v4p" componentmode="Hidden" id="92" nodename="subpatch\Info Betroffener.v4p">
+   <BOUNDS type="Node" left="8460" top="5715" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="10335" top="5580" width="4800" height="3600">
+   <BOUNDS type="Box" left="8460" top="5715" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="43815" top="4260" width="9000" height="6000">
+   <BOUNDS type="Window" left="17820" top="315" width="9000" height="6000">
    </BOUNDS>
    <PIN pinname="View" visible="1" slicecount="1" values="||">
    </PIN>
@@ -729,26 +781,34 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="86" srcpinname="Output Node" dstnodeid="92" dstpinname="View" linkstyle="Bezier">
-   <LINKPOINT x="15230" y="13530">
+   <LINKPOINT x="14255" y="13515">
    </LINKPOINT>
-   <LINKPOINT x="12850" y="4185">
+   <LINKPOINT x="11425" y="4245">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="65" srcpinname="Output Betroffener" dstnodeid="92" dstpinname="PosBetroffener">
+   <LINK srcnodeid="65" srcpinname="Output Betroffener" dstnodeid="92" dstpinname="PosBetroffener" linkstyle="Bezier">
+   <LINKPOINT x="9075" y="3998">
+   </LINKPOINT>
+   <LINKPOINT x="9495" y="3998">
+   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="92" srcpinname="InfoScreen" dstnodeid="39" dstpinname="Layer 8">
    </LINK>
    <LINK srcnodeid="42" srcpinname="Y Output Value" dstnodeid="92" dstpinname="Buffer Size" linkstyle="Bezier">
-   <LINKPOINT x="16830" y="14895">
+   <LINKPOINT x="16205" y="14940">
    </LINKPOINT>
-   <LINKPOINT x="13200" y="3300">
+   <LINKPOINT x="11950" y="3390">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="42" srcpinname="Y Output Value" dstnodeid="82" dstpinname="Buffer Size">
    </LINK>
    <LINK srcnodeid="86" srcpinname="Output Node" dstnodeid="82" dstpinname="View">
    </LINK>
-   <LINK srcnodeid="26" srcpinname="Y Output Value" dstnodeid="92" dstpinname="Enable">
+   <LINK srcnodeid="26" srcpinname="Y Output Value" dstnodeid="92" dstpinname="Enable" linkstyle="Bezier">
+   <LINKPOINT x="6045" y="3503">
+   </LINKPOINT>
+   <LINKPOINT x="9225" y="3503">
+   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="82" srcpinname="Mentor Out" dstnodeid="39" dstpinname="Layer 7">
    </LINK>
@@ -759,5 +819,21 @@
    </BOUNDS>
    <PIN pinname="Maximum Foreground FPS" slicecount="1" values="30">
    </PIN>
+   </NODE>
+   <NODE systemname="nanogridv4p" filename="subpatch\nanogridv4p.v4p" componentmode="Hidden" id="133" nodename="subpatch\nanogridv4p.v4p">
+   <BOUNDS type="Node" left="8700" top="8025" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8700" top="8025" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="8385" top="2175" width="14745" height="8940">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="133" srcpinname="Layer" dstnodeid="39" dstpinname="Layer 11">
+   </LINK>
+   <NODE systemname="Camera (Transform Softimage)" filename="%VVVV%\lib\packs\VL.EditingFramework.0.49.229-g30fb9f349f\vvvv\nodes\modules\Camera (Transform Softimage).v4p" nodename="Camera (Transform Softimage)" componentmode="Hidden" id="134">
+   <BOUNDS type="Node" left="11310" top="5745" width="100" height="100">
+   </BOUNDS>
    </NODE>
    </PATCH>

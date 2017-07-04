@@ -21,7 +21,7 @@
    </PIN>
    <PIN pinname="Specular Color" slicecount="1" visible="1" values="|0.33888,0.33888,0.33888,1.00000|">
    </PIN>
-   <PIN pinname="Alpha" slicecount="1" values="0.6">
+   <PIN pinname="Alpha" slicecount="1" values="0.45">
    </PIN>
    <PIN pinname="Render State" visible="1">
    </PIN>
@@ -99,7 +99,7 @@
    </BOUNDS>
    <PIN pinname="Render State" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Mode" slicecount="1" values="Add">
+   <PIN pinname="Mode" slicecount="1" values="AlphaAdd">
    </PIN>
    </NODE>
    <LINK srcnodeid="16" srcpinname="Render State" dstnodeid="4" dstpinname="Render State">
@@ -109,7 +109,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4135" top="3995" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Color Input" slicecount="1" visible="1" values="|1.00000,0.00000,0.00000,1.00000|">
+   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.94023,0.00000,0.00000,0.53157|">
    </PIN>
    <PIN pinname="Color Output" visible="1">
    </PIN>

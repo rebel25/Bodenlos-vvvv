@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\Daniel\Desktop\Prototyp_bodenlos_Ausstellung\patch\VVVV_Code\subpatch\Modell.v4p" systemname="Modell" filename="C:\Users\Daniel\Desktop\Prototyp_bodenlos_Ausstellung\patch\subpatch\Modell.v4p" scrollx="15" scrolly="360">
-   <BOUNDS type="Window" left="3525" top="5085" width="10980" height="10680">
+   <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\VVVV_Code\subpatch\Modell.v4p" systemname="Modell" filename="C:\Users\Daniel\Desktop\Prototyp_bodenlos_Ausstellung\patch\subpatch\Modell.v4p" scrollx="15" scrolly="360">
+   <BOUNDS type="Window" left="1470" top="1155" width="10980" height="10680">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -185,7 +185,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3030" top="5745" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.2">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.25">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -213,7 +213,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="1935" top="4320" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-40">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-30">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -227,7 +227,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2055" top="4680" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="36.74">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="41.43">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -251,7 +251,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2235" top="5010" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="20">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-70">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
