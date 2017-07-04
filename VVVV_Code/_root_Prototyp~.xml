@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\VVVV_Code\_root_Prototyp.v4p" scrollx="4230" scrolly="-360" systemname="_root_Prototyp" filename="C:\Users\Natalie\Documents\VVVV\6. Semester\bodenlos\Prototyp_Ausstellung\_root_Prototyp.v4p">
-   <BOUNDS type="Window" left="5790" top="1365" width="13905" height="12000">
+   <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\VVVV_Code\_root_Prototyp.v4p" scrollx="720" scrolly="4890" systemname="_root_Prototyp" filename="C:\Users\Natalie\Documents\VVVV\6. Semester\bodenlos\Prototyp_Ausstellung\_root_Prototyp.v4p">
+   <BOUNDS type="Window" left="3045" top="2475" width="14520" height="12390">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -23,7 +23,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="5985" top="825" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -33,7 +33,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Switch Person|">
    </PIN>
@@ -137,7 +137,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1545" top="11515" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="12855" top="1635" width="15945" height="9735">
+   <BOUNDS type="Window" left="16725" top="3645" width="15945" height="9735">
    </BOUNDS>
    <PIN pinname="View" visible="1" slicecount="1" values="||">
    </PIN>
@@ -278,7 +278,7 @@
    <PIN pinname="Uniform Scale" slicecount="1" values="1.07">
    </PIN>
    </NODE>
-   <NODE systemname="AR map fix" filename="subpatch\AR map fix.v4p" nodename="subpatch\AR map fix.v4p" componentmode="InAWindow" id="60">
+   <NODE systemname="AR map fix" filename="subpatch\AR map fix.v4p" nodename="subpatch\AR map fix.v4p" componentmode="Hidden" id="60">
    <BOUNDS type="Node" left="4240" top="5960" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform In" visible="1">
@@ -333,7 +333,7 @@
    <LINK srcnodeid="48" srcpinname="Layer" dstnodeid="39" dstpinname="Layer 1">
    </LINK>
    <NODE systemname="Figuren" filename="subpatch\Figuren.v4p" nodename="subpatch\Figuren.v4p" componentmode="Hidden" id="64">
-   <BOUNDS type="Node" left="3615" top="4330" width="100" height="100">
+   <BOUNDS type="Node" left="3630" top="4420" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output Figuren" visible="1">
    </PIN>
@@ -405,15 +405,15 @@
    <LINK srcnodeid="11" srcpinname="Lazer HUD" dstnodeid="39" dstpinname="Layer 9">
    </LINK>
    <LINK srcnodeid="65" srcpinname="Output Rettungskraft" dstnodeid="64" dstpinname="Pos Rettungskraft" linkstyle="Bezier">
-   <LINKPOINT x="7965" y="3293">
+   <LINKPOINT x="7970" y="3323">
    </LINKPOINT>
-   <LINKPOINT x="4050" y="3293">
+   <LINKPOINT x="4060" y="3353">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="65" srcpinname="Output Betroffener" dstnodeid="64" dstpinname="Pos Betroffener" linkstyle="Bezier">
-   <LINKPOINT x="9045" y="3293">
+   <LINKPOINT x="9050" y="3323">
    </LINKPOINT>
-   <LINKPOINT x="4425" y="3293">
+   <LINKPOINT x="4435" y="3353">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="65" srcpinname="Output Betroffener" dstnodeid="36" dstpinname="View Betroffener" linkstyle="Bezier">
@@ -429,9 +429,9 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="26" srcpinname="Y Output Value" dstnodeid="64" dstpinname="Figurauswahl" linkstyle="Bezier">
-   <LINKPOINT x="5970" y="2805">
+   <LINKPOINT x="5975" y="2835">
    </LINKPOINT>
-   <LINKPOINT x="3675" y="2805">
+   <LINKPOINT x="3685" y="2865">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="26" srcpinname="Y Output Value" dstnodeid="11" dstpinname="InfoFeed An/Aus" linkstyle="Bezier">
@@ -703,7 +703,7 @@
    </PIN>
    </NODE>
    <NODE id="72" componentmode="Hidden" systemname="Pathfinder (Value) convert to dx11" filename="subpatch\Pathfinder (Value) convert to dx11.v4p" nodename="subpatch\Pathfinder (Value) convert to dx11.v4p">
-   <BOUNDS type="Window" left="2295" top="3420" width="19485" height="13530">
+   <BOUNDS type="Window" left="-1860" top="630" width="19515" height="13530">
    </BOUNDS>
    <BOUNDS type="Node" left="4880" top="6600" width="100" height="100">
    </BOUNDS>
