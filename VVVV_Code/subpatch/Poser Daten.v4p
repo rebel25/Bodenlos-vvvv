@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
    <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\VVVV_Code\subpatch\Poser Daten.v4p" systemname="Poser Daten" filename="C:\Users\Natalie\Documents\GitHub\Bodenlos-vvvv\subpatch\Poser Daten.v4p" scrollx="0" scrolly="-360">
-   <BOUNDS type="Window" left="3075" top="3165" width="13830" height="10065">
+   <BOUNDS type="Window" left="6270" top="2415" width="13830" height="10065">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -369,9 +369,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="38">
-   <BOUNDS type="Node" left="2150" top="3330" width="2500" height="230">
+   <BOUNDS type="Node" left="2180" top="3165" width="2500" height="230">
    </BOUNDS>
-   <BOUNDS type="Box" left="2150" top="3330" width="1660" height="390">
+   <BOUNDS type="Box" left="2180" top="3165" width="1725" height="540">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|Daten von Controller 1 selektieren|">
    </PIN>
@@ -457,13 +457,15 @@
    <NODE systemname="Controller_Buttons" filename="Controller_Buttons.v4p" nodename="Controller_Buttons.v4p" componentmode="Hidden" id="45">
    <BOUNDS type="Node" left="4920" top="1140" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="6180" top="8985" width="9000" height="6000">
+   <BOUNDS type="Window" left="6990" top="6435" width="9000" height="6000">
    </BOUNDS>
    <PIN pinname="System" visible="1">
    </PIN>
    <PIN pinname="Switch Player" visible="1">
    </PIN>
    <PIN pinname="Switch Palyer" visible="1">
+   </PIN>
+   <PIN pinname="Fade" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="0" srcpinname="System" dstnodeid="45" dstpinname="System">
@@ -509,5 +511,27 @@
    </LINKPOINT>
    <LINKPOINT x="4875" y="1053">
    </LINKPOINT>
+   </LINK>
+   <NODE systemname="Round (Value)" filename="%VVVV%\addonpack\lib\nodes\plugins\Round.dll" nodename="Round (Value)" componentmode="Hidden" id="48">
+   <BOUNDS type="Node" left="5145" top="7650" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="49">
+   <BOUNDS type="Box" left="6480" top="1890" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6480" top="1890" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Fade">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="45" srcpinname="Fade" dstnodeid="49" dstpinname="Y Input Value">
    </LINK>
    </PATCH>
