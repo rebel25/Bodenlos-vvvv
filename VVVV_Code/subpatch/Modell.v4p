@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
    <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\VVVV_Code\subpatch\Modell.v4p" systemname="Modell" filename="C:\Users\Daniel\Desktop\Prototyp_bodenlos_Ausstellung\patch\subpatch\Modell.v4p" scrollx="15" scrolly="360">
-   <BOUNDS type="Window" left="1470" top="1155" width="10980" height="10680">
+   <BOUNDS type="Window" left="4185" top="2055" width="10980" height="10680">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -88,6 +88,10 @@
    <PIN pinname="Pitch" visible="1">
    </PIN>
    <PIN pinname="TranslateZ" visible="1">
+   </PIN>
+   <PIN pinname="ScaleX" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="ScaleZ" slicecount="1" values="1.02">
    </PIN>
    </NODE>
    <LINK srcnodeid="26" srcpinname="Transform Out" dstnodeid="56" dstpinname="Transform In">
@@ -185,7 +189,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3030" top="5745" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.25">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.248">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -213,7 +217,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="1935" top="4320" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-30">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-30.71">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -251,7 +255,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2235" top="5010" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-70">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="2.12">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -279,7 +283,7 @@
    <NODE nodename="IOBox (String)" componentmode="InABox" id="69">
    <BOUNDS type="Node" left="3180" top="4460" width="4440" height="230">
    </BOUNDS>
-   <BOUNDS type="Box" left="3180" top="4460" width="2350" height="470">
+   <BOUNDS type="Box" left="3180" top="4460" width="2355" height="735">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|Modell wird manuell der Position des realen Tisches angepasst|">
    </PIN>
@@ -406,4 +410,10 @@
    </LINK>
    <LINK srcnodeid="60" srcpinname="Y Output Value" dstnodeid="59" dstpinname="Light PositionXYZ">
    </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="78">
+   <BOUNDS type="Node" left="3270" top="1830" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3270" top="1830" width="795" height="240">
+   </BOUNDS>
+   </NODE>
    </PATCH>

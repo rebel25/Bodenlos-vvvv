@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\VVVV_Code\_root_Prototyp.v4p" scrollx="720" scrolly="4890" systemname="_root_Prototyp" filename="C:\Users\Natalie\Documents\VVVV\6. Semester\bodenlos\Prototyp_Ausstellung\_root_Prototyp.v4p">
-   <BOUNDS type="Window" left="3045" top="2475" width="14520" height="12390">
+   <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\VVVV_Code\_root_Prototyp.v4p" scrollx="0" scrolly="-360" systemname="_root_Prototyp" filename="C:\Users\Natalie\Documents\VVVV\6. Semester\bodenlos\Prototyp_Ausstellung\_root_Prototyp.v4p">
+   <BOUNDS type="Window" left="5535" top="1035" width="14520" height="12390">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -137,7 +137,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1545" top="11515" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="16725" top="3645" width="15945" height="9735">
+   <BOUNDS type="Window" left="15765" top="5055" width="15945" height="9735">
    </BOUNDS>
    <PIN pinname="View" visible="1" slicecount="1" values="||">
    </PIN>
@@ -170,7 +170,7 @@
    <PIN pinname="Fullscreen" slicecount="1" values="0">
    </PIN>
    </NODE>
-   <NODE systemname="Main view" filename="subpatch\Main view.v4p" nodename="subpatch\Main view.v4p" componentmode="Hidden" id="36">
+   <NODE systemname="Main view" filename="subpatch\Main view.v4p" nodename="subpatch\Main view.v4p" componentmode="InAWindow" id="36">
    <BOUNDS type="Node" left="6920" top="10150" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform In" visible="1">
@@ -179,7 +179,7 @@
    </PIN>
    <PIN pinname="Projection" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="18060" top="2685" width="8670" height="8640">
+   <BOUNDS type="Window" left="6975" top="3870" width="8670" height="8640">
    </BOUNDS>
    <PIN pinname="LookAt (View)" visible="1">
    </PIN>
@@ -518,8 +518,8 @@
    </LINK>
    <LINK srcnodeid="71" srcpinname="Y Output Value" dstnodeid="70" dstpinname="Switch">
    </LINK>
-   <NODE id="38" componentmode="Hidden" systemname="Modell" filename="subpatch\Modell.v4p" nodename="subpatch\Modell.v4p">
-   <BOUNDS type="Window" left="1470" top="1155" width="10980" height="10680">
+   <NODE id="38" componentmode="InAWindow" systemname="Modell" filename="subpatch\Modell.v4p" nodename="subpatch\Modell.v4p">
+   <BOUNDS type="Window" left="1470" top="5520" width="10980" height="10680">
    </BOUNDS>
    <BOUNDS type="Node" left="3005" top="2865" width="100" height="100">
    </BOUNDS>
@@ -702,8 +702,8 @@
    <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <NODE id="72" componentmode="Hidden" systemname="Pathfinder (Value) convert to dx11" filename="subpatch\Pathfinder (Value) convert to dx11.v4p" nodename="subpatch\Pathfinder (Value) convert to dx11.v4p">
-   <BOUNDS type="Window" left="-1860" top="630" width="19515" height="13530">
+   <NODE id="72" componentmode="InAWindow" systemname="Pathfinder (Value) convert to dx11" filename="subpatch\Pathfinder (Value) convert to dx11.v4p" nodename="subpatch\Pathfinder (Value) convert to dx11.v4p">
+   <BOUNDS type="Window" left="6435" top="1950" width="19515" height="13530">
    </BOUNDS>
    <BOUNDS type="Node" left="4880" top="6600" width="100" height="100">
    </BOUNDS>
