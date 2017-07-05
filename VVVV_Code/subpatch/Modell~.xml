@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\VVVV_Code\subpatch\Modell.v4p" systemname="Modell" filename="C:\Users\Daniel\Desktop\Prototyp_bodenlos_Ausstellung\patch\subpatch\Modell.v4p" scrollx="15" scrolly="360">
-   <BOUNDS type="Window" left="4185" top="2055" width="10980" height="10680">
+   <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\VVVV_Code\subpatch\Modell.v4p" systemname="Modell" filename="C:\Users\Daniel\Desktop\Prototyp_bodenlos_Ausstellung\patch\subpatch\Modell.v4p" scrollx="15" scrolly="2520">
+   <BOUNDS type="Window" left="-1455" top="1140" width="17385" height="10680">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -53,9 +53,9 @@
    <LINK srcnodeid="14" srcpinname="Output String" dstnodeid="24" dstpinname="Filename">
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="25">
-   <BOUNDS type="Box" left="1275" top="8760" width="795" height="240">
+   <BOUNDS type="Box" left="1320" top="9780" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1275" top="8760" width="0" height="0">
+   <BOUNDS type="Node" left="1320" top="9780" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="|World Modell|">
    </PIN>
@@ -182,8 +182,6 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
-   <LINK srcnodeid="59" srcpinname="Layer" dstnodeid="25" dstpinname="Input Node">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="62">
    <BOUNDS type="Box" left="3030" top="5745" width="795" height="240">
    </BOUNDS>
@@ -309,9 +307,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="71">
-   <BOUNDS type="Box" left="4545" top="6435" width="795" height="240">
+   <BOUNDS type="Box" left="4335" top="6570" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="4545" top="6435" width="0" height="0">
+   <BOUNDS type="Node" left="4335" top="6570" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="2.77">
    </PIN>
@@ -378,30 +376,6 @@
    </NODE>
    <LINK srcnodeid="75" srcpinname="Y Output Value" dstnodeid="74" dstpinname="Input 2XYZ">
    </LINK>
-   <NODE systemname="Cons (Color)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Cons (Color)" componentmode="Hidden" id="76">
-   <BOUNDS type="Node" left="5565" top="7440" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 1" visible="1">
-   </PIN>
-   <PIN pinname="Input 2" visible="1" slicecount="1" values="|0.29844,0.29844,0.29844,1.00000|">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="72" srcpinname="Color Output" dstnodeid="76" dstpinname="Input 1">
-   <LINKPOINT x="5655" y="7395">
-   </LINKPOINT>
-   </LINK>
-   <NODE nodename="IOBox (Color)" componentmode="InABox" id="77">
-   <BOUNDS type="Box" left="6930" top="8250" width="2235" height="435">
-   </BOUNDS>
-   <BOUNDS type="Node" left="6930" top="8250" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.46103,0.46103,0.46103,1.00000|">
-   </PIN>
-   <PIN pinname="Color Output" visible="1">
-   </PIN>
-   </NODE>
    <LINK srcnodeid="57" srcpinname="Color Output" dstnodeid="59" dstpinname="Diffuse Color">
    </LINK>
    <LINK srcnodeid="72" srcpinname="Color Output" dstnodeid="59" dstpinname="Specular Color">
@@ -416,4 +390,6 @@
    <BOUNDS type="Box" left="3270" top="1830" width="795" height="240">
    </BOUNDS>
    </NODE>
+   <LINK srcnodeid="59" srcpinname="Layer" dstnodeid="25" dstpinname="Input Node">
+   </LINK>
    </PATCH>

@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
    <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\VVVV_Code\subpatch\Poser Daten.v4p" systemname="Poser Daten" filename="C:\Users\Natalie\Documents\GitHub\Bodenlos-vvvv\subpatch\Poser Daten.v4p" scrollx="0" scrolly="-360">
-   <BOUNDS type="Window" left="1050" top="2295" width="13830" height="10065">
+   <BOUNDS type="Window" left="3075" top="3165" width="13830" height="10065">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -221,9 +221,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="23">
-   <BOUNDS type="Box" left="400" top="610" width="480" height="480">
+   <BOUNDS type="Box" left="1825" top="520" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="400" top="610" width="0" height="0">
+   <BOUNDS type="Node" left="1825" top="520" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -240,7 +240,7 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="23" srcpinname="Y Output Value" dstnodeid="21" dstpinname="Switch">
+   <LINK srcnodeid="23" srcpinname="Y Output Value" dstnodeid="21" dstpinname="Switch" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="Transform (Transform 3d Vector)" nodename="Transform (Transform 3d Vector)" componentmode="Hidden" id="28">
    <BOUNDS type="Node" left="9610" top="5385" width="100" height="100">
@@ -308,10 +308,10 @@
    </NODE>
    <LINK srcnodeid="28" srcpinname="Transform Out" dstnodeid="30" dstpinname="Input 2">
    </LINK>
-   <LINK srcnodeid="23" srcpinname="Y Output Value" dstnodeid="30" dstpinname="Switch" linkstyle="Bezier">
-   <LINKPOINT x="2030" y="2890">
+   <LINK srcnodeid="23" srcpinname="Y Output Value" dstnodeid="30" dstpinname="Switch" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="2980" y="2830">
    </LINKPOINT>
-   <LINKPOINT x="5100" y="770">
+   <LINKPOINT x="5575" y="740">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="31">
@@ -326,48 +326,12 @@
    </NODE>
    <LINK srcnodeid="4" srcpinname="Output Node" dstnodeid="30" dstpinname="Input 1">
    </LINK>
-   <NODE systemname="Controller (OpenVR Split)" filename="%VVVV%\packs\VVVV.OpenVR\nodes\plugins\VVVV.OpenVR.dll" nodename="Controller (OpenVR Split)" componentmode="Hidden" id="33">
-   <BOUNDS type="Node" left="9090" top="900" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Trigger Press" visible="1">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="32">
-   <BOUNDS type="Box" left="9720" top="1330" width="480" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="9720" top="1330" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Toggle">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="33" srcpinname="Trigger Press" dstnodeid="32" dstpinname="Y Input Value">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="34">
    <BOUNDS type="Node" left="4540" top="420" width="2770" height="230">
    </BOUNDS>
    <BOUNDS type="Box" left="4540" top="420" width="2770" height="230">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|Knoten um die Vive-Daten zu erhalten|">
-   </PIN>
-   <PIN pinname="Output String" visible="0">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="MultiLine">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="35">
-   <BOUNDS type="Node" left="8860" top="250" width="4730" height="230">
-   </BOUNDS>
-   <BOUNDS type="Box" left="8860" top="250" width="2260" height="610">
-   </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|Hier soll ein Figurwechsel durch Controller-Tastendruck entstehen|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -489,5 +453,61 @@
    <LINK srcnodeid="21" srcpinname="Output" dstnodeid="22" dstpinname="Input Node">
    </LINK>
    <LINK srcnodeid="30" srcpinname="Output" dstnodeid="31" dstpinname="Input Node">
+   </LINK>
+   <NODE systemname="Controller_Buttons" filename="Controller_Buttons.v4p" nodename="Controller_Buttons.v4p" componentmode="Hidden" id="45">
+   <BOUNDS type="Node" left="4920" top="1140" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Window" left="6180" top="8985" width="9000" height="6000">
+   </BOUNDS>
+   <PIN pinname="System" visible="1">
+   </PIN>
+   <PIN pinname="Switch Player" visible="1">
+   </PIN>
+   <PIN pinname="Switch Palyer" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="System" dstnodeid="45" dstpinname="System">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="46">
+   <BOUNDS type="Box" left="4935" top="1830" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4935" top="1830" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Switch Player|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="45" srcpinname="Switch Player" dstnodeid="46" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="47">
+   <BOUNDS type="Box" left="2790" top="495" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2790" top="495" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Switch Palyer|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="47" srcpinname="Y Output Value" dstnodeid="45" dstpinname="Switch Palyer" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="4395" y="1033">
+   </LINKPOINT>
+   <LINKPOINT x="4875" y="1053">
+   </LINKPOINT>
    </LINK>
    </PATCH>

@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
    <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\VVVV_Code\subpatch\Figuren.v4p" scrollx="60" scrolly="360" systemname="Figuren" filename="C:\Users\Natalie\Documents\GitHub\Bodenlos-vvvv\subpatch\Figuren.v4p">
-   <BOUNDS type="Window" left="4620" top="3690" width="11205" height="9285">
+   <BOUNDS type="Window" left="1620" top="2790" width="11205" height="9285">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>

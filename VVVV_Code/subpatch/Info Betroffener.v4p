@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
    <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\VVVV_Code\subpatch\Info Betroffener.v4p" systemname="Info Betroffener" filename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\VVVV_Code\subpatch\Info Betroffener.v4p" scrollx="0" scrolly="-360">
-   <BOUNDS type="Window" left="5655" top="8700" width="9000" height="6000">
+   <BOUNDS type="Window" left="6930" top="6900" width="9000" height="6000">
    </BOUNDS>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="585" top="420" width="795" height="480">
@@ -96,6 +96,8 @@
    <PIN pinname="Texture Out" visible="1">
    </PIN>
    <PIN pinname="Reload" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="No Mips" slicecount="1" values="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="12">
