@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\VVVV_Code\_root_Prototyp.v4p" scrollx="0" scrolly="1800" systemname="_root_Prototyp" filename="C:\Users\Natalie\Documents\VVVV\6. Semester\bodenlos\Prototyp_Ausstellung\_root_Prototyp.v4p">
-   <BOUNDS type="Window" left="75" top="1530" width="14520" height="12180">
+   <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\VVVV_Code\_root_Prototyp.v4p" scrollx="0" scrolly="2520" systemname="_root_Prototyp" filename="C:\Users\Natalie\Documents\VVVV\6. Semester\bodenlos\Prototyp_Ausstellung\_root_Prototyp.v4p">
+   <BOUNDS type="Window" left="3825" top="1290" width="14520" height="12180">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -115,7 +115,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1545" top="11515" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="10725" top="3300" width="17715" height="10215">
+   <BOUNDS type="Window" left="21705" top="7635" width="17715" height="10215">
    </BOUNDS>
    <PIN pinname="View" visible="1" slicecount="1" values="||">
    </PIN>
@@ -149,7 +149,7 @@
    </PIN>
    <PIN pinname="Enable Depth Buffer" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Background Color" slicecount="1" values="|0.00000,0.00000,0.00000,1.00000|">
+   <PIN pinname="Background Color" slicecount="1" visible="1" values="|0.25453,0.33224,0.48015,1.00000|">
    </PIN>
    </NODE>
    <NODE systemname="Main view" filename="subpatch\Main view.v4p" nodename="subpatch\Main view.v4p" componentmode="Hidden" id="36">
@@ -189,7 +189,7 @@
    </PIN>
    <PIN pinname="Layer Out" visible="1">
    </PIN>
-   <PIN pinname="Input Count" slicecount="1" values="12">
+   <PIN pinname="Input Count" slicecount="1" values="10">
    </PIN>
    <PIN pinname="Layer 3" visible="1" slicecount="1" values="||">
    </PIN>
@@ -239,7 +239,7 @@
    </PIN>
    </NODE>
    <NODE systemname="PerfMeter (DX11.Debug)" filename="%VVVV%\packs\dx11\nodes\modules\PerfMeter (DX11.Debug).v4p" nodename="PerfMeter (DX11.Debug)" componentmode="Hidden" id="48">
-   <BOUNDS type="Node" left="1865" top="7015" width="100" height="100">
+   <BOUNDS type="Node" left="2045" top="7675" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -262,14 +262,14 @@
    <PIN pinname="Uniform Scale" slicecount="1" values="1.05">
    </PIN>
    </NODE>
-   <NODE systemname="AR map fix" filename="subpatch\AR map fix.v4p" nodename="subpatch\AR map fix.v4p" componentmode="InAWindow" id="60">
+   <NODE systemname="AR map fix" filename="subpatch\AR map fix.v4p" nodename="subpatch\AR map fix.v4p" componentmode="Hidden" id="60">
    <BOUNDS type="Node" left="6850" top="5825" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform In" visible="1">
    </PIN>
    <PIN pinname="pos Controller" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="2865" top="2895" width="9360" height="8505">
+   <BOUNDS type="Window" left="2655" top="2295" width="9360" height="8505">
    </BOUNDS>
    <PIN pinname="Switch Input" visible="1">
    </PIN>
@@ -396,8 +396,6 @@
    <LINKPOINT x="7845" y="4043">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="11" srcpinname="Lazer HUD" dstnodeid="39" dstpinname="Layer 9">
-   </LINK>
    <LINK srcnodeid="65" srcpinname="Output Rettungskraft" dstnodeid="64" dstpinname="Pos Rettungskraft" linkstyle="Bezier">
    <LINKPOINT x="6825" y="3345">
    </LINKPOINT>
@@ -489,7 +487,7 @@
    <LINK srcnodeid="71" srcpinname="Y Output Value" dstnodeid="70" dstpinname="Switch">
    </LINK>
    <NODE id="38" componentmode="Hidden" systemname="Modell" filename="subpatch\Modell.v4p" nodename="subpatch\Modell.v4p">
-   <BOUNDS type="Window" left="-1455" top="1140" width="17385" height="10680">
+   <BOUNDS type="Window" left="5805" top="1890" width="17385" height="10680">
    </BOUNDS>
    <BOUNDS type="Node" left="3005" top="2865" width="100" height="100">
    </BOUNDS>
@@ -635,7 +633,7 @@
    <NODE systemname="Mentor_neu" filename="subpatch\Mentor_neu.v4p" nodename="subpatch\Mentor_neu.v4p" componentmode="Hidden" id="82" stayontop="1">
    <BOUNDS type="Node" left="6090" top="6750" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="6030" top="840" width="17250" height="16380">
+   <BOUNDS type="Window" left="1470" top="150" width="17250" height="16380">
    </BOUNDS>
    <PIN pinname="Pos für Mentor" visible="1">
    </PIN>
@@ -710,12 +708,12 @@
    <LINKPOINT x="5460" y="4560">
    </LINKPOINT>
    </LINK>
-   <NODE systemname="Info Betroffener" filename="subpatch\Info Betroffener.v4p" componentmode="InAWindow" id="92" nodename="subpatch\Info Betroffener.v4p">
+   <NODE systemname="Info Betroffener" filename="subpatch\Info Betroffener.v4p" componentmode="Hidden" id="92" nodename="subpatch\Info Betroffener.v4p">
    <BOUNDS type="Node" left="4245" top="6135" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="4245" top="6135" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="4875" top="5595" width="12255" height="7665">
+   <BOUNDS type="Window" left="2790" top="4725" width="12255" height="7665">
    </BOUNDS>
    <PIN pinname="View" visible="1" slicecount="1" values="||">
    </PIN>
@@ -752,8 +750,6 @@
    </LINK>
    <LINK srcnodeid="86" srcpinname="Output Node" dstnodeid="82" dstpinname="View">
    </LINK>
-   <LINK srcnodeid="82" srcpinname="Mentor Out" dstnodeid="39" dstpinname="Layer 7">
-   </LINK>
    <LINK srcnodeid="36" srcpinname="LookAt (View)" dstnodeid="86" dstpinname="Input Node">
    </LINK>
    <NODE systemname="MainLoop (VVVV)" nodename="MainLoop (VVVV)" componentmode="Hidden" id="-6">
@@ -762,18 +758,6 @@
    <PIN pinname="Maximum Foreground FPS" slicecount="1" values="30">
    </PIN>
    </NODE>
-   <NODE systemname="nanogridv4p" filename="subpatch\nanogridv4p.v4p" componentmode="Hidden" id="133" nodename="subpatch\nanogridv4p.v4p">
-   <BOUNDS type="Node" left="8700" top="8025" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="8700" top="8025" width="4800" height="3600">
-   </BOUNDS>
-   <BOUNDS type="Window" left="8385" top="2175" width="14745" height="8940">
-   </BOUNDS>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="133" srcpinname="Layer" dstnodeid="39" dstpinname="Layer 11">
-   </LINK>
    <NODE systemname="Abstand_Player" filename="subpatch\Abstand_Player.v4p" componentmode="Hidden" id="140" nodename="subpatch\Abstand_Player.v4p">
    <BOUNDS type="Node" left="8925" top="4185" width="100" height="100">
    </BOUNDS>
@@ -803,8 +787,6 @@
    <LINK srcnodeid="140" srcpinname="Distance" dstnodeid="60" dstpinname="Alpha">
    </LINK>
    <LINK srcnodeid="52" srcpinname="Transform Out" dstnodeid="34" dstpinname="Aspect Ratio">
-   </LINK>
-   <LINK srcnodeid="60" srcpinname="pos Controller" dstnodeid="39" dstpinname="Layer 8">
    </LINK>
    <LINK srcnodeid="92" srcpinname="InfoScreen" dstnodeid="39" dstpinname="Layer 4">
    </LINK>
@@ -874,12 +856,30 @@
    <LINKPOINT x="7530" y="4665">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="11" srcpinname="Output" dstnodeid="39" dstpinname="Layer 10">
-   </LINK>
    <LINK srcnodeid="65" srcpinname="Fade" dstnodeid="11" dstpinname="Switch Player">
    </LINK>
    <LINK srcnodeid="48" srcpinname="Layer" dstnodeid="39" dstpinname="Layer 1">
    </LINK>
    <LINK srcnodeid="140" srcpinname="Distance" dstnodeid="92" dstpinname="Alpha">
+   </LINK>
+   <NODE systemname="nanogrid" filename="subpatch\nanogrid.v4p" nodename="subpatch\nanogrid.v4p" componentmode="Hidden" id="147">
+   <BOUNDS type="Node" left="8970" top="7470" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Window" left="7215" top="1830" width="14745" height="8940">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="147" srcpinname="Layer" dstnodeid="39" dstpinname="Layer 11">
+   </LINK>
+   <LINK srcnodeid="82" srcpinname="Mentor Out" dstnodeid="39" dstpinname="Layer 6">
+   </LINK>
+   <LINK srcnodeid="60" srcpinname="pos Controller" dstnodeid="39" dstpinname="Layer 7">
+   </LINK>
+   <LINK srcnodeid="11" srcpinname="Lazer HUD" dstnodeid="39" dstpinname="Layer 8">
+   </LINK>
+   <LINK srcnodeid="11" srcpinname="Output" dstnodeid="39" dstpinname="Layer 9">
+   </LINK>
+   <LINK srcnodeid="147" srcpinname="Layer" dstnodeid="39" dstpinname="Layer 10">
    </LINK>
    </PATCH>

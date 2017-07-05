@@ -72,4 +72,18 @@
    </NODE>
    <LINK srcnodeid="0" srcpinname="Distance" dstnodeid="5" dstpinname="Y Input Value">
    </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="6">
+   <BOUNDS type="Node" left="2760" top="2430" width="4095" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2760" top="2430" width="4020" height="315">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt;- Errechnet den Abstand zwischen den beiden Figuren.|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
    </PATCH>

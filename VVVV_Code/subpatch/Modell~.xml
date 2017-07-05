@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
    <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\VVVV_Code\subpatch\Modell.v4p" systemname="Modell" filename="C:\Users\Daniel\Desktop\Prototyp_bodenlos_Ausstellung\patch\subpatch\Modell.v4p" scrollx="15" scrolly="2520">
-   <BOUNDS type="Window" left="-1455" top="1140" width="17385" height="10680">
+   <BOUNDS type="Window" left="1470" top="1275" width="17385" height="10680">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -97,11 +97,11 @@
    <LINK srcnodeid="26" srcpinname="Transform Out" dstnodeid="56" dstpinname="Transform In">
    </LINK>
    <NODE nodename="IOBox (Color)" componentmode="InABox" id="57">
-   <BOUNDS type="Box" left="6690" top="6315" width="2235" height="435">
+   <BOUNDS type="Box" left="6390" top="6255" width="2445" height="405">
    </BOUNDS>
-   <BOUNDS type="Node" left="6690" top="6315" width="0" height="0">
+   <BOUNDS type="Node" left="6390" top="6255" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.24836,0.24836,0.24836,1.00000|">
+   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.28913,0.28913,0.28913,1.00000|">
    </PIN>
    <PIN pinname="Color Output" visible="1">
    </PIN>
@@ -307,9 +307,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="71">
-   <BOUNDS type="Box" left="4335" top="6570" width="795" height="240">
+   <BOUNDS type="Box" left="4005" top="6705" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="4335" top="6570" width="0" height="0">
+   <BOUNDS type="Node" left="4005" top="6705" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="2.77">
    </PIN>
@@ -321,9 +321,9 @@
    <LINK srcnodeid="71" srcpinname="Y Output Value" dstnodeid="59" dstpinname="Light Attenuation 1">
    </LINK>
    <NODE nodename="IOBox (Color)" componentmode="InABox" id="72">
-   <BOUNDS type="Box" left="7410" top="7050" width="2250" height="480">
+   <BOUNDS type="Box" left="6480" top="6750" width="2475" height="420">
    </BOUNDS>
-   <BOUNDS type="Node" left="7410" top="7050" width="0" height="0">
+   <BOUNDS type="Node" left="6480" top="6750" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.00000,0.29998,0.34479,0.94997|">
    </PIN>
@@ -331,11 +331,11 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Color)" componentmode="InABox" id="73">
-   <BOUNDS type="Box" left="6375" top="5415" width="2460" height="735">
+   <BOUNDS type="Box" left="6420" top="5655" width="2460" height="405">
    </BOUNDS>
-   <BOUNDS type="Node" left="6375" top="5415" width="0" height="0">
+   <BOUNDS type="Node" left="6420" top="5655" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.37805,0.37805,0.37805,1.00000|">
+   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.47814,0.47814,0.47814,1.00000|">
    </PIN>
    <PIN pinname="Color Output" visible="1">
    </PIN>
