@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\Natalie\Documents\GitHub\Bodenlos-vvvv\VVVV_Code\subpatch\Info Betroffener.v4p" systemname="Info Betroffener" filename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\VVVV_Code\subpatch\Info Betroffener.v4p" scrollx="0" scrolly="-360">
-   <BOUNDS type="Window" left="2600" top="2310" width="8140" height="9310">
+   <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\VVVV_Code\subpatch\Info Betroffener.v4p" systemname="Info Betroffener" filename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\VVVV_Code\subpatch\Info Betroffener.v4p" scrollx="0" scrolly="-360">
+   <BOUNDS type="Window" left="3660" top="1455" width="8130" height="9300">
    </BOUNDS>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="1145" top="630" width="795" height="480">
@@ -39,7 +39,7 @@
    <NODE systemname="FacingCam" filename="FacingCam.v4p" nodename="FacingCam.v4p" componentmode="Hidden" id="2">
    <BOUNDS type="Node" left="1160" top="2265" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="17715" top="6900" width="9030" height="9765">
+   <BOUNDS type="Window" left="4800" top="3045" width="9030" height="9765">
    </BOUNDS>
    <PIN pinname="Position" visible="1" slicecount="3" values="0,0,0">
    </PIN>
@@ -311,9 +311,9 @@
    <LINK srcnodeid="35" srcpinname="Output" dstnodeid="34" dstpinname="Input 1">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="36">
-   <BOUNDS type="Box" left="3765" top="2785" width="795" height="240">
+   <BOUNDS type="Box" left="3810" top="2695" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3765" top="2785" width="0" height="0">
+   <BOUNDS type="Node" left="3810" top="2695" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1.5">
    </PIN>
@@ -331,7 +331,7 @@
    <NODE nodename="IOBox (String)" componentmode="InABox" id="37">
    <BOUNDS type="Node" left="4420" top="4155" width="5010" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="4420" top="4155" width="2030" height="610">
+   <BOUNDS type="Box" left="4420" top="4155" width="2265" height="885">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt;- Faded Das Infopanel abhängig vom Abstand zur Rettungskraft ein.|">
    </PIN>

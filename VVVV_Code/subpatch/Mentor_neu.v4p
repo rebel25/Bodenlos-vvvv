@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\VVVV_Code\subpatch\Mentor_neu.v4p" scrollx="0" scrolly="720" systemname="quad test" filename="C:\Users\Daniel\Desktop\V4_Saves\quad test.v4p">
-   <BOUNDS type="Window" left="12540" top="870" width="12870" height="16140">
+   <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\VVVV_Code\subpatch\Mentor_neu.v4p" scrollx="105" scrolly="6615" systemname="quad test" filename="C:\Users\Daniel\Desktop\V4_Saves\quad test.v4p">
+   <BOUNDS type="Window" left="2025" top="255" width="14085" height="11700">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -185,7 +185,7 @@
    </PIN>
    <PIN pinname="Name" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="7900" top="2480" width="11020" height="10000">
+   <BOUNDS type="Window" left="3750" top="1530" width="11010" height="9990">
    </BOUNDS>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="240">
@@ -249,9 +249,9 @@
    <NODE nodename="IOBox (String)" componentmode="InABox" id="236">
    <BOUNDS type="Node" left="7815" top="3630" width="6260" height="230">
    </BOUNDS>
-   <BOUNDS type="Box" left="7815" top="3630" width="1930" height="780">
+   <BOUNDS type="Box" left="7815" top="3630" width="1965" height="1320">
    </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|Mentor soll sich dauerhaft minimal Bewegen um den schwebenden Eindruck zu rezeugen|">
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Mentor soll sich dauerhaft minimal Bewegen um den schwebenden Eindruck zu erzeugen|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -263,7 +263,7 @@
    <NODE nodename="IOBox (String)" componentmode="InABox" id="235">
    <BOUNDS type="Node" left="4775" top="4120" width="10280" height="230">
    </BOUNDS>
-   <BOUNDS type="Box" left="4775" top="4120" width="1690" height="1480">
+   <BOUNDS type="Box" left="4775" top="4120" width="1695" height="1785">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|Bei Bewegung des Betroffenen soll der Mentor nicht an das Sichtfeld geheftet sein, sondern eilt dem Betroffenen wie ein echtes Lebewesen hinterher|">
    </PIN>

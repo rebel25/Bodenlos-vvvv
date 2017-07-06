@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\Natalie\Documents\GitHub\Bodenlos-vvvv\VVVV_Code\subpatch\Controller_Buttons.v4p" systemname="Controller_Buttons" filename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\VVVV_Code\subpatch\Controller_Buttons.v4p" scrollx="0" scrolly="-360">
+   <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\VVVV_Code\subpatch\Controller_Buttons.v4p" systemname="Controller_Buttons" filename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\VVVV_Code\subpatch\Controller_Buttons.v4p" scrollx="0" scrolly="-360">
    <BOUNDS type="Window" left="6270" top="3660" width="7290" height="8320">
    </BOUNDS>
    <NODE systemname="TrackedDevices (OpenVR)" filename="%VVVV%\packs\VVVV.OpenVR\nodes\plugins\VVVV.OpenVR.dll" nodename="TrackedDevices (OpenVR)" componentmode="Hidden" id="0">
@@ -217,7 +217,7 @@
    <NODE nodename="IOBox (String)" componentmode="InABox" id="21">
    <BOUNDS type="Node" left="3940" top="4300" width="3790" height="230">
    </BOUNDS>
-   <BOUNDS type="Box" left="3940" top="4300" width="1620" height="780">
+   <BOUNDS type="Box" left="3940" top="4300" width="1740" height="1065">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|Verzögerung um über den Wechsel eine Blende legen zu können|">
    </PIN>
