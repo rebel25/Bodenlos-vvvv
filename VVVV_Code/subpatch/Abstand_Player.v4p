@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\VVVV_Code\subpatch\Abstand_Player.v4p" systemname="Abstand_Player" filename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\VVVV_Code\subpatch\Abstand_Player.v4p">
-   <BOUNDS type="Window" left="4830" top="6210" width="9000" height="6000">
+   <PATCH nodename="C:\Users\Natalie\Documents\GitHub\Bodenlos-vvvv\VVVV_Code\subpatch\Abstand_Player.v4p" systemname="Abstand_Player" filename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\VVVV_Code\subpatch\Abstand_Player.v4p">
+   <BOUNDS type="Window" left="4830" top="6210" width="6310" height="5460">
    </BOUNDS>
    <NODE systemname="Distance (3d)" filename="%VVVV%\lib\nodes\modules\3D\Distance (3d).v4p" nodename="Distance (3d)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="1635" top="2430" width="100" height="100">
@@ -13,7 +13,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Decompose (Transform Vector)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Decompose (Transform Vector)" componentmode="Hidden" id="1">
-   <BOUNDS type="Node" left="2490" top="1440" width="100" height="100">
+   <BOUNDS type="Node" left="2810" top="1420" width="100" height="100">
    </BOUNDS>
    <PIN pinname="TranslateXYZ" visible="1">
    </PIN>
@@ -21,7 +21,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Decompose (Transform Vector)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Decompose (Transform Vector)" componentmode="Hidden" id="2">
-   <BOUNDS type="Node" left="1635" top="1905" width="100" height="100">
+   <BOUNDS type="Node" left="1005" top="1375" width="100" height="100">
    </BOUNDS>
    <PIN pinname="TranslateXYZ" visible="1">
    </PIN>
@@ -29,9 +29,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="3" systemname="IOBox (Node)">
-   <BOUNDS type="Box" left="1605" top="540" width="795" height="240">
+   <BOUNDS type="Box" left="1015" top="920" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1605" top="540" width="0" height="0">
+   <BOUNDS type="Node" left="1015" top="920" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
    </PIN>
@@ -41,9 +41,9 @@
    <LINK srcnodeid="3" srcpinname="Output Node" dstnodeid="2" dstpinname="Transform In">
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="4" systemname="IOBox (Node)">
-   <BOUNDS type="Box" left="2475" top="840" width="795" height="240">
+   <BOUNDS type="Box" left="2805" top="930" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2475" top="840" width="0" height="0">
+   <BOUNDS type="Node" left="2805" top="930" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
    </PIN>
@@ -59,9 +59,9 @@
    <LINK srcnodeid="1" srcpinname="TranslateXYZ" dstnodeid="0" dstpinname="XYZ2">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="5">
-   <BOUNDS type="Box" left="1620" top="3150" width="795" height="240">
+   <BOUNDS type="Box" left="1630" top="3140" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1620" top="3150" width="0" height="0">
+   <BOUNDS type="Node" left="1630" top="3140" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -73,9 +73,9 @@
    <LINK srcnodeid="0" srcpinname="Distance" dstnodeid="5" dstpinname="Y Input Value">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="6">
-   <BOUNDS type="Node" left="2760" top="2430" width="4095" height="270">
+   <BOUNDS type="Node" left="2760" top="2470" width="4095" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="2760" top="2430" width="4020" height="315">
+   <BOUNDS type="Box" left="2760" top="2470" width="2300" height="560">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt;- Errechnet den Abstand zwischen den beiden Figuren.|">
    </PIN>

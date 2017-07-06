@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\VVVV_Code\subpatch\Figuren.v4p" scrollx="60" scrolly="360" systemname="Figuren" filename="C:\Users\Natalie\Documents\GitHub\Bodenlos-vvvv\subpatch\Figuren.v4p">
+   <PATCH nodename="C:\Users\Natalie\Documents\GitHub\Bodenlos-vvvv\VVVV_Code\subpatch\Figuren.v4p" scrollx="60" scrolly="360" systemname="Figuren" filename="C:\Users\Natalie\Documents\GitHub\Bodenlos-vvvv\subpatch\Figuren.v4p">
    <BOUNDS type="Window" left="1620" top="2790" width="11205" height="9285">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
@@ -51,7 +51,7 @@
    </PIN>
    <PIN pinname="Scale XYZ" slicecount="3" visible="1" values="0.1,0.1,0.1">
    </PIN>
-   <PIN pinname="Center XYZ" visible="1">
+   <PIN pinname="Center XYZ" visible="1" slicecount="3" values="0,0,0">
    </PIN>
    <PIN pinname="Rotate XYZ" visible="1">
    </PIN>
@@ -65,9 +65,9 @@
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="31">
-   <BOUNDS type="Box" left="6445" top="4195" width="795" height="720">
+   <BOUNDS type="Box" left="6485" top="4105" width="795" height="720">
    </BOUNDS>
-   <BOUNDS type="Node" left="6445" top="4195" width="0" height="0">
+   <BOUNDS type="Node" left="6485" top="4105" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0.0075,0.0075,0.0075">
    </PIN>
@@ -131,9 +131,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="20">
-   <BOUNDS type="Box" left="3170" top="3090" width="795" height="240">
+   <BOUNDS type="Box" left="2940" top="2770" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3170" top="3090" width="0" height="0">
+   <BOUNDS type="Node" left="2940" top="2770" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="..\assets\Rettungskraft_neu.dae">
    </PIN>
@@ -175,9 +175,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="43">
-   <BOUNDS type="Box" left="2925" top="2785" width="795" height="240">
+   <BOUNDS type="Box" left="3195" top="3215" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2925" top="2785" width="0" height="0">
+   <BOUNDS type="Node" left="3195" top="3215" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="..\assets\Betroffener_neu.dae">
    </PIN>
@@ -280,26 +280,6 @@
    </NODE>
    <LINK srcnodeid="52" srcpinname="Y Output Value" dstnodeid="62" dstpinname="Input">
    </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="64">
-   <BOUNDS type="Box" left="8215" top="4390" width="795" height="720">
-   </BOUNDS>
-   <BOUNDS type="Node" left="8215" top="4390" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0,0,0">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Vector Size" slicecount="1" values="3">
-   </PIN>
-   <PIN pinname="Rows" slicecount="1" values="3">
-   </PIN>
-   <PIN pinname="X Input Value" slicecount="3" values="0,0,0">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="65">
    <BOUNDS type="Node" left="390" top="4240" width="3180" height="230">
    </BOUNDS>
@@ -319,7 +299,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="4260" top="3030" width="2730" height="1020">
    </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|Switch um immer nur die Figur anzuzeigen, welche nicht die Sichtweise darstellt, damit die Figur nicht störend im Renderer auftaucht|">
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Switch, um immer nur die Figur anzuzeigen, welche nicht die Sichtweise darstellt, damit die Figur nicht störend im Renderer auftaucht|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -343,9 +323,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="68">
-   <BOUNDS type="Node" left="7895" top="5885" width="1930" height="230">
+   <BOUNDS type="Node" left="7555" top="4695" width="1930" height="230">
    </BOUNDS>
-   <BOUNDS type="Box" left="7895" top="5885" width="1980" height="480">
+   <BOUNDS type="Box" left="7555" top="4695" width="1980" height="480">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|kleine Positions-Korrektur der Figur|">
    </PIN>
@@ -357,9 +337,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="69">
-   <BOUNDS type="Node" left="6995" top="2400" width="3730" height="230">
+   <BOUNDS type="Node" left="6855" top="2260" width="3730" height="230">
    </BOUNDS>
-   <BOUNDS type="Box" left="6995" top="2400" width="1995" height="765">
+   <BOUNDS type="Box" left="6855" top="2260" width="1995" height="765">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt;- Teilt ein Transform in die einzelnen Vectoren auf|">
    </PIN>
@@ -407,9 +387,9 @@
    <LINK srcnodeid="61" srcpinname="Inverse Output" dstnodeid="54" dstpinname="Switch">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="72">
-   <BOUNDS type="Box" left="6660" top="4995" width="795" height="720">
+   <BOUNDS type="Box" left="6680" top="4995" width="795" height="720">
    </BOUNDS>
-   <BOUNDS type="Node" left="6660" top="4995" width="0" height="0">
+   <BOUNDS type="Node" left="6680" top="4995" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0.25,0,0">
    </PIN>
@@ -427,54 +407,6 @@
    <LINK srcnodeid="72" srcpinname="Y Output Value" dstnodeid="32" dstpinname="Rotate XYZ">
    </LINK>
    <LINK srcnodeid="54" srcpinname="Output" dstnodeid="32" dstpinname="Transform In">
-   </LINK>
-   <NODE systemname="Switch (Value Input)" nodename="Switch (Value Input)" componentmode="Hidden" id="93">
-   <BOUNDS type="Node" left="7740" top="5400" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 2" visible="1">
-   </PIN>
-   <PIN pinname="Input 1" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Switch" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="64" srcpinname="Y Output Value" dstnodeid="93" dstpinname="Input 2">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="94">
-   <BOUNDS type="Box" left="8010" top="3585" width="795" height="720">
-   </BOUNDS>
-   <BOUNDS type="Node" left="8010" top="3585" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0,0,0">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Vector Size" slicecount="1" values="3">
-   </PIN>
-   <PIN pinname="Rows" slicecount="1" values="3">
-   </PIN>
-   <PIN pinname="X Input Value" slicecount="3" values="0,0,0">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="94" srcpinname="Y Output Value" dstnodeid="93" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="93" srcpinname="Output" dstnodeid="32" dstpinname="Center XYZ" linkstyle="Bezier">
-   <LINKPOINT x="7760" y="5808">
-   </LINKPOINT>
-   <LINKPOINT x="6865" y="5803">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="61" srcpinname="Inverse Output" dstnodeid="93" dstpinname="Switch" linkstyle="Bezier">
-   <LINKPOINT x="4500" y="2445">
-   </LINKPOINT>
-   <LINKPOINT x="7950" y="3270">
-   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="20" srcpinname="Output String" dstnodeid="53" dstpinname="Input 1">
    </LINK>

@@ -1,9 +1,9 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\VVVV_Code\subpatch\Controller_Buttons.v4p" systemname="Controller_Buttons" filename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\VVVV_Code\subpatch\Controller_Buttons.v4p" scrollx="0" scrolly="-360">
-   <BOUNDS type="Window" left="6990" top="6435" width="9000" height="6000">
+   <PATCH nodename="C:\Users\Natalie\Documents\GitHub\Bodenlos-vvvv\VVVV_Code\subpatch\Controller_Buttons.v4p" systemname="Controller_Buttons" filename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\VVVV_Code\subpatch\Controller_Buttons.v4p" scrollx="0" scrolly="-360">
+   <BOUNDS type="Window" left="6270" top="3660" width="7650" height="8320">
    </BOUNDS>
    <NODE systemname="TrackedDevices (OpenVR)" filename="%VVVV%\packs\VVVV.OpenVR\nodes\plugins\VVVV.OpenVR.dll" nodename="TrackedDevices (OpenVR)" componentmode="Hidden" id="0">
-   <BOUNDS type="Node" left="750" top="390" width="100" height="100">
+   <BOUNDS type="Node" left="860" top="850" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Left and Right Controller" visible="1">
    </PIN>
@@ -11,7 +11,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Controller (OpenVR Split)" filename="%VVVV%\packs\VVVV.OpenVR\nodes\plugins\VVVV.OpenVR.dll" nodename="Controller (OpenVR Split)" componentmode="Hidden" id="1">
-   <BOUNDS type="Node" left="1725" top="1035" width="100" height="100">
+   <BOUNDS type="Node" left="1835" top="1495" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Controller" visible="1">
    </PIN>
@@ -23,9 +23,9 @@
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="2">
-   <BOUNDS type="Box" left="750" top="0" width="795" height="240">
+   <BOUNDS type="Box" left="860" top="460" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="750" top="0" width="0" height="0">
+   <BOUNDS type="Node" left="860" top="460" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
    </PIN>
@@ -35,7 +35,7 @@
    <LINK srcnodeid="2" srcpinname="Output Node" dstnodeid="0" dstpinname="System">
    </LINK>
    <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="4">
-   <BOUNDS type="Node" left="2805" top="1830" width="100" height="100">
+   <BOUNDS type="Node" left="2915" top="2290" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1" slicecount="2" values="0,0">
    </PIN>
@@ -45,7 +45,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Unzip (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Unzip (Value)" componentmode="Hidden" id="6">
-   <BOUNDS type="Node" left="2820" top="1440" width="100" height="100">
+   <BOUNDS type="Node" left="2930" top="1900" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="2" values="0,0">
    </PIN>
@@ -59,7 +59,7 @@
    <LINK srcnodeid="6" srcpinname="Output 2" dstnodeid="4" dstpinname="Input 2">
    </LINK>
    <NODE systemname="Toggle (Animation)" nodename="Toggle (Animation)" componentmode="Hidden" id="9">
-   <BOUNDS type="Node" left="2790" top="2925" width="100" height="100">
+   <BOUNDS type="Node" left="2930" top="3705" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -67,9 +67,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="11">
-   <BOUNDS type="Box" left="2805" top="4335" width="480" height="480">
+   <BOUNDS type="Box" left="2915" top="5605" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="2805" top="4335" width="0" height="0">
+   <BOUNDS type="Node" left="2915" top="5605" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -85,7 +85,7 @@
    </PIN>
    </NODE>
    <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="13">
-   <BOUNDS type="Node" left="2790" top="2550" width="100" height="100">
+   <BOUNDS type="Node" left="2930" top="3330" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="0">
    </PIN>
@@ -99,7 +99,7 @@
    <LINK srcnodeid="1" srcpinname="Touchpad Press" dstnodeid="6" dstpinname="Input">
    </LINK>
    <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="14">
-   <BOUNDS type="Node" left="2805" top="2190" width="100" height="100">
+   <BOUNDS type="Node" left="2915" top="2900" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1" slicecount="2" values="0,0">
    </PIN>
@@ -113,9 +113,9 @@
    <LINK srcnodeid="14" srcpinname="Output" dstnodeid="13" dstpinname="Input">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="15">
-   <BOUNDS type="Box" left="4635" top="915" width="480" height="480">
+   <BOUNDS type="Box" left="4745" top="1375" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="4635" top="915" width="0" height="0">
+   <BOUNDS type="Node" left="4745" top="1375" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -131,13 +131,13 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="15" srcpinname="Y Output Value" dstnodeid="14" dstpinname="Input 2" linkstyle="Bezier">
-   <LINKPOINT x="4635" y="1778">
+   <LINKPOINT x="4745" y="2313">
    </LINKPOINT>
-   <LINKPOINT x="3165" y="1778">
+   <LINKPOINT x="3275" y="2413">
    </LINKPOINT>
    </LINK>
    <NODE systemname="Decay (Animation)" nodename="Decay (Animation)" componentmode="Hidden" id="16">
-   <BOUNDS type="Node" left="2805" top="3375" width="100" height="100">
+   <BOUNDS type="Node" left="2915" top="4645" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Attack" slicecount="1" visible="1" values="0.5">
    </PIN>
@@ -151,7 +151,7 @@
    <LINK srcnodeid="9" srcpinname="Output" dstnodeid="16" dstpinname="Input">
    </LINK>
    <NODE systemname="Round (Value)" filename="%VVVV%\addonpack\lib\nodes\plugins\Round.dll" nodename="Round (Value)" componentmode="Hidden" id="17">
-   <BOUNDS type="Node" left="2805" top="3810" width="100" height="100">
+   <BOUNDS type="Node" left="2915" top="5080" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -165,9 +165,9 @@
    <LINK srcnodeid="17" srcpinname="Output" dstnodeid="11" dstpinname="Y Input Value">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="18">
-   <BOUNDS type="Box" left="3720" top="2790" width="795" height="240">
+   <BOUNDS type="Box" left="3100" top="4150" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3720" top="2790" width="0" height="0">
+   <BOUNDS type="Node" left="3100" top="4150" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -183,9 +183,9 @@
    <LINK srcnodeid="18" srcpinname="Y Output Value" dstnodeid="16" dstpinname="Attack">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="19">
-   <BOUNDS type="Box" left="4110" top="4395" width="480" height="480">
+   <BOUNDS type="Box" left="4220" top="5665" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="4110" top="4395" width="0" height="0">
+   <BOUNDS type="Node" left="4220" top="5665" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -200,4 +200,18 @@
    </NODE>
    <LINK srcnodeid="9" srcpinname="Output" dstnodeid="19" dstpinname="Y Input Value">
    </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="20">
+   <BOUNDS type="Node" left="640" top="2890" width="4660" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="640" top="2890" width="1820" height="640">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Trackt, wenn bei einem Controller auf das Touchpad geklickt wird|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
    </PATCH>
