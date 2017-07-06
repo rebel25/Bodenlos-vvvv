@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
    <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\VVVV_Code\_root_Prototyp.v4p" scrollx="0" scrolly="-720" systemname="_root_Prototyp" filename="C:\Users\Natalie\Documents\VVVV\6. Semester\bodenlos\Prototyp_Ausstellung\_root_Prototyp.v4p">
-   <BOUNDS type="Window" left="6780" top="945" width="19605" height="13950">
+   <BOUNDS type="Window" left="1110" top="780" width="19620" height="13950">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -81,9 +81,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="31">
-   <BOUNDS type="Node" left="970" top="8580" width="3800" height="230">
+   <BOUNDS type="Node" left="955" top="8865" width="3800" height="230">
    </BOUNDS>
-   <BOUNDS type="Box" left="970" top="8580" width="10575" height="465">
+   <BOUNDS type="Box" left="955" top="8865" width="10575" height="465">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="Output____________________________________________________________________________">
    </PIN>
@@ -205,7 +205,7 @@
    </BOUNDS>
    </NODE>
    <NODE systemname="AspectRatio (Transform)" nodename="AspectRatio (Transform)" componentmode="Hidden" id="52">
-   <BOUNDS type="Node" left="9085" top="11175" width="100" height="100">
+   <BOUNDS type="Node" left="9100" top="11190" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
@@ -417,7 +417,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="11445" top="840" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -431,7 +431,7 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Switch Camera|">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="71" srcpinname="Y Output Value" dstnodeid="69" dstpinname="Switch" linkstyle="Bezier" hiddenwhenlocked="1">
@@ -563,9 +563,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="80">
-   <BOUNDS type="Node" left="8965" top="10960" width="1490" height="230">
+   <BOUNDS type="Node" left="9115" top="10885" width="1490" height="230">
    </BOUNDS>
-   <BOUNDS type="Box" left="8965" top="10960" width="1490" height="230">
+   <BOUNDS type="Box" left="9115" top="10885" width="1490" height="230">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|Festes Bildformat|">
    </PIN>
@@ -911,5 +911,41 @@
    </LINKPOINT>
    <LINKPOINT x="12210" y="1950">
    </LINKPOINT>
+   </LINK>
+   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" id="152">
+   <BOUNDS type="Node" left="930" top="11520" width="8955" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="930" top="11520" width="6000" height="4500">
+   </BOUNDS>
+   <BOUNDS type="Window" left="14370" top="4260" width="13425" height="7875">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   <PIN pinname="Actual BackBuffer SizeXY" visible="1">
+   </PIN>
+   <PIN pinname="View" visible="1">
+   </PIN>
+   <PIN pinname="Projection" visible="1">
+   </PIN>
+   <PIN pinname="Enable Depth Buffer" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Depth Buffer Mode" slicecount="1" values="Standard">
+   </PIN>
+   <PIN pinname="Depth Buffer Format" slicecount="1" values="D32_Float">
+   </PIN>
+   <PIN pinname="Background Color" slicecount="1" values="|0.25541,0.34167,0.46710,1.00000|">
+   </PIN>
+   <PIN pinname="Aspect Ratio" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="39" srcpinname="Layer Out" dstnodeid="152" dstpinname="Layers">
+   </LINK>
+   <LINK srcnodeid="152" srcpinname="Actual BackBuffer SizeXY" dstnodeid="42" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="69" srcpinname="Output" dstnodeid="152" dstpinname="View">
+   </LINK>
+   <LINK srcnodeid="70" srcpinname="Output" dstnodeid="152" dstpinname="Projection">
+   </LINK>
+   <LINK srcnodeid="52" srcpinname="Transform Out" dstnodeid="152" dstpinname="Aspect Ratio">
    </LINK>
    </PATCH>
