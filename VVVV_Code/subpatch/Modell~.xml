@@ -340,4 +340,18 @@
    </LINK>
    <LINK srcnodeid="59" srcpinname="Layer" dstnodeid="25" dstpinname="Input Node">
    </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="79">
+   <BOUNDS type="Node" left="4690" top="5270" width="920" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4690" top="5270" width="1420" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="Lichteinstellungen">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
    </PATCH>

@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\VVVV_Code\_root_Prototyp.v4p" scrollx="0" scrolly="5040" systemname="_root_Prototyp" filename="C:\Users\Natalie\Documents\VVVV\6. Semester\bodenlos\Prototyp_Ausstellung\_root_Prototyp.v4p">
-   <BOUNDS type="Window" left="4065" top="795" width="18270" height="14820">
+   <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\VVVV_Code\_root_Prototyp.v4p" scrollx="15" scrolly="7920" systemname="_root_Prototyp" filename="C:\Users\Natalie\Documents\VVVV\6. Semester\bodenlos\Prototyp_Ausstellung\_root_Prototyp.v4p">
+   <BOUNDS type="Window" left="3420" top="3420" width="18270" height="14820">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -272,26 +272,6 @@
    <LINKPOINT x="7013" y="4819">
    </LINKPOINT>
    </LINK>
-   <NODE systemname="Figuren" filename="subpatch\Figuren.v4p" nodename="subpatch\Figuren.v4p" componentmode="Hidden" id="64">
-   <BOUNDS type="Node" left="4200" top="4150" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Output Figuren" visible="1">
-   </PIN>
-   <BOUNDS type="Window" left="2070" top="2445" width="11205" height="9285">
-   </BOUNDS>
-   <PIN pinname="Switch Input" visible="1">
-   </PIN>
-   <PIN pinname="Transform In" visible="1">
-   </PIN>
-   <PIN pinname="pos Controller" visible="1">
-   </PIN>
-   <PIN pinname="Figurauswahl" visible="1">
-   </PIN>
-   <PIN pinname="Pos Rettungskraft" visible="1">
-   </PIN>
-   <PIN pinname="Pos Betroffener" visible="1">
-   </PIN>
-   </NODE>
    <NODE id="11" componentmode="Hidden" systemname="AR cam fix" filename="subpatch\AR cam fix.v4p" nodename="subpatch\AR cam fix.v4p">
    <BOUNDS type="Node" left="8275" top="8075" width="1020" height="270">
    </BOUNDS>
@@ -314,10 +294,6 @@
    <PIN pinname="Switch Player" slicecount="1" visible="1" values="0">
    </PIN>
    </NODE>
-   <LINK srcnodeid="63" srcpinname="Y Output Value" dstnodeid="64" dstpinname="Switch Input">
-   </LINK>
-   <LINK srcnodeid="64" srcpinname="pos Controller" dstnodeid="39" dstpinname="Layer 3">
-   </LINK>
    <NODE systemname="Poser Daten" filename="subpatch\Poser Daten.v4p" componentmode="Hidden" id="65" nodename="subpatch\Poser Daten.v4p">
    <BOUNDS type="Node" left="6890" top="2070" width="100" height="100">
    </BOUNDS>
@@ -352,18 +328,6 @@
    <LINKPOINT x="8165" y="4626">
    </LINKPOINT>
    <LINKPOINT x="8275" y="5160">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="65" srcpinname="Output Rettungskraft" dstnodeid="64" dstpinname="Pos Rettungskraft" linkstyle="Bezier" hiddenwhenlocked="1">
-   <LINKPOINT x="7055" y="3288">
-   </LINKPOINT>
-   <LINKPOINT x="4465" y="3182">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="65" srcpinname="Output Betroffener" dstnodeid="64" dstpinname="Pos Betroffener" linkstyle="Bezier" hiddenwhenlocked="1">
-   <LINKPOINT x="8135" y="3288">
-   </LINKPOINT>
-   <LINKPOINT x="4840" y="3182">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="65" srcpinname="Output Betroffener" dstnodeid="36" dstpinname="View Betroffener" linkstyle="Bezier" hiddenwhenlocked="1">
@@ -595,7 +559,7 @@
    <NODE systemname="Mentor_neu" filename="subpatch\Mentor_neu.v4p" nodename="subpatch\Mentor_neu.v4p" componentmode="Hidden" id="82" stayontop="1">
    <BOUNDS type="Node" left="6650" top="6840" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="2025" top="255" width="14085" height="11700">
+   <BOUNDS type="Window" left="3645" top="2565" width="14085" height="11700">
    </BOUNDS>
    <PIN pinname="Pos für Mentor" visible="1">
    </PIN>
@@ -756,12 +720,6 @@
    </LINK>
    <LINK srcnodeid="92" srcpinname="InfoScreen" dstnodeid="39" dstpinname="Layer 4">
    </LINK>
-   <LINK srcnodeid="65" srcpinname="Switch Player" dstnodeid="64" dstpinname="Figurauswahl" linkstyle="Bezier" hiddenwhenlocked="1">
-   <LINKPOINT x="7595" y="3288">
-   </LINKPOINT>
-   <LINKPOINT x="4090" y="3182">
-   </LINKPOINT>
-   </LINK>
    <LINK srcnodeid="65" srcpinname="Switch Player" dstnodeid="92" dstpinname="Enable" linkstyle="Bezier" hiddenwhenlocked="1">
    <LINKPOINT x="7660" y="4039">
    </LINKPOINT>
@@ -914,12 +872,12 @@
    <LINKPOINT x="12855" y="1890">
    </LINKPOINT>
    </LINK>
-   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="Hidden" id="151">
+   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" id="151">
    <BOUNDS type="Node" left="1905" top="11760" width="8250" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="1905" top="11760" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="16440" top="1860" width="11385" height="6795">
+   <BOUNDS type="Window" left="17100" top="4050" width="11385" height="6795">
    </BOUNDS>
    <PIN pinname="View" visible="1">
    </PIN>
@@ -949,9 +907,9 @@
    <LINK srcnodeid="39" srcpinname="Layer Out" dstnodeid="151" dstpinname="Layers">
    </LINK>
    <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InABox" id="152">
-   <BOUNDS type="Node" left="8205" top="13815" width="4755" height="270">
+   <BOUNDS type="Node" left="8175" top="15165" width="4755" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="8205" top="13815" width="6000" height="4500">
+   <BOUNDS type="Box" left="8175" top="15165" width="6555" height="4365">
    </BOUNDS>
    <BOUNDS type="Window" left="16440" top="1860" width="11385" height="6795">
    </BOUNDS>
@@ -978,6 +936,92 @@
    </LINK>
    <LINK srcnodeid="52" srcpinname="Transform Out" dstnodeid="152" dstpinname="Aspect Ratio">
    </LINK>
-   <LINK srcnodeid="39" srcpinname="Layer Out" dstnodeid="152" dstpinname="Layers">
+   <NODE systemname="Group (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Group (DX11.Layer)" componentmode="Hidden" id="154">
+   <BOUNDS type="Node" left="9930" top="13740" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer 1" visible="1">
+   </PIN>
+   <PIN pinname="Layer 2" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="39" srcpinname="Layer Out" dstnodeid="154" dstpinname="Layer 1">
+   </LINK>
+   <LINK srcnodeid="154" srcpinname="Layer Out" dstnodeid="152" dstpinname="Layers">
+   </LINK>
+   <NODE systemname="Figuren_switch" filename="subpatch\Figuren_switch.v4p" nodename="subpatch\Figuren_switch.v4p" componentmode="InAWindow" id="155">
+   <BOUNDS type="Node" left="13545" top="11340" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Window" left="2895" top="2955" width="11205" height="9285">
+   </BOUNDS>
+   <PIN pinname="pos Controller" visible="1">
+   </PIN>
+   <PIN pinname="Pos Rettungskraft" visible="1">
+   </PIN>
+   <PIN pinname="Pos Betroffener" visible="1">
+   </PIN>
+   <PIN pinname="Figurauswahl" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="64" componentmode="Hidden" systemname="Figuren" filename="subpatch\Figuren.v4p" nodename="subpatch\Figuren.v4p">
+   <BOUNDS type="Window" left="9675" top="6195" width="11205" height="9285">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4200" top="4150" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output Figuren" visible="1">
+   </PIN>
+   <PIN pinname="Switch Input" visible="1">
+   </PIN>
+   <PIN pinname="Transform In" visible="1">
+   </PIN>
+   <PIN pinname="pos Controller" visible="1">
+   </PIN>
+   <PIN pinname="Figurauswahl" visible="1">
+   </PIN>
+   <PIN pinname="Pos Rettungskraft" visible="1">
+   </PIN>
+   <PIN pinname="Pos Betroffener" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="65" srcpinname="Switch Player" dstnodeid="64" dstpinname="Figurauswahl" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="7595" y="3288">
+   </LINKPOINT>
+   <LINKPOINT x="4090" y="3182">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="65" srcpinname="Output Betroffener" dstnodeid="64" dstpinname="Pos Betroffener" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="8135" y="3288">
+   </LINKPOINT>
+   <LINKPOINT x="4840" y="3182">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="65" srcpinname="Output Rettungskraft" dstnodeid="64" dstpinname="Pos Rettungskraft" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="7055" y="3288">
+   </LINKPOINT>
+   <LINKPOINT x="4465" y="3182">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="64" srcpinname="pos Controller" dstnodeid="39" dstpinname="Layer 3">
+   </LINK>
+   <LINK srcnodeid="155" srcpinname="pos Controller" dstnodeid="154" dstpinname="Layer 2">
+   </LINK>
+   <LINK srcnodeid="65" srcpinname="Output Rettungskraft" dstnodeid="155" dstpinname="Pos Rettungskraft" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="6945" y="6825">
+   </LINKPOINT>
+   <LINKPOINT x="14160" y="6825">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="65" srcpinname="Output Betroffener" dstnodeid="155" dstpinname="Pos Betroffener" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="8025" y="6825">
+   </LINKPOINT>
+   <LINKPOINT x="14760" y="6825">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="65" srcpinname="Switch Player" dstnodeid="155" dstpinname="Figurauswahl" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="7305" y="6825">
+   </LINKPOINT>
+   <LINKPOINT x="13545" y="6825">
+   </LINKPOINT>
    </LINK>
    </PATCH>

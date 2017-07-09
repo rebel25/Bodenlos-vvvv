@@ -39,7 +39,7 @@
    <NODE systemname="FacingCam" filename="FacingCam.v4p" nodename="FacingCam.v4p" componentmode="Hidden" id="2">
    <BOUNDS type="Node" left="1160" top="2265" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="17715" top="6900" width="9030" height="9765">
+   <BOUNDS type="Window" left="4800" top="3045" width="9030" height="9765">
    </BOUNDS>
    <PIN pinname="Position" visible="1" slicecount="3" values="0,0,0">
    </PIN>
@@ -311,9 +311,9 @@
    <LINK srcnodeid="35" srcpinname="Output" dstnodeid="34" dstpinname="Input 1">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="36">
-   <BOUNDS type="Box" left="3765" top="2785" width="795" height="240">
+   <BOUNDS type="Box" left="3810" top="2695" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3765" top="2785" width="0" height="0">
+   <BOUNDS type="Node" left="3810" top="2695" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1.5">
    </PIN>

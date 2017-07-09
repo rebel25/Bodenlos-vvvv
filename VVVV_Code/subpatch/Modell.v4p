@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\Natalie\Documents\GitHub\Bodenlos-vvvv\VVVV_Code\subpatch\Modell.v4p" systemname="Modell" filename="C:\Users\Daniel\Desktop\Prototyp_bodenlos_Ausstellung\patch\subpatch\Modell.v4p" scrollx="20" scrolly="-360">
-   <BOUNDS type="Window" left="5800" top="1890" width="11360" height="10680">
+   <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\VVVV_Code\subpatch\Modell.v4p" systemname="Modell" filename="C:\Users\Daniel\Desktop\Prototyp_bodenlos_Ausstellung\patch\subpatch\Modell.v4p" scrollx="15" scrolly="-360">
+   <BOUNDS type="Window" left="3300" top="1170" width="11355" height="10680">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
