@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\VVVV_Code\_root_Prototyp.v4p" scrollx="0" scrolly="315" systemname="_root_Prototyp" filename="C:\Users\Natalie\Documents\VVVV\6. Semester\bodenlos\Prototyp_Ausstellung\_root_Prototyp.v4p">
-   <BOUNDS type="Window" left="2115" top="375" width="18270" height="14820">
+   <PATCH nodename="C:\Users\Daniel\Desktop\Bodenlos\Bodenlos-vvvv\VVVV_Code\_root_Prototyp.v4p" scrollx="0" scrolly="5040" systemname="_root_Prototyp" filename="C:\Users\Natalie\Documents\VVVV\6. Semester\bodenlos\Prototyp_Ausstellung\_root_Prototyp.v4p">
+   <BOUNDS type="Window" left="4065" top="795" width="18270" height="14820">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -173,11 +173,13 @@
    </PIN>
    <PIN pinname="Layer 12" visible="1" slicecount="1" values="||">
    </PIN>
+   <PIN pinname="Enabled" slicecount="1" values="1">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="42">
-   <BOUNDS type="Box" left="5390" top="12245" width="795" height="480">
+   <BOUNDS type="Box" left="5990" top="12470" width="795" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="5390" top="12245" width="0" height="0">
+   <BOUNDS type="Node" left="5990" top="12470" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -199,7 +201,7 @@
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
-   <PIN pinname="Enabled" slicecount="1" values="0">
+   <PIN pinname="Enabled" slicecount="1" values="1">
    </PIN>
    <BOUNDS type="Window" left="9255" top="2790" width="12300" height="12450">
    </BOUNDS>
@@ -241,7 +243,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="6870" top="790" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -253,7 +255,7 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Switch Input|">
    </PIN>
@@ -689,9 +691,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="86" srcpinname="Output Node" dstnodeid="92" dstpinname="View" linkstyle="Bezier">
-   <LINKPOINT x="13985" y="14260">
+   <LINKPOINT x="14145" y="15030">
    </LINKPOINT>
-   <LINKPOINT x="14530" y="2600">
+   <LINKPOINT x="15240" y="2760">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="65" srcpinname="Output Betroffener" dstnodeid="92" dstpinname="PosBetroffener" linkstyle="Bezier" hiddenwhenlocked="1">
@@ -701,15 +703,15 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="42" srcpinname="Y Output Value" dstnodeid="92" dstpinname="Buffer Size" linkstyle="Bezier">
-   <LINKPOINT x="15061" y="14980">
+   <LINKPOINT x="15461" y="15130">
    </LINKPOINT>
-   <LINKPOINT x="14144" y="2040">
+   <LINKPOINT x="14344" y="2115">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="42" srcpinname="Y Output Value" dstnodeid="82" dstpinname="Buffer Size" linkstyle="Bezier">
-   <LINKPOINT x="16140" y="14565">
+   <LINKPOINT x="16540" y="14715">
    </LINKPOINT>
-   <LINKPOINT x="12525" y="1500">
+   <LINKPOINT x="12725" y="1575">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="36" srcpinname="LookAt (View)" dstnodeid="86" dstpinname="Input Node">
@@ -871,7 +873,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="10385" top="825" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -883,7 +885,7 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Grid An/Aus|">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="149" srcpinname="Y Output Value" dstnodeid="147" dstpinname="Grid An/Aus" linkstyle="Bezier" hiddenwhenlocked="1">
@@ -907,9 +909,75 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="86" srcpinname="Output Node" dstnodeid="82" dstpinname="View" linkstyle="Bezier">
-   <LINKPOINT x="15690" y="13410">
+   <LINKPOINT x="15915" y="14400">
    </LINKPOINT>
-   <LINKPOINT x="12210" y="1950">
+   <LINKPOINT x="12855" y="1890">
    </LINKPOINT>
+   </LINK>
+   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="Hidden" id="151">
+   <BOUNDS type="Node" left="1905" top="11760" width="8250" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1905" top="11760" width="6000" height="4500">
+   </BOUNDS>
+   <BOUNDS type="Window" left="16440" top="1860" width="11385" height="6795">
+   </BOUNDS>
+   <PIN pinname="View" visible="1">
+   </PIN>
+   <PIN pinname="Projection" visible="1">
+   </PIN>
+   <PIN pinname="Actual BackBuffer SizeXY" visible="1">
+   </PIN>
+   <PIN pinname="Aspect Ratio" visible="1">
+   </PIN>
+   <PIN pinname="Depth Buffer Mode" slicecount="1" values="Standard">
+   </PIN>
+   <PIN pinname="Depth Buffer Format" slicecount="1" values="D32_Float">
+   </PIN>
+   <PIN pinname="Clear Depth Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="69" srcpinname="Output" dstnodeid="151" dstpinname="View">
+   </LINK>
+   <LINK srcnodeid="70" srcpinname="Output" dstnodeid="151" dstpinname="Projection">
+   </LINK>
+   <LINK srcnodeid="151" srcpinname="Actual BackBuffer SizeXY" dstnodeid="42" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="52" srcpinname="Transform Out" dstnodeid="151" dstpinname="Aspect Ratio">
+   </LINK>
+   <LINK srcnodeid="39" srcpinname="Layer Out" dstnodeid="151" dstpinname="Layers">
+   </LINK>
+   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InABox" id="152">
+   <BOUNDS type="Node" left="8205" top="13815" width="4755" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8205" top="13815" width="6000" height="4500">
+   </BOUNDS>
+   <BOUNDS type="Window" left="16440" top="1860" width="11385" height="6795">
+   </BOUNDS>
+   <PIN pinname="View" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Projection" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Actual BackBuffer SizeXY" visible="1">
+   </PIN>
+   <PIN pinname="Aspect Ratio" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Depth Buffer Mode" slicecount="1" values="Standard">
+   </PIN>
+   <PIN pinname="Depth Buffer Format" slicecount="1" values="D32_Float">
+   </PIN>
+   <PIN pinname="Clear Depth Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Layers" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="68" srcpinname="Projection" dstnodeid="152" dstpinname="Projection">
+   </LINK>
+   <LINK srcnodeid="68" srcpinname="View" dstnodeid="152" dstpinname="View">
+   </LINK>
+   <LINK srcnodeid="52" srcpinname="Transform Out" dstnodeid="152" dstpinname="Aspect Ratio">
+   </LINK>
+   <LINK srcnodeid="39" srcpinname="Layer Out" dstnodeid="152" dstpinname="Layers">
    </LINK>
    </PATCH>
